@@ -1,0 +1,54 @@
+{
+	"name": "todo-app",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@fontsource/poppins": "^4.5.0",
+		"@reduxjs/toolkit": "^1.7.1",
+		"date-fns": "^2.28.0",
+		"framer-motion": "^5.5.1",
+		"node-sass": "^7.0.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-hot-toast": "^2.2.0",
+		"react-icons": "^4.3.1",
+		"react-redux": "^7.2.6",
+		"react-scripts": "5.0.0",
+		"uuid": "^8.3.2"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"wesbos"
+		],
+		"rules": {
+			"import/no-extraneous-dependencies": [
+				"error",
+				{
+					"devDependencies": true
+				}
+			],
+			"react/prop-types": 0
+		}
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"eslint-config-wesbos": "^3.0.2"
+	}
+}
