@@ -6,6 +6,7 @@
     <title>HacktoberFest-React Projects for beginners</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
     <style>
         /* Additional custom styling for the box */
         .custom-box {
@@ -15,8 +16,74 @@
           border-radius: 5px;
         }
 
+        /* Aesthetic background */
+        body {
+          background: linear-gradient(to bottom, #007bff, #e6e5e5);
+          color: white;
+        }
 
-      </style>
+        .navbar {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        nav {
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+      }
+      
+      .logo {
+          display: flex;
+          align-items: center;
+      }
+      
+      .logo img {
+          margin-right: 10px; /* Add spacing between the logo and text */
+      }
+      
+      .github-icon img {
+          cursor: pointer; /* Add a pointer cursor to the GitHub icon */
+      }
+
+      /* Styling for the section with background image */
+      .hero-section {
+        background-image: url('your-background-image.jpg'); /* Add your image URL here */
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        text-align: center;
+        color: white;
+      }
+
+      .hero-text {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      /* Styling for the list of projects */
+      .projects-list {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      /* Styling for project items */
+      .project-item {
+        margin-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .project-item:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    </style>
 </head>
 <body>
 <!-- Navbar start -->
@@ -25,9 +92,7 @@
     <div class="container">
       <!-- Logo and Brand -->
       <a class="navbar-brand" href="#">
-
-        <img src="./react.png" height="30">
-       
+        <img src="./logo.png" height="30" alt="Logo">
         React Projects for beginners-HacktoberFest
       </a>
 
@@ -39,13 +104,6 @@
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <!-- Additional Links -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Github</a>
-          </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="#"><i class="bi bi-star-fill"></i> <span id="starsCount">Loading...</span></a> -->
-          </li>
 
           <!-- Repository Link -->
           <li class="nav-item">
@@ -58,7 +116,15 @@
 
     </div>
   </nav>
-<p></p>
+
+<!-- Hero Section with Background Image -->
+<section class="hero-section">
+  <div class="container">
+    <h1 class="hero-text">HacktoberFest - React Projects for Beginners</h1>
+    <p>Welcome to a collection of beginner-friendly React projects for HacktoberFest. Start your coding journey with these exciting projects.</p>
+  </div>
+</section>
+
 <section class="text-center">
     <div>
         
@@ -84,106 +150,96 @@
     </div>
 </section>
 
-        <section>
-            <div class="container mt-5">
-                <div class="row">
-                  <div class="col-md-6 mx-auto">
-                    <div class="custom-box">
-                      <h2>Projects List</h2>
-                      <p> </p>
-                      <div class="container mt-5">
-                        <ul class="list-group">
-                          <!-- Project 1 -->
-                          <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">1. React todo app</h5>
-                              <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-todo-app" target="_blank" class="btn"><i class="bi bi-github"></i></a>
-                            </div>
-                            <p class="mb-1">Start your coding journey with a beginner-friendly React Todo App, perfect for learning task management and basic web development</p>
-                          </li>
-                          
-                          <!-- Project 2 -->
-                          <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">2. React Weather app</h5>
-                              <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Weather-app" target="_blank" class="btn"><i class="bi bi-github"></i></a>
-                            </div>
-                            <p class="mb-1">Explore weather effortlessly with a beginner-friendly React Weather App, providing real-time forecasts and an intuitive user experience..</p>
-                          </li>
-                          
-                                                    <!-- Project 3 -->
-                          <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">3. React Stopwatch app</h5>
-                              <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-stopwatch" target="_blank" class="btn"><i class="bi bi-github"></i></a>
-                            </div>
-                            <p class="mb-1">Solidify your javascript concepts by making a React Stopwatch. You will learn how to manage 
-                              javascript objects as state in React.
-                            </p>
-                          </li>
-                                    <!-- Project 4 -->
-                          <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">4. React Landing Page</h5>
-                              <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Bank-UI" target="_blank" class="btn"><i class="bi bi-github"></i></a>
-                            </div>
-                            <p class="mb-1">Create an attractive landing page of your choice that will improve your designing skills.</p>
-                          </li>
-
-                            <!-- Project 5 -->
-                          <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">5. Movie Database App</h5>
-                              <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/simple-movie-search-app" target="_blank" class="btn"><i class="bi bi-github"></i></a>
-                            </div>
-                            <p class="mb-1">Create a simple movie database app where you can search about movies. In this project 
-                              you will learn about Card Components & how to manage dynamic data on page.
-                            </p>
-                          </li>
-
-                          <!-- Project 6 -->
-                          <li class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">6. React Expense Tracker</h5>
-                              <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/expense-tracker-react" target="_blank" class="btn"><i class="bi bi-github"></i></a>
-                            </div>
-                            <p class="mb-1">Learn more about state management by creating an Expense Tracker .
-                            </p>
-                          </li>
-
-
-
-                          
-                          <!-- Add more projects as needed -->
-                          
-                        </ul>
-                      </div>
-                    </div>
+<section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="custom-box projects-list">
+            <h2>Projects List</h2>
+            <div class="container mt-4">
+              <ul class="list-group">
+                <!-- Project 1 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">1. React todo app</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-todo-app" target="_blank" class="btn"><i class="bi bi-github"></i></a>
                   </div>
-                </div>
-              </div>
-        </section>
+                  <p class="mb-1">Start your coding journey with a beginner-friendly React Todo App, perfect for learning task management and basic web development</p>
+                </li>
+                
+                <!-- Project 2 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">2. React Weather app</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Weather-app" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Explore weather effortlessly with a beginner-friendly React Weather App, providing real-time forecasts and an intuitive user experience..</p>
+                </li>
+                
+                <!-- Project 3 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">3. React Stopwatch app</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-stopwatch" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Solidify your javascript concepts by making a React Stopwatch. You will learn how to manage 
+                    javascript objects as state in React.
+                  </p>
+                </li>
+                        
+                <!-- Project 4 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">4. React Landing Page</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Bank-UI" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Create an attractive landing page of your choice that will improve your designing skills.</p>
+                </li>
 
+                <!-- Project 5 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">5. Movie Database App</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/simple-movie-search-app" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Create a simple movie database app where you can search about movies. In this project 
+                    you will learn about Card Components & how to manage dynamic data on page.
+                  </p>
+                </li>
+
+                <!-- Project 6 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">6. React Expense Tracker</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/expense-tracker-react" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Learn more about state management by creating an Expense Tracker.</p>
+                </li>
+
+                
+                <!-- Add more projects as needed -->
+                
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-
-        <!-- Footer -->
-  
-  <footer class="bg-dark text-light text-center py-3">
-    <div class="container">
-      <p>&copy; 2023 <a href="https://hacktoberfest.com/">HacktoberFest</a></p>
-      <a href="https://github.com/ianshulx" class="text-light" target="_blank">
-        <i class="bi bi-github"></i> GitHub
-      </a>
-      <p></p>
-      <p>This repository is licensed under the MIT license. See the <a href="https://github.com/ianshulx/React-projects-for-beginners/blob/main/LICENSE">LICENSE </a>  file for more information.</p>
     </div>
-  </footer>
+</section>
 
+</div>
 
+<!-- Footer -->
 
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<footer class="bg-dark text-light text-center py-3">
+  <div class="container">
+    <p>&copy; 2023 <a href="https://hacktoberfest.com/">HacktoberFest</a></p>
+    <a href="https://github.com/ianshulx" class="text-light" target="_blank">
+      <i class="bi bi-github"></i> GitHub
+    </a>
+    <p></p>
+    <p>This repository is licensed under the MIT license. See the <a href="https://github.com/ianshulx/React-projects-for-beginners/blob/main/LICENSE">LICENSE </a>  file for more information.</p>
+  </div>
+</footer>
 
-</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPh
