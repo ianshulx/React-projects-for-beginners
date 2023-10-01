@@ -1,0 +1,65 @@
+.player-page {
+	width: 700px;
+	margin: auto;
+	margin-top: 120px;
+
+	.caption {
+		font-size: 16px;
+		color: rgb(47, 152, 66);
+	}
+
+	.cover {
+		width: 180px;
+		height: 180px;
+		margin-left: 20px;
+
+		img {
+			width: 180px;
+			height: 180px;
+			border-radius: 50%;
+		}
+	}
+	.volume-container {
+		position: relative;
+		left: 20px;
+		top: -3px;
+	}
+	.volume-container .volume-wrapper {
+		opacity: 0;
+		transition: opacity .5s linear;
+	}
+	.volume-container:hover .volume-wrapper {
+		opacity: 1;
+	}
+	.music-title {
+	    font-size: 25px;
+	    font-weight: 400;
+	    color: rgb(3, 3, 3);
+	    height: 36px;
+	    line-height: 36px;
+	}
+	.music-artist {
+		font-size: 15px;
+	    font-weight: 400;
+	    color: rgb(74, 74, 74);
+    }
+    .left-time {
+    	font-size: 14px;
+    	color: #999;
+    	font-weight: 400;
+    	width: 40px;
+    }
+    .icon {
+    	cursor: pointer;
+    }
+    .ml20 {
+    	margin-left: 20px;
+    }
+    .mt35 {
+    	margin-top: 35px;
+    }
+    .volume-wrapper {
+    	width: 60px;
+    	display: inline-block;
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "react-music-player",
+  "version": "1.0.0",
+  "description": "music player build with react, redux and react-router with the help of webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "node server",
+    "build": "webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "eslint": "eslint ."
+  },
+  "keywords": [
+    "es6",
+    "react",
+    "redux"
+  ],
+  "author": "musiq",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaolin3303/react-music-player"
+  },  
+  "dependencies": {
+    "pubsub-js": "^1.5.4",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-hot-loader": "^3.0.0-beta.2",
+    "react-router": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.2",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.16.1",
+    "json-loader": "^0.5.4",
+    "less": "^2.6.0",
+    "less-loader": "^2.2.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
