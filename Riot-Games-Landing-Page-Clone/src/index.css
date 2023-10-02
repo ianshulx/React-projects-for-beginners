@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Mark;
+  src: url("/mark.ttf");
+}
+
+body {
+  background-color: black;
+}
+
+.text-menus {
+  @apply text-[13px] font-bold tracking-wider px-4 rounded-md py-1 hover:cursor-pointer;
+}
+
+.text-menus:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.trishan {
+  background: radial-gradient(
+    55% 180% at 5% 100%,
+    rgba(163, 38, 41, 0.2) 0,
+    rgba(10, 10, 10, 0) 75%,
+    rgba(10, 10, 10, 0) 100%
+  );
+}
