@@ -1,7 +1,7 @@
 <h1>React Beginners Hacktoberfest Repository</h1>
 
 Welcome to the React Beginners Hacktoberfest Repository! This is a special place for beginners who are passionate about learning and contributing to open-source projects using React JS.
-<h2>NOTE: PLEASE CHECK YOUR PR0JECT CAREFULLY, IT SHOULD BE ERROR-FREE, YOUR PROJECT WILL BE REVIEWED IT REVIEWER FOUND ANY ERROR YOU REQUEST WILL MARKED AS "INVALID".<h2>
+<h3>NOTE: PLEASE CHECK YOUR PR0JECT CAREFULLY, IT SHOULD BE ERROR-FREE, YOUR PROJECT WILL BE REVIEWED If REVIEWER FOUND ANY ERROR YOU REQUEST WILL MARKED AS "INVALID".<h3>
 <h3>Description</h3>
 
 This repository serves as a platform for Hacktoberfest participants who are on their journey to mastering React JS. It's a place where you can share your mini-projects, learn from others, and contribute to the growth of the open-source community.
