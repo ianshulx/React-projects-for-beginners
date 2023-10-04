@@ -1,0 +1,556 @@
+/*
+Custom template - BlueBerry Orange
+Copyright © rahulhaque
+
+Not free to use or copy without permission
+*/
+
+:root {
+  --color-1: #6c5871;
+  --color-2: #ff9702;
+  --color-3: #a80000;
+  --color-4: #000a90;
+  --color-5: #0b7300;
+  --color-success: #55dda9;
+  --color-danger: #ff858e;
+  --color-info: #28c8fa;
+  --color-warn: #ffcf51;
+  --color-title: #5715a5;
+  --color-subtitle: rgba(87, 21, 165, 0.8);
+  --primary-color: #6e15c1;
+  --secondary-color: #f8f2f2;
+  --link-color: #e38cb7;
+  --link-color-hover: #d6619c;
+}
+
+.color-title {
+  color: var(--color-title);
+}
+
+.color-subtitle {
+  color: var(--color-subtitle);
+}
+
+.color-link {
+  color: var(--link-color-hover);
+}
+
+.text-error {
+  color: var(--color-3);
+}
+
+.text-bold {
+  font-weight: bolder;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-highlight {
+  color: var(--color-2);
+}
+
+.color-success {
+  color: var(--color-success);
+}
+
+body a {
+  color: #e38cb7;
+}
+
+body a:hover {
+  color: #d6619c;
+}
+
+/*Input*/
+body .p-inputtext {
+  font-size: 14px;
+  color: #333333;
+  background: #ffffff;
+  padding: 0.429em;
+  border: 1px solid #e9e1e1;
+  -o-transition: border-color 0.2s;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 3px;
+}
+body .p-inputtext:enabled:hover:not(.p-error) {
+  border-color: var(--primary-color);
+}
+body .p-inputtext:enabled:focus:not(.p-error) {
+  border-color: var(--primary-color);
+  outline: 0 none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+body .p-inputgroup .p-inputgroup-addon {
+  border-color: #e9e1e1;
+}
+
+.rounded-border {
+  border-radius: 5px;
+}
+
+/*Card title subtitle*/
+.p-card-title, .p-card-subtitle {
+  color: var(--color-title);
+}
+
+body .p-dialog-title {
+  color: var(--color-title);
+}
+
+body .p-dialog {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+body .p-dialog .p-dialog-titlebar {
+    border: 0px solid #c8c8c8;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+body .p-dialog .p-dialog-content {
+    border: 0px solid #c8c8c8;
+    -moz-border-radius-bottomLeft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomRight: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.layout-wrapper .layout-topbar .layout-topbar-icons a:hover {
+  color: var(--color-subtitle);
+}
+
+/*Primary button*/
+body .p-button {
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  font-weight: 500;
+  border: 1px solid var(--primary-color);
+}
+body .p-button:enabled:hover, body .p-button:enabled:active {
+  background-color: #5d15af;
+  border-color: #5d15af;
+}
+
+/*Secondary button*/
+body .p-button.p-button-secondary {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+body .p-button.p-button-secondary:enabled:hover, body .p-button.p-button-secondary:enabled:active {
+  background-color: #f1e4e4;
+  border-color: #f1e4e4;
+}
+
+/*Info button*/
+body .p-button.p-button-info {
+  background-color: var(--color-info);
+  border: 1px solid var(--color-info);
+}
+body .p-button.p-button-info:enabled:hover, body .p-button.p-button-info:enabled:active {
+  background-color: #29b4fa;
+  border-color: #29b4fa;
+}
+
+/*Danger button*/
+body .p-button.p-button-danger {
+  background-color: #f76452;
+  border: 1px solid #f76452;
+}
+body .p-button.p-button-danger:enabled:hover, body .p-button.p-button-danger:enabled:active {
+  background-color: #de4e3c;
+  border-color: #de4e3c;
+}
+
+/* Message */
+body .p-messages {
+  margin-top: 0;
+}
+
+/*Success message*/
+body .p-messages.p-messages-success {
+  background-color: var(--color-success);
+  color: var(--color-4);
+}
+body .p-messages.p-messages-success .p-messages-icon, body .p-messages.p-messages-success .p-messages-close {
+  color: var(--color-4);
+}
+
+/*Error message*/
+body .p-messages.p-messages-error {
+  background-color: var(--color-danger);
+  color: var(--color-3);
+}
+body .p-messages.p-messages-error .p-messages-icon, body .p-messages.p-messages-error .p-messages-close {
+  color: var(--color-3);
+}
+
+/*Info message*/
+body .p-messages.p-messages-info {
+  background-color: var(--color-info);
+  color: var(--color-4);
+}
+body .p-messages.p-messages-info .p-messages-icon, body .p-messages.p-messages-info .p-messages-close {
+  color: var(--color-4);
+}
+
+/*Warning message*/
+body .p-messages.p-messages-warn {
+  background-color: var(--color-warn);
+  color: var(--color-3);
+}
+body .p-messages.p-messages-warn .p-messages-icon, body .p-messages.p-messages-warn .p-messages-close {
+  color: var(--color-3);
+}
+
+/*Calendar*/
+body .p-datepicker table td.p-datepicker-today a.p-highlight {
+  background-color: var(--color-title);
+}
+
+/*Table header*/
+thead {
+  color: var(--color-title);
+}
+body .p-datatable .p-datatable-thead > tr > th {
+  color: var(--color-title);
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid var(--color-subtitle);
+}
+body .p-datatable .p-datatable-tbody > tr > td {
+  border: none;
+}
+
+body .p-datatable .p-sortable-column.p-highlight {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/*Paginator*/
+body .p-datatable .p-paginator-bottom {
+  border: none;
+  background: transparent;
+  padding: 5px;
+}
+body .p-datatable .p-paginator-bottom a {
+  border-radius: 15px;
+  margin: 0px 3px;
+}
+body .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  margin: 0px 3px;
+}
+body .p-paginator .p-paginator-pages .p-paginator-page:not(.p-highlight):hover {
+  border-radius: 15px;
+}
+
+/*Sidebar filter*/
+body .p-listbox .p-listbox-header {
+  padding: 0em 0em 0.5em;
+}
+
+/*Sidebar list item*/
+body .p-listbox .p-listbox-list .p-listbox-item.p-highlight {
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+
+/*Dropdown panel*/
+body .p-dropdown .p-dropdown-panel {
+  border-radius: 5px;
+}
+body .p-dropdown-panel .p-dropdown-filter-container {
+  width: 100%;
+  padding: 5px;
+}
+body .p-dropdown-panel .p-dropdown-filter-container .p-dropdown-filter-icon {
+  right: .7em;
+}
+
+body label {
+  color: var(--color-title);
+  font-size: 16px;
+}
+
+/* Horizontal rule style*/
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Full Calendar Design */
+.fc th {
+  text-align: left;
+  background-color: #f8f2f2;
+  padding: 5px 5px;
+}
+.fc th,
+.fc td {
+  border-style: dashed;
+  vertical-align: top;
+}
+.fc td.fc-today {
+  border-style: dashed;
+  /* overcome neighboring borders */
+}
+.fc .fc-row {
+  /* extra precedence to overcome themes forcing a 1px border */
+  /* no visible border by default. but make available if need be (scrollbar width compensation) */
+  border-style: dashed;
+  border-width: 0;
+}
+/* Global Event Styles
+--------------------------------------------------------------------------------------------------*/
+.fc-event {
+  position: relative;
+  /* for resize handle and other inner positioning */
+  display: block;
+  /* make the <a> tag block */
+  font-size: 0.85em;
+  line-height: 1.4;
+  border-radius: 1.5em;
+  border: 1px solid #6e15c1;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px hsla(0,0%,60%,.4);
+  cursor: pointer;
+}
+
+.fc-event,
+.fc-event-dot {
+  background-color: #6e15c1;
+  /* default BACKGROUND color */
+}
+.fc-day-grid-event {
+  margin: 1px 2px 0;
+  /* spacing between events and edges */
+  padding: 6px;
+}
+
+tr:first-child > td > .fc-day-grid-event {
+  margin-top: 0px;
+  /* a little bit more space before the first event */
+}
+.fc-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "fcicons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: .7;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Buttons
+--------------------------------------------------------------------------------------------------
+Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
+*/
+/* reset */
+.fc-button {
+  border-radius: 0;
+  overflow: visible;
+  text-transform: none;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.fc-button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.fc-button {
+  -webkit-appearance: button;
+}
+
+.fc-button:not(:disabled) {
+  cursor: pointer;
+}
+
+.fc-button::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+/* theme */
+.fc-button {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.4em 0.65em;
+  font-size: 1em;
+  line-height: 0;
+  border-radius: 0.25em;
+  height: 1.9em;
+}
+
+.fc-button:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.fc-button:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25);
+}
+
+.fc-button:disabled {
+  opacity: 0.65;
+}
+
+/* "primary" coloring */
+.fc-button-primary {
+  color: #fff;
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+}
+
+.fc-button-primary:hover {
+  color: #fff;
+  background-color: #1e2b37;
+  border-color: #1a252f;
+}
+
+.fc-button-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
+}
+
+.fc-button-primary:disabled {
+  color: #fff;
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+}
+
+.fc-button-primary:not(:disabled):active,
+.fc-button-primary:not(:disabled).fc-button-active {
+  color: #fff;
+  background-color: #1a252f;
+  border-color: #151e27;
+}
+
+.fc-button-primary:not(:disabled):active:focus,
+.fc-button-primary:not(:disabled).fc-button-active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(76, 91, 106, 0.5);
+}
+
+/* icons within buttons */
+.fc-button .fc-icon {
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+
+/* Buttons Groups
+--------------------------------------------------------------------------------------------------*/
+.fc-button-group {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.fc-button-group > .fc-button {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.fc-button-group > .fc-button:hover {
+  z-index: 1;
+}
+
+.fc-button-group > .fc-button:focus,
+.fc-button-group > .fc-button:active,
+.fc-button-group > .fc-button.fc-button-active {
+  z-index: 1;
+}
+
+.fc-button-group > .fc-button:not(:first-child) {
+  margin-left: -1px;
+}
+
+.fc-button-group > .fc-button:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.fc-button-group > .fc-button:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.fc-list-empty-wrap2 {
+  position: unset;
+}
+
+.fc-list-empty {
+  padding: .6em;
+}
+
+.fc-toolbar h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/*
+Scroll to top
+*/
+.scrollTop {
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

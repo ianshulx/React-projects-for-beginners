@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Projects for beginners</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        /* Additional custom styling for the box */
+        .custom-box {
+          background-color: #f0f0f0;
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+        }
+
+        /* Aesthetic background */
+        body {
+          background: linear-gradient(to bottom, #7117ea, #ea6060,  #9544ff);
+          color: white;
+        }
+
+        .navbar {
+          background-color: rgba(0, 0, 0, 0.7);
+         
+          
+        }
+
+        nav {
+          background-color: rgba(0, 0, 0, 0.408);
+          
+          color: rgba(255, 255, 255, 0.399);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          
+      }
+      
+      .logo {
+          display: flex;
+          align-items: center;
+      }
+      
+      .logo img {
+          margin-right: 10px; /* Add spacing between the logo and text */
+      }
+      
+      .github-icon img {
+          cursor: pointer; /* Add a pointer cursor to the GitHub icon */
+      }
+
+      /* Styling for the section with background image */
+      .hero-section {
+        background-image: url('your-background-image.jpg'); /* Add your image URL here */
+        background-size: cover;
+        background-position: center;
+        padding:30px 0;
+        text-align: center;
+        color: white;
+      }
+
+      .hero-text {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      /* Styling for the list of projects */
+      .projects-list {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      /* Styling for project items */
+      .project-item {
+        margin-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .project-item:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      #contributors-box {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #contributors-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #contributors-list li {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        width: 150px; /* Reduced the width */
+        text-align: center;
+    }
+
+    #contributors-list li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #contributors-list li img {
+        border-radius: 50%;
+    }
+    </style>
+</head>
+<body>
+<!-- Navbar start -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Logo and Brand -->
+      <a class="navbar-brand" href="https://react.dev/" target="_blank">
+        <img src="./logo.png" height="30" alt="Logo">
+       <a class="navbar-brand"href="https://github.com/ianshulx/React-projects-for-beginners" target="_blank"> React Projects for beginners</a>
+      </a>
+
+      <!-- Navbar toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Additional Links -->
+
+
+
+          <!-- Repository Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/ianshulx/React-projects-for-beginners" target="_blank"><i class="bi bi-github"></i></a>
+          </li>
+          
+
+          
+        </ul>
+        
+      </div>
+
+    </div>
+  </nav>
+
+<!-- Hero Section with Background Image -->
+<section class="hero-section">
+  <div class="container">
+    <h1 class="hero-text">HacktoberFest - React Projects for Beginners</h1>
+    <p>Welcome to a collection of beginner-friendly React projects for HacktoberFest. Start your coding journey with these exciting projects.</p>
+  </div>
+</section>
+
+
+<section class="text-center" style="padding:40px 0;">
+  <a class="btn btn-warning ml-2" href="https://github.com/ianshulx/React-projects-for-beginners" target="_blank">
+    <i class="bi bi-star-fill"></i> Star this repository
+  </a>
+</section>
+
+
+<section class="text-center">
+  <div>
+      
+      <a href="https://github.com/ianshulx/React-projects-for-beginners/stargazers">
+        <img src="https://img.shields.io/github/stars/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub stars">
+      </a>
+      <a href="https://github.com/ianshulx/React-projects-for-beginners/network">
+        <img src="https://img.shields.io/github/forks/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub forks">
+      </a>
+      <a href="https://github.com/ianshulx/React-projects-for-beginners/graphs/contributors">
+        <img src="https://img.shields.io/github/contributors/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub contributors">
+      </a>
+      <a href="https://github.com/ianshulx/React-projects-for-beginners/issues">
+        <img src="https://img.shields.io/github/issues/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub issues">
+      </a>
+      <a href="https://github.com/ianshulx/React-projects-for-beginners/pulls">
+        <img src="https://img.shields.io/github/issues-pr/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub pull requests">
+      </a>
+      <a href="https://github.com/ianshulx/React-projects-for-beginners/watchers">
+        <img src="https://img.shields.io/github/watchers/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub watchers">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="custom-box projects-list">
+            <h2>Projects List</h2>
+            <div class="container mt-4">
+              <ul class="list-group">
+                <!-- Project 1 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">1. React todo app</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-todo-app" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Start your coding journey with a beginner-friendly React Todo App, perfect for learning task management and basic web development</p>
+                </li>
+                
+                <!-- Project 2 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">2. React Weather app</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Weather-app" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Explore weather effortlessly with a beginner-friendly React Weather App, providing real-time forecasts and an intuitive user experience..</p>
+                </li>
+                
+                <!-- Project 3 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">3. React Stopwatch app</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-stopwatch" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Solidify your javascript concepts by making a React Stopwatch. You will learn how to manage 
+                    javascript objects as state in React.
+                  </p>
+                </li>
+                        
+                <!-- Project 4 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">4. React Bank UI</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Bank-UI" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Create an attractive landing page of your choice that will improve your designing skills.</p>
+                </li>
+
+                <!-- Project 5 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">5. Movie Database App</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/simple-movie-search-app" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Create a simple movie database app where you can search about movies. In this project 
+                    you will learn about Card Components & how to manage dynamic data on page.
+                  </p>
+                </li>
+
+                <!-- Project 6 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">6. React Expense Tracker</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/expense-tracker-react" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Learn more about state management by creating an Expense Tracker.</p>
+                </li>
+
+
+                                <!-- Project 7 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">7. E-commerce Website React</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/E-commerce%20Website" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">React-based e-commerce site: Sleek design, vast product range, and secure checkout redefine online shopping. </p>
+                </li>
+
+
+                <!-- Project 8 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">8. GIF generator</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/GIF%20Generator" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Experience the fun of GIF creation with our React-based GIF Generator. Easily create, customize, and share animated GIFs, adding excitement to your online conversations.</p>
+                </li>
+
+                
+                <!-- Project 9 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">9. Calculator App</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/calculator-react" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">"Experience the power of React with our intuitive Calculator app. Perform quick and accurate calculations with a sleek and user-friendly interface.</p>
+                </li>
+
+
+
+
+                
+                <!-- Project 10 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">10. Meme App </h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/meme-app-react" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Unleash your creativity with our React-powered Meme App. Craft and share hilarious memes effortlessly, adding humor to your social media..</p>
+                </li>
+
+
+                
+                <!-- Project 11 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">11. React Music App</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-music-player" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">Immerse yourself in the world of music with our React-based Music Player. Enjoy seamless playback, playlist management, and a dynamic audio experience.</p>
+                </li>
+
+
+                                
+                <!-- Project 12 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">12. Quote Generator</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/quotesgenerator" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">"Get inspired with our React-based Quote Generator. Discover wisdom, motivation, and creativity at your fingertips, one quote at a time."</p>
+                </li>
+                
+                
+
+                                <!-- Project 13 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">13. Password Generator</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/react_password_generator" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">"Boost your online security with our React Password Generator. Create strong, randomized passwords effortlessly to safeguard your digital life."</p>
+                </li>
+                                <!-- Project 14 -->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">14. Score Game</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Score" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">"ScoreKeeper app is applicable to any points-based game. It helps in accurately managing and keeping track of the score board, and displays the winner as well."</p>
+                </li>
+
+
+                                                  <!-- Project 15-->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">15. Riot game clone UI</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/Riot-Games-Landing-Page-Clone" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">"Riot Games Clone: A React project replicating the essence of Riot Games' popular gaming platform, offering a diverse gaming experience."</p>
+                </li>
+
+                                                                    <!-- Project 16-->
+                <li class="list-group-item project-item">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">16. Stock Dashboard</h5>
+                    <a href="https://github.com/ianshulx/React-projects-for-beginners/tree/main/Stock_Dashboard" target="_blank" class="btn"><i class="bi bi-github"></i></a>
+                  </div>
+                  <p class="mb-1">"This projects gives the stock results for the unique company details and uses charts to display their historical and future predictions."</p>
+                </li>
+                <!-- Add more projects as needed -->
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+</div>
+
+<section class="text-center" style="padding: 20px;">
+  <h1 class="hero-text">GitHub Repository Contributors</h1>
+  <div id="contributors-box">
+      <ul id="contributors-list">
+          <!-- Contributors will be displayed here -->
+      </ul>
+  </div>
+</section>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-light text-center py-3">
+  <div class="container">
+    <p>&copy; 2023 <a href="https://hacktoberfest.com/">HacktoberFest</a></p>
+    
+    <a href="https://github.com/ianshulx" class="text-light" target="_blank">
+      <i class="bi bi-github"></i>
+    </a>
+    &nbsp;
+     <a href="https://www.instagram.com/hackers.core/?hl=en" class="text-light" target="_blank">
+     <i class="bi bi-instagram"></i>
+    </a>
+    
+    <p></p>
+    <p>This repository is licensed under the MIT license. See the <a href="https://github.com/ianshulx/React-projects-for-beginners/blob/main/LICENSE">LICENSE </a>  file for more information.</p>
+  </div>
+</footer>
+<script>
+  // Replace with your GitHub repository URL
+  const repoUrl = 'https://api.github.com/repos/ianshulx/React-projects-for-beginners/contributors';
+
+  // Fetch contributors data from GitHub API
+  fetch(repoUrl)
+      .then(response => response.json())
+      .then(data => {
+          const contributorsList = document.getElementById('contributors-list');
+
+          // Loop through the contributors and create list items
+          data.forEach(contributor => {
+              const listItem = document.createElement('li');
+              listItem.innerHTML = `
+                  <a href="${contributor.html_url}" target="_blank">
+                      <img src="${contributor.avatar_url}" alt="${contributor.login}" width="100" height="100">
+                      <p>${contributor.login}</p>
+                  </a>
+              `;
+              contributorsList.appendChild(listItem);
+          });
+      })
+      .catch(error => {
+          console.error('Error fetching data:', error);
+      });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

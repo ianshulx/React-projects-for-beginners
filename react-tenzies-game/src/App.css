@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background:linear-gradient(#0f0c29,#302b63,#24243e);
+  padding: 25px;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+main{
+  background:#f9f9f5;
+  width: 500px;
+  height: 480px;
+  border: 2px solid #2d1515;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 10px 10px 10px #2d1515;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1{
+  font-size: 2.5em;
+}
+
+.rules{
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  margin:15px;
+  margin-bottom: 25px;
+}
+
+.dice-container{
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: .7em;
+  column-gap: 2.2em;
+}
+
+.die-face{
+  height: 56px;
+  width: 56px;
+  /* background-color: #bceeff; */
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.die-face h2{
+  font-size: 2em;
+}
+
+.roll-btn{
+  width: 140px;
+  height: 42px;
+  font-size: 1.5em;
+  font-weight: bolder;
+  align-self: center;
+  background-color: #5035FF;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+.roll-btn:active{
+  box-shadow: inset 5px 5px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+.roll-btn:hover{
+  background-color: #3214f4;
+}
+
+.results {
+  margin-top: 18px;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.1em;
+}
+.results-time {
+  display: flex;
+  gap: 5px;
+}
