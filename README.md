@@ -27,8 +27,7 @@ git clone https://github.com/ianshulx/React-projects-for-beginners
 git checkout -b my-new-branch
 ```
 
-4._Changes_ : Create a new branch and commit your changes on that branch. Follow the [How to contribute](./CONTRIBUTING.md)
-
+4._Changes_ : Create a new branch and commit your changes on that branch.
 5._ADD_ and _COMMIT_
 
 - Add your changes
