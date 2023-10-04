@@ -12,13 +12,44 @@ Whether you've built a simple calculator, a to-do list, or a weather app, your c
 
 Hacktoberfest is a month-long celebration of open-source software run by DigitalOcean. It's open to everyone in our global community. Whether you’re a developer, a student learning to code, an event host, or a company of any size, you can help drive the growth of open-source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
 
-<h3>How to Contribute?</h3>
+### Process of Contribution
 
-1. Fork this repository
-2. Create a new branch for your mini-project
-3. Add your project in its directory
-4. Make sure your code is clean and comments are included when necessary
-5. Submit a pull request and briefly explain your project and what you've learned in your journey of creating it.
+1._Fork_ : Fork this GitHub Repo to your own github account
+2._Clone_ : Clone the forked repo (the repo present on your account) to your local machine.
+
+```terminal
+git clone https://github.com/ianshulx/React-projects-for-beginners
+```
+
+3.Create a _new Branch_
+
+```markdown
+git checkout -b my-new-branch
+```
+
+4._Changes_ : Create a new branch and commit your changes on that branch. Follow the [How to contribute](./CONTRIBUTING.md)
+
+5._ADD_ and _COMMIT_
+
+- Add your changes
+
+```markdown
+git add .
+```
+
+- Commit your changes.
+
+```markdown
+git commit -m "Relevant message"
+```
+
+6._Push_ : After all changes are commited, push your changes to your remote repo.
+
+```markdown
+git push origin my-new-branch
+```
+
+7._PR_ : After pushing changes, raise a PR from your remote repo to this repo's dev branch
 
    
 By participating in this repository, you will not only be contributing to the open source, but also improving your skills in React JS. Let's make learning React fun and interactive during this Hacktoberfest!
