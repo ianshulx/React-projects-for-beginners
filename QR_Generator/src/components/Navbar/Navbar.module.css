@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.navbar {
+    background-color: #494F55;
+    color: #fff;
+    padding: 20px;
+}
+
+.navbar img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar p {
+        justify-content: center;
+    }
+  }
