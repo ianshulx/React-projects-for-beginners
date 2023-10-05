@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.anchor, .anchor:hover, .anchor:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.anchor:hover {
+    color: #fff;
+}
