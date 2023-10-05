@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  src: url('./../fonts/Raleway/static/Raleway-Regular.ttf');
+}
+@font-face {
+  font-family: 'Lobster', cursive;
+  src: url('./../fonts/LobsterLobster-Regular.ttf');
+}
+@font-face {
+  font-family: 'Borel', sans-serif;
+  src: url('./../fonts/Borel/Borel-Regular.ttf');
+}

@@ -1,0 +1,47 @@
+:root {
+  --underline-color: #000;
+}
+
+.animate {
+  transition: all 0.3s ease-in-out;
+}
+.animate.bounce:hover {
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+.animate-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--underline-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+.animate-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.animate-underline:active:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
