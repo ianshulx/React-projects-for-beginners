@@ -1,0 +1,31 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffa33c;
+  color: white;
+  padding: 0px 80px;
+}
+
+.header span {
+  color: crimson;
+}
+
+.header-logo {
+  font-family: "Poppins", Times, serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.header__options {
+  display: flex;
+}
+
+.header__option {
+  font-weight: 500;
+  margin-left: 100px;
+  color: white;
+  cursor: pointer;
+}

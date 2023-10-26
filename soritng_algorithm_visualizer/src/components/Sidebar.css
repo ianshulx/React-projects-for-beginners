@@ -1,0 +1,89 @@
+.sidebar {
+  width: 280px;
+  box-shadow: 5px 0px 10px 1px lightgrey;
+  background-color: aliceblue;
+}
+
+.sidebar__option {
+  padding: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+label {
+  font-weight: 500;
+}
+
+select {
+  border: none;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: transparent;
+}
+
+.MuiSlider-track {
+  color: green;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar__option {
+    padding: 10px;
+  }
+
+  select {
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px 1px lightgrey;
+  }
+
+  .slider {
+    max-width: 50px;
+  }
+  .sidebar__option {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    max-width: 72px;
+    margin-right: -2px;
+    border-bottom: none;
+  }
+
+  select {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  label {
+    font-size: 0.9rem;
+    display: none;
+  }
+}

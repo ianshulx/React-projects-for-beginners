@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b15eff;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  height: 90%;
+  border-radius: 3px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 1px grey;
+  /* min-width: 700px; */
+  position: relative;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .App {
+    align-items: flex-start;
+    background-color: rgb(0, 255, 255);
+  }
+}
