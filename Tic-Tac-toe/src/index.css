@@ -1,0 +1,24 @@
+
+@font-face {
+  font-family: Inter;
+  src: url(./assets/Inter-SemiBold.ttf);
+}
+
+body{
+  font-family:Inter;
+  color: black;
+  height: 100vh; 
+}
+
+.cross{
+  fill: #fb5c50;
+}
+.circle{
+  fill:none;stroke:#05aaf5;stroke-linecap:round;stroke-linejoin:round;
+  stroke-width: 5px;
+  
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
