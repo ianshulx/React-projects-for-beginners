@@ -4,15 +4,15 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## Picture of the Project
+## Screenshot of the Project
 
-![CryptoCurrency](https://github.com/ojasggg/React-projects-for-beginners/assets/48384232/8937730a-752e-4fd8-92fd-8282d975b143)
+![TextToSpeech](https://github.com/ojasggg/React-projects-for-beginners/assets/48384232/9f89de52-d51a-4383-86fa-18527da7e16a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-- [![React][React.js]][React-url]
+[![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -29,13 +29,12 @@
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-3. Install NPM packages
+1. Clone the repo
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Run the Application using vite
+3. Run the Application using vite
    ```sh
    npm run dev
    ```
@@ -51,7 +50,7 @@ Portfolio Website - [OjashGurung](https://www.ojashgurung.social)
 LinkedIn - [![ojash-gurung](https://i.stack.imgur.com/gVE0j.png) ojash-gurung](https://www.linkedin.com/in/ojash-gurung)
 &nbsp;
 
-Project Link- [Web3 Theme Landing Page](https://github.com/ianshulx/React-projects-for-beginners/tree/main/web3_landing_page)
+Project Link- [Text_to_speech_converter](https://github.com/ianshulx/React-projects-for-beginners/tree/main/text_to_speech)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
