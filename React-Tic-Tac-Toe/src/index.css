@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #222;
+  color: #ddd;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.board {
+  margin: 50px;
+}
+
+.square {
+  border: 1px solid #999 ;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:hover {
+  cursor: pointer;
+}
