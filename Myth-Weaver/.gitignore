@@ -1,0 +1,5 @@
+.env
+.idea
+**/node_modules
+data
+yarn.lock
