@@ -49,18 +49,25 @@ export default function ProjectCard({
             color: colorTheme.primaryText,
           }}
         >
-          <CardActionArea>
-            <CardMedia component="img" height="140" image={image} alt={title} />
-            <CardContent>
-              <h3 className="text-xl font-bold text-start mb-2">{title}</h3>
-              <p className="text-start text-md">{description}</p>
-            </CardContent>
-            <CardActions>
-              <Button size="small" href={link}>
-                View
-              </Button>
-            </CardActions>
-          </CardActionArea>
+          <a href={link} target="_blank">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="140"
+                image={image}
+                alt={title}
+              />
+              <CardContent>
+                <h3 className="text-xl font-bold text-start mb-2">{title}</h3>
+                <p className="text-start text-md">{description}</p>
+              </CardContent>
+              <CardActions>
+                <Button size="small" href={link}>
+                  View
+                </Button>
+              </CardActions>
+            </CardActionArea>
+          </a>
         </Card>
       </div>
       <CardActionArea>
