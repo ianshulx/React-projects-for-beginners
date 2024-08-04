@@ -1,53 +1,56 @@
 /* App.css */
 
 body {
-  background-color: #f0f4f8;
+  background-color: #e3f2fd;
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  background: linear-gradient(to right, #f9f9f9, #e3f2fd);
 }
 
 .calculator-body {
-  max-width: 400px;
+  max-width: 420px;
   margin: 20px;
   padding: 20px;
-  background: linear-gradient(135deg, #ffffff, #f8f9fb);
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #ffffff, #f1f1f1);
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   text-align: center;
-  transition: transform 0.2s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .calculator-body:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
 }
 
 h1 {
-  color: #333;
+  color: #3f51b5;
   margin-bottom: 20px;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
 
 .result {
-  height: 60px;
-  background-color: #f0f1f2;
-  border-radius: 10px;
+  height: 70px;
+  background-color: #f0f4f8;
+  border-radius: 12px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .result p {
-  font-size: 36px;
+  font-size: 38px;
   color: #333;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .keypad {
@@ -60,25 +63,24 @@ h1 {
   background: linear-gradient(145deg, #4CAF50, #66bb6a);
   border: none;
   color: white;
-  padding: 20px;
-  margin: 5px;
+  padding: 15px 20px;
+  margin: 6px;
   text-align: center;
   display: inline-block;
-  font-size: 24px;
-  border-radius: 8px;
+  font-size: 22px;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s, transform 0.1s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.1s, box-shadow 0.3s;
 }
 
 .button:hover {
   background: linear-gradient(145deg, #45a049, #5ebd5b);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.4);
+  box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.5);
 }
-
-
