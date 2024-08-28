@@ -4,7 +4,7 @@ Welcome to the React Beginners Hacktoberfest Repository! This is a special place
 <h3>NOTE#1: PLEASE CHECK YOUR PR0JECT CAREFULLY, IT SHOULD BE ERROR-FREE, YOUR PROJECT WILL BE REVIEWED If REVIEWER FOUND ANY ERROR YOU REQUEST WILL MARKED AS "INVALID".<h3>
 
    
-<h3>NOTE#2: DON'T FORGET TO LIST YOUR PROJECT IN THE "index.html" FILE IN THE ROOT FOLDER OF THE REPO. YOU CAN ALSO ADD THE DEMO LINK OF YOUR PROJECT<h3>
+<h3>NOTE#2: DON'T FORGET TO LIST YOUR PROJECT IN THE "index.html" FILE IN THE ROOT FOLDER OF THE REPO. YOU CAN ALSO ADD THE DEMO LINK OF YOUR PROJECT(IF ANY)<h3>
 <h3>Description</h3>
 
 This repository serves as a platform for Hacktoberfest participants who are on their journey to mastering React JS. It's a place where you can share your mini-projects, learn from others, and contribute to the growth of the open-source community.
