@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #646464;
+  /* transition: all; */
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #909090;
+}
+
+.wrapper {
+  display: flex; /* Use flexbox to make the children adjacent */
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* You can add more specific styles for Sidebar and App1 if needed */
