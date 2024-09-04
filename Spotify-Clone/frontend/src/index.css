@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    html, body, #root {
+        @apply h-full bg-backdrop text-white antialiased
+    }
+    #root {
+        @apply flex flex-col
+    }
+    .wrapper {
+        height: calc(100% - theme('spacing.24'));
+        @apply flex
+    }
+    .scrollable {
+        scroll-behavior: smooth;
+    }
+    /* Add this in your Tailwind CSS stylesheet or configure it in your build process */
+
+  
+}
