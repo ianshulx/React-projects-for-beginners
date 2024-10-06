@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Regular";
+    src: local("Athletics-Regular"),
+    url('./assets/fonts/Athletics-Regular.ttf') format("truetype");
+
+}
+
+@font-face {
+    font-family: "Light";
+    src: local("Athletics-Light"),
+    url('./assets/fonts/Athletics-Light.ttf') format("truetype");
+    
+}
+
+@font-face {
+    font-family: "Medium";
+    src: local("Athletics-Medium"),
+    url('./assets/fonts/Athletics-Medium.ttf') format("truetype");
+    
+}
+
+@font-face {
+    font-family: "Bold";
+    src: local("Athletics-Bold"),
+    url('./assets/fonts/Athletics-Bold.ttf') format("truetype");
+    
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
