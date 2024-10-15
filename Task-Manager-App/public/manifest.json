@@ -1,0 +1,25 @@
+{
+  "short_name": "Tasklear",
+  "name": "Tasklear - Manage tasks on the go!",
+  "icons": [
+    {
+      "src": "tasklear.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "tasklear.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "tasklear.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
