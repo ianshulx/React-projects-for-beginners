@@ -231,7 +231,7 @@ const projects = [
   {
     title: "Farming Landing",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Markdown-Previewer",
-    description: "This is a simple Landing for farming website",
+    description: "This is a ",
     imgSrc: "assets/krushi-mitra.svg"
   }
 ];
