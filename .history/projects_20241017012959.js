@@ -267,7 +267,7 @@ const projects = [
   },
   {
     title: "Farming Landing",
-    url: "https://github.com/solankitrushen/React-projects-for-beginners/tree/02e902ad5ebf54115574473aa6107ca17bac58cb/Farming-landing",
+    url: "https://htm-landing.vercel.app/",
     description: "This is a simple Landing for farming website",
     imgSrc: "assets/krushi-mitra.svg",
   },
