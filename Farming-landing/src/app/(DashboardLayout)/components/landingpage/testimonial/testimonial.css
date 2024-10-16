@@ -1,0 +1,17 @@
+/* .testimonial-slider .slick-slide {
+    margin: 0 18px;
+} */
+
+.slick-dots li button:before {
+    font-size: 10px;
+}
+.testimonial-slider .slick-list{
+    padding:0 0 20px 0;
+}
+.slick-dots li {
+    margin: 0;
+}
+
+.slick-dots {
+    bottom: -50px
+}
