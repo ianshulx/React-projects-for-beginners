@@ -233,6 +233,12 @@ const projects = [
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/draganddrop-board",
     description: "Its a simple drag and drop kanban style board to manage tasks",
     imgSrc: "assets/drag-and-drop.png"
+  },
+  {
+    title: "ChatGram - Real Time Chat Application",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/chatgram",
+    description: "Real Time Chatting Application",
+    imgSrc: "assets/ChatGram.png"
   }
 ];
 
