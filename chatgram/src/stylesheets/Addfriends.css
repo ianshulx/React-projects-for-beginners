@@ -1,0 +1,79 @@
+@import "../App.css";
+.freindsContainer {
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-left: 430px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.person {
+    width: 600px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    font-family: var(--ff--roboto);
+}
+
+.person div, button {
+    margin: 10px;
+    color: white;
+}
+
+.person div{
+    backdrop-filter: blur(10px);
+    border-left: 3px solid rgb(16, 166, 116);
+    border-radius: 10px;
+}
+
+ .serialNum {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-20);
+}
+
+.person .personname  {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person .personemail  {
+    width: 270px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person .addbtn {
+    width: 100px;
+    height: 50px;
+    background-color: #4CAF50; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.addbtn:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+

@@ -1,0 +1,43 @@
+@import "../App.css";
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex; /* Use flexbox for aligning items */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items horizontally */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the navbar is on top */
+    padding: 0 20px; /* Add some horizontal padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+ul {
+    height: 40px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.btn {
+    background-color: var(--persian-blue);
+    height: 38px;
+    width: 130px;
+    border-left: 3px solid wheat;
+    border-radius: 0.6pc;
+    font-family: var(--ff--roboto);
+    color: wheat;
+    font-size: var(--fs-20);
+    margin: 0 4px;
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Add transition for hover effect */
+}
+
+.btn:hover {
+    background-color: var(--orange-peel);
+    color: var(--dark-light);
+}

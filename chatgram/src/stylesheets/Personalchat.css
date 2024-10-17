@@ -1,0 +1,349 @@
+/* @import "../App.css";
+
+.personalChatnot {
+    width: 100%;
+    height: 630px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.personalChat {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.personalChat .personbar {
+    width: 100%;
+    height: 60px;
+    border: 2px solid khaki;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--light-grey); 
+}
+
+.personalChat .personbar .backicon {
+    width: 70px;
+    height: 100%;
+    border: 2px solid blue;
+    margin-left: 30px;
+}
+
+.personalChat .personbar .displayperson {
+    width: calc(100% - 100px); 
+    height: 100%;
+    border: 2px solid black;
+    font-weight: var(--fw-500);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personalChat .chats {
+    width: 100%;
+    flex-grow: 1;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+    padding: 20px;
+    max-height: calc(100% - 60px - 100px); 
+
+}
+
+.personalChat .chats .receivedchats,
+.personalChat .chats .sentchats {
+    width: fit-content; 
+    max-width: 70%; 
+    margin-bottom: 20px; 
+}
+
+.personalChat .chats .receivedchats .receivedmsg,
+.personalChat .chats .sentchats .sentmsg {
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.personalChat .chats .receivedchats .timestamp,
+.personalChat .chats .sentchats .timestamp {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.chat-container {
+    width: 100%;
+    height: 100px;
+    border: 2px solid rgb(44, 25, 156);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background-color: var(--light-grey); 
+}
+
+.chat-container .inputmsgdiv {
+    width: 100%;
+    max-width: 600px; 
+    height: 50px;
+    border: 1px solid sienna;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 0 10px;
+    background-color: white; 
+}
+
+.mediaattchbtn {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.chat-container input {
+    flex-grow: 1; 
+    border: none;
+    height: 100%;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.sendmsg {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+} */
+
+
+
+@import "../App.css";
+.personalChatnot {
+    width: 100%;
+    height: 630px;
+    border: 3px solid rgb(16, 166, 116);
+    display: flex;
+    flex-direction: column;
+}
+
+.startchatimage {
+    width: 200px;
+    height: 200px;
+    margin-top: 200px;
+    margin-left: 400px;
+    background-image: url("../assets/startchat.png");
+    background-size: 200px;
+    backdrop-filter: blur(10px);
+}
+
+.startchatmsg{
+    width: 500px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+    margin-left: 240px;
+    backdrop-filter: blur(10px);
+}
+.cinc {
+    width: 500px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+    margin-left: 240px;
+    backdrop-filter: blur(10px);
+}
+
+.personalChat {
+    width: 100%;
+    height: 630px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}
+.personalChat .personbar  {
+    width: 100%;
+    height: 60px;
+    border: 2px solid khaki;
+    display: flex;
+    flex-direction: row;
+}
+
+.personalChat .personbar .backicon,.videocall,.phonecall,.searchmsgs {
+    width: 70px;
+    height: 100%;
+    margin-left: 10px;
+    color: var(--orange-peel);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personalChat .personbar .displayperson {
+    width: 700px;
+    height: 100%;
+    font-weight: var(--fw-500);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personalChat .chats {
+    width: 100%;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.personalChat .chats .receivedchats {
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--light-gray);
+}
+
+
+.personalChat .chats .receivedchats .receivedmsg {
+    display: inline-block;
+    font-size: 21px;
+    margin-left: 4px;
+    border-radius: 0.8rem;
+    padding: 8px; 
+    backdrop-filter: blur(10px);
+    border-left: 3px solid var(--jade-blue);
+}
+
+.personalChat .chats .receivedchats .timestamp {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    font-size: 11px;
+}
+
+.personalChat .chats .sentchats {
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--light-gray);
+}
+.personalChat .chats .sentchats .sentmsg {
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 21px;
+    border-radius: 0.8rem;
+    backdrop-filter: blur(10px);
+    border-right: 3px solid var(--red-orange-creyola);
+    float: right;
+    padding: 8px;
+}
+
+.personalChat .chats .sentchats .timestamp {
+    float: right;
+    display: inline-block;
+    font-size: 11px;
+    position: relative;
+    top: 35px;
+}
+.chat-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-container .inputmsgdiv {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+.mediaattchbtn {
+    width: 50px; 
+    height: 50px; 
+    background-color: #128C7E;
+    border: none; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 22px; 
+    cursor: pointer; 
+    border-radius: 50%; 
+    margin: 0px;
+}
+
+.mediaattchbtn:hover{
+    background-color: #25D366; 
+}
+
+.chat-container input {
+    width: 90%;
+    display : inline-block;
+    margin-left: 0px;
+}
+
+.sendmsg {
+    width: 50px; 
+    height: 50px; 
+    border: none; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 22px; 
+    border-radius: 50%;
+    margin: 0px;
+    background-color: #128C7E;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.sendmsg:hover{
+    background-color: #25D366;
+}
+.search-container {
+    width: 150px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.srchmsg {
+    width: 120px ;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.highlightborder {
+    border: 1px solid blue;
+}
