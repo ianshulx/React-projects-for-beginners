@@ -26,7 +26,7 @@ export const Column:React.FC<ColumnProps> = ({title, tasks, setTasks,id}) => {
         <h2 className="text-center font-medium">{title}</h2>
         <hr className="bg-gray-400 my-2 h-0.5"></hr>
         {
-            tasks.map((task)=>(
+            tasks.sort((a,b)=>a.uid-b.uid).map((task)=>(
                 <Task text={task.text} columnId={task.columnId} uid={task.uid} key={task.uid}/>
             ))
         }
