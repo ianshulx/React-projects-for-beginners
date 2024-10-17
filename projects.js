@@ -227,6 +227,12 @@ const projects = [
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Markdown-Previewer",
     description: "Text to show on Hover",
     imgSrc: "assets/mark.png"
+  },
+  {
+    title: "Kanban: Drag & Drop Board",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/draganddrop-board",
+    description: "Its a simple drag and drop kanban style board to manage tasks",
+    imgSrc: "assets/drag-and-drop.png"
   }
 ];
 
