@@ -1,5 +1,5 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const genAI = new GoogleGenerativeAI("AIzaSyDr7qUBzAcslFvBezft3Yiz1YKM6k_rT60");
+const genAI = new GoogleGenerativeAI("Your Api");
 const express = require("express")
 const router = express.Router()
 
