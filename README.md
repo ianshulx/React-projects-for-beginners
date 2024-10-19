@@ -5,6 +5,8 @@ Its Hacktoberfest currently!
 <h3>NOTE#1: PLEASE CHECK YOUR PROJECT CAREFULLY, IT SHOULD BE ERROR-FREE, YOUR PROJECT WILL BE REVIEWED, IF THE REVIEWER FOUND ANY ERROR YOUR REQUEST WILL MARKED AS "INVALID".<h3>
 
 <h3>NOTE#2: DON'T FORGET TO LIST YOUR PROJECT IN THE `projects.js` FILE IN THE ROOT FOLDER OF THE REPO. YOU CAN ALSO ADD THE DEMO LINK OF YOUR PROJECT(IF ANY)<h3>
+<h3> NOTE#3: Please read [Repo-Size Management Guidelines](https://github.com/ianshulx/React-projects-for-beginners/blob/main/Repo_Size_Guidelines) </h3>
+  
 <h3>Description</h3>
 
 This repository serves as a platform for React Project for Beginners participants who are on their journey to mastering React JS and want to contribute per Hacktoberfest. It's a place where you can share your mini-projects, learn from others, and contribute to the growth of the open-source community.
