@@ -131,8 +131,30 @@
     border-radius: 50%;
   }
 
+  .card-body{
+    cursor: pointer;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    padding: 20px 0px;
+    border-radius: 18px;
+  }
+  .card-body:hover{
+    cursor: pointer;
+    transform: scale(1.1); /* Enlarge the element */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
   @media (min-width:768px){
     .col-md-2{
       width: 15.66667%;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .card-body{
+      transition: none;
+    }
+    .card-body:hover{
+      box-shadow: none;
+      transform: none;
     }
   }

@@ -256,9 +256,9 @@ projects.forEach(project => {
   projectDiv.className = 'col-md-2 mb-4 d-md-inline-block';
   projectDiv.innerHTML = `
       <div class="custom-card text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="${project.description}">
-        <img src="${project.imgSrc}" class="card-img-top rounded-circle mx-auto d-block" alt="React App" style="width: 85px; height:85px">
         <div class="card-body">
           <a href="${project.url}" target="_blank">
+            <img src="${project.imgSrc}" class="card-img-top rounded-circle mx-auto d-block" alt="React App" style="width: 85px; height:85px">
             <h5 class="card-title">${project.title}</h5>
           </a>
         </div>
