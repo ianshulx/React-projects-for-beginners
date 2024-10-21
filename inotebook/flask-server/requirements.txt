@@ -1,0 +1,5 @@
+Flask==2.2.2
+Flask-CORS==3.0.10
+pymongo==4.3.3
+reportlab==3.6.12
+numpy==1.23.4
