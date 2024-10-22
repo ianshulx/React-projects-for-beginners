@@ -245,6 +245,12 @@ const projects = [
     url: "https://landing.glitchastra.com/",
     description: "Common Landing Page for farmers",
     imgSrc: "assets/Farmer-landing.png"
+  },
+  {
+    title: "iNoteBook - A Platform for Notes",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/inotebook",
+    description: "iNoteBook - Your notes, organized and accessible.",
+    imgSrc: "assets/iNoteBook.png"
   }
   
 ];

@@ -1,0 +1,29 @@
+.note-card {
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  height: 200px; /* Set a fixed medium height */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+  position: relative; /* For absolute positioning of buttons */
+}
+
+.note-card:hover {
+  transform: scale(1.02); /* Scale effect on hover */
+}
+
+.note-title {
+  height: 60px; /* Set a height for the title */
+  font-size: 1.5rem; /* Increase font size */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  overflow: hidden; /* Prevent overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  display: -webkit-box; /* Enable flexible box layout */
+  -webkit-box-orient: vertical; /* Set the orientation to vertical */
+}
+
+.note-actions {
+  position: absolute; /* Position buttons absolutely */
+  bottom: 10px; /* Adjust distance from the bottom */
+  right: 10px; /* Adjust distance from the right */
+  display: flex; /* Use flexbox for alignment */
+  gap: 5px; /* Add space between buttons */
+}
