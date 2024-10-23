@@ -1,160 +1,164 @@
+/* Custom Box Style */
 .custom-box {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 
-  /* Aesthetic background */
-  body {
-    background: rgb(249,135,240);
-    background: linear-gradient(90deg, rgba(249,135,240,1) 2%, rgba(54,241,236,1) 40%, rgba(245,132,242,1) 83%);
-    color: white;
-  }
+/* Aesthetic Background */
+body {
+  background: rgb(249, 135, 240);
+  background: linear-gradient(90deg, rgba(249, 135, 240, 1) 2%, rgba(54, 241, 236, 1) 40%, rgba(245, 132, 242, 1) 83%);
+  color: white;
+  margin: 0; /* Remove default margin */
+}
 
-  .navbar {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
+/* Navbar Style */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
-  nav {
-    background-color: rgba(0, 0, 0, 0.408);
+nav {
+  background-color: rgba(0, 0, 0, 0.408);
+  color: rgba(255, 255, 255, 0.8); /* Increased opacity for better visibility */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
 
-    color: rgba(255, 255, 255, 0.399);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
 
-  .logo {
-    display: flex;
-    align-items: center;
-  }
+.logo img {
+  margin-right: 10px; /* Add spacing between the logo and text */
+}
 
-  .logo img {
-    margin-right: 10px;
-    /* Add spacing between the logo and text */
-  }
+/* GitHub Icon Styles */
+.github-icon img {
+  cursor: pointer; /* Pointer cursor for GitHub icon */
+}
 
-  .github-icon img {
-    cursor: pointer;
-    /* Add a pointer cursor to the GitHub icon */
-  }
+/* Hero Section Styles */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+  text-align: center;
+  color: #56ddcd;
+}
 
-  /* Styling for the section with background image */
-  .hero-section {
-    /* Add your image URL here */
-    background-size: cover;
-    background-position: center;
-    padding: 30px 0;
-    text-align: center;
-    color: #56ddcd;
-  }
+.hero-section div {
+  background-color: #020205;
+}
 
-  .hero-section div{
-    background-color: #020205;
-  }
+.hero-text {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
-  .hero-text {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
+/* Hero Text First Line Style */
+.hero-text::first-line {
+  float: left;
+}
 
-  .hero-text::first-line{
-    float: left;
-  }
+/* Logos in Hero Section */
+.hero-section-logo,
+.Hacktoberfest_logo {
+  width: 100px;
+  height: 100px;
+}
 
-  .hero-section-logo, .Hacktoberfest_logo {
-    width: 100px; 
-    height: 100px;
-  }
+/* Custom Card Link Style */
+.custom-card a {
+  text-decoration: none;
+  color: black;
+}
 
-  
+/* Custom Button Style */
+.custom-button {
+  background-color: #56ddcd;
+  margin-left: 10px;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 10px 20px; /* Added padding for better touch target */
+  display: inline-flex;
+  align-items: center; /* Center content vertically */
+}
 
-  .custom-card a{
-    text-decoration: none;
-    color: black;
-    text-wrap: balance;
-  }
-  
-  .custom-button {
-    background-color: #56ddcd;
-    margin-left: 10px;
-    font-size: 20px;
-    width: max-content;
-    display: inline-flex;
-    border-radius: 25px;
-  }
+.custom-button:hover,
+.custom-button:active,
+.custom-button:focus-visible {
+  background-color: #46b1b3; /* Slightly darker on hover */
+}
 
-  .custom-button:hover, .custom-button:active, .custom-button:focus-visible {
-    background-color: #56ddcd;
-  }
+.custom-button a {
+  text-decoration: none;
+  color: #545554;
+}
 
-  .custom-button a{
-    text-decoration: none;
-    color: #545554;
-  }
+/* Contributors Section */
+#contributors-box {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
 
-  .custom-button img{
-    height: 10%;
-  }
+#contributors-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Added gap between contributors */
+}
 
-  #contributors-box {
-    padding: 20px;
-    border-radius: 10px;
-    margin: 0 auto;
-  }
+#contributors-list li {
+  padding: 10px;
+  border-radius: 5px;
+  width: 150px; /* Width for contributor boxes */
+  text-align: center;
+}
 
-  #contributors-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
+#contributors-list li a {
+  text-decoration: none;
+  color: white;
+}
 
-  #contributors-list li {
-    padding: 10px;
-    border-radius: 5px;
-    width: 150px;
-    /* Reduced the width */
-    text-align: center;
-  }
+#contributors-list li img {
+  border-radius: 50%; /* Circular images */
+}
 
-  #contributors-list li a {
-    text-decoration: none;
-    color: white;
-  }
+/* Card Body Styles */
+.card-body {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Faster transition */
+  padding: 20px 0px;
+  border-radius: 18px;
+}
 
-  #contributors-list li img {
-    border-radius: 50%;
-  }
+.card-body:hover {
+  transform: scale(1.05); /* Slightly smaller scale effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
-  .card-body{
-    cursor: pointer;
-    transition: transform 0.6s ease, box-shadow 0.6s ease;
-    padding: 20px 0px;
-    border-radius: 18px;
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .col-md-2 {
+    width: 15.66667%; /* Adjust column width on larger screens */
   }
-  .card-body:hover{
-    cursor: pointer;
-    transform: scale(1.1); /* Enlarge the element */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
+}
 
-  @media (min-width:768px){
-    .col-md-2{
-      width: 15.66667%;
-    }
+@media screen and (max-width: 500px) {
+  .card-body {
+    transition: none; /* Disable transition on small screens */
   }
-
-  @media screen and (max-width:500px) {
-    .card-body{
-      transition: none;
-    }
-    .card-body:hover{
-      box-shadow: none;
-      transform: none;
-    }
+  .card-body:hover {
+    box-shadow: none; /* Disable hover effects */
+    transform: none;
   }
+}
