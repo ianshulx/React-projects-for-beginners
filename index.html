@@ -2,104 +2,248 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aniruddha Adak's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Projects for Beginners</title>
+  <!-- ICON || FAVICON -->
+  <link rel="shortcut icon" type="image/png" href="/rp.png" />
+  <!-- FOR IE -->
+  <link rel="apple-touch-icon" type="image/png" href="/rp.png" />
+  <!-- FOR iPhone -->
+  <link rel="icon" type="image/png" href="/rp.png" />
+  <!-- FOR Browser Chrome, Opera, etc -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./index.css" />
+  
+  <style>
+    /* Responsive styles */
+    .hero-section {
+      padding: 20px;
+    }
+
+    .hero-section-logo {
+      width: 50px;
+      height: auto;
+    }
+
+    .hero-text {
+      font-size: 1.5rem;
+    }
+
+    .custom-button {
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+      .hero-text {
+        font-size: 1.2rem;
+      }
+
+      .container-fluid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-section-logo {
+        margin-bottom: 10px;
+      }
+
+      .custom-button {
+        width: 40px;
+        height: 40px;
+      }
+
+      .custom-button img {
+        width: 16px;
+      }
+
+      .d-sm-block {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-text {
+        font-size: 1rem;
+      }
+
+      .custom-button {
+        width: 35px;
+        height: 35px;
+      }
+
+      .custom-button img {
+        width: 14px;
+      }
+
+      #contributors-list li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Logo" width="50">
-            <h1>Aniruddha Adak</h1>
+  <!-- Hero Section with Background Image -->
+  <section class="hero-section d-flex flex-row justify-content-start">
+    <div class="container p-3">
+      <div class="container-fluid d-inline-flex flex-row justify-content-between">
+        <div class="d-flex">
+          <img src="./assets/logo.png" alt="react-icon" class="hero-section-logo" />
+          <h1 class="hero-text"><span class="float-start">React</span><br />Projects for Beginners</h1>
         </div>
-        <div class="github-icon">
-            <a href="https://github.com/yourusername" target="_blank">
-                <img src="github-icon.png" alt="GitHub" width="30">
-            </a>
+        <div class="d-flex ">
+          <img src="./Hacktoberfest_logo.svg" alt="Hacktober Fest Icon" class="Hacktoberfest_logo" />
+          <img src="" alt="" />
         </div>
-    </nav>
+      </div>
+      <!-- buttons -->
+      <section style="margin-left:20px;">
+        <div class="d-flex flex-row justify-content-start align-items-center mb-4 gap-3">
+          <!-- Star Repo Icon -->
+          <div style="text-align: center;">
+            <button class="btn custom-button"
+              style="background: linear-gradient(135deg, #ffcc00, #ff9900); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <a href="https://github.com/ianshulx/React-projects-for-beginners" target="_blank"
+                style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
+                <i class="bi bi-star-fill" style="font-size: 20px; color: white;"></i>
+              </a>
+            </button>
+            <span style="font-size: 12px; margin-top: 5px; display: block; color: #00ffff;">Star Repo</span>
+          </div>
 
-    <!-- Hero Section -->
-    <header class="hero-section" style="background-image: url('hero-background.jpg');">
-        <div>
-            <h2 class="hero-text">Welcome to My Portfolio</h2>
-            <img src="hero-logo.png" alt="Hero Logo" class="hero-section-logo">
-            <p>I'm Aniruddha Adak, a passionate developer and the CEO of LinkConnect.</p>
-            <a href="#about" class="custom-button">Learn More</a>
+          <!-- Fork Repo Icon -->
+          <div style="text-align: center;">
+            <button class="btn custom-button"
+              style="background: linear-gradient(135deg, #00ffcc, #0099ff); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <a href="https://github.com/ianshulx/React-projects-for-beginners/network" target="_blank"
+                style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
+                <img src="./code-fork-solid.svg" style="width: 20px; color: white;">
+              </a>
+            </button>
+            <span style="font-size: 12px; margin-top: 5px; display: block; color: #00ffff;">Fork Repo</span>
+          </div>
+
+          <!-- Contributors Icon -->
+          <div style="text-align: center;">
+            <button class="btn custom-button"
+              style="background: linear-gradient(135deg, #ff6699, #ff3366); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <a href="https://github.com/ianshulx/React-projects-for-beginners/graphs/contributors" target="_blank"
+                style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
+                <img src="./chess-king-solid.svg" style="width: 20px; color: white;">
+              </a>
+            </button>
+            <span style="font-size: 12px; margin-top: 5px; display: block; color: #00ffff;">Contributors</span>
+          </div>
+
+          <!-- Maintainer Icon -->
+          <div style="text-align: center;">
+            <button class="btn custom-button"
+              style="background: linear-gradient(135deg, #d9a6ff, #b266ff); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <a href="https://github.com/ianshulx" target="_blank"
+                style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
+                <img src="./profile.svg" style="width: 20px; color: white;">
+              </a>
+            </button>
+            <span style="font-size: 12px; margin-top: 5px; display: block; color: #00ffff;">Maintainer</span>
+          </div>
         </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="custom-box">
-        <h2>About Me</h2>
-        <p>
-            I am a full-stack developer with a keen interest in artificial intelligence, cloud computing, and web development.
-            I enjoy creating innovative solutions that make a difference.
-        </p>
-        <a href="#projects" class="custom-button">View My Projects</a>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="custom-box">
-        <h2>Projects</h2>
-        <div class="custom-card">
-            <a href="https://link-to-project1.com" target="_blank">Project 1</a>
+        <div class="d-sm-block d-md-flex">
+          <a href="https://github.com/ianshulx/React-projects-for-beginners/stargazers">
+            <img src="https://img.shields.io/github/stars/ianshulx/React-projects-for-beginners?style=flat-square"
+              alt="GitHub stars" />
+          </a>
+          <a href="https://github.com/ianshulx/React-projects-for-beginners/network">
+            <img src="https://img.shields.io/github/forks/ianshulx/React-projects-for-beginners?style=flat-square"
+              alt="GitHub forks" />
+          </a>
+          <a href="https://github.com/ianshulx/React-projects-for-beginners/graphs/contributors">
+            <img src="https://img.shields.io/github/contributors/ianshulx/React-projects-for-beginners?style=flat-square"
+              alt="GitHub contributors" />
+          </a>
+          <a href="https://github.com/ianshulx/React-projects-for-beginners/issues">
+            <img src="https://img.shields.io/github/issues/ianshulx/React-projects-for-beginners?style=flat-square"
+              alt="GitHub issues" />
+          </a>
+          <a href="https://github.com/ianshulx/React-projects-for-beginners/pulls">
+            <img src="https://img.shields.io/github/issues-pr/ianshulx/React-projects-for-beginners?style=flat-square"
+              alt="GitHub pull requests" />
+          </a>
+          <a href="https://github.com/ianshulx/React-projects-for-beginners/watchers">
+            <img src="https://img.shields.io/github/watchers/ianshulx/React-projects-for-beginners?style=flat-square"
+              alt="GitHub watchers" />
+          </a>
         </div>
-        <div class="custom-card">
-            <a href="https://link-to-project2.com" target="_blank">Project 2</a>
-        </div>
-        <div class="custom-card">
-            <a href="https://link-to-project3.com" target="_blank">Project 3</a>
-        </div>
-    </section>
+      </section>
+    </div>
+  </section>
 
-    <!-- Contributors Section -->
-    <section id="contributors-box">
-        <h2>Contributors</h2>
-        <ul id="contributors-list">
-            <li>
-                <a href="https://github.com/contributor1" target="_blank">
-                    <img src="contributor1.jpg" alt="Contributor 1" width="100">
-                    Contributor 1
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/contributor2" target="_blank">
-                    <img src="contributor2.jpg" alt="Contributor 2" width="100">
-                    Contributor 2
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/contributor3" target="_blank">
-                    <img src="contributor3.jpg" alt="Contributor 3" width="100">
-                    Contributor 3
-                </a>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Aniruddha Adak. All rights reserved.</p>
-        <div>
-            <a href="https://www.linkedin.com/in/aniruddha-adak" target="_blank">LinkedIn</a> |
-            <a href="https://x.com/skillful_mind" target="_blank">X.com</a> |
-            <a href="https://www.instagram.com/skillful__mind/" target="_blank">Instagram</a> |
-            <a href="mailto:your-email@example.com">Email Me</a> |
-            <span>Phone: +91 7029155691</span>
+ <!-- Project Section -->
+<section>
+  <div class="container-fluid mt-5">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+      <!-- Project Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./assets/project1.png" class="card-img-top" alt="Project 1" />
+          <div class="card-body">
+            <h5 class="card-title">Project 1 Title</h5>
+            <p class="card-text">A brief description of Project 1, explaining what it does and its features.</p>
+            <a href="https://github.com/ianshulx/React-project-1" class="btn btn-primary" target="_blank">View Project</a>
+            <a href="https://github.com/ianshulx/React-project-1/archive/refs/heads/main.zip" class="btn btn-secondary" target="_blank">Clone Repository</a>
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <script src="script.js"></script>
+      <!-- Project Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./assets/project2.png" class="card-img-top" alt="Project 2" />
+          <div class="card-body">
+            <h5 class="card-title">Project 2 Title</h5>
+            <p class="card-text">A brief description of Project 2, explaining what it does and its features.</p>
+            <a href="https://github.com/ianshulx/React-project-2" class="btn btn-primary" target="_blank">View Project</a>
+            <a href="https://github.com/ianshulx/React-project-2/archive/refs/heads/main.zip" class="btn btn-secondary" target="_blank">Clone Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./assets/project3.png" class="card-img-top" alt="Project 3" />
+          <div class="card-body">
+            <h5 class="card-title">Project 3 Title</h5>
+            <p class="card-text">A brief description of Project 3, explaining what it does and its features.</p>
+            <a href="https://github.com/ianshulx/React-project-3" class="btn btn-primary" target="_blank">View Project</a>
+            <a href="https://github.com/ianshulx/React-project-3/archive/refs/heads/main.zip" class="btn btn-secondary" target="_blank">Clone Repository</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Add more project cards as needed -->
+      
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="text-center mt-5">
+  <div class="container">
+    <p>&copy; 2024 React Projects for Beginners. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-0Qe27Kp9W9tcLsft+0FrEeHkg+wHquVqlHQglCzzgTb3N8xqgxHDH1cF4BGsBNMz" crossorigin="anonymous"></script>
 </body>
 
 </html>
