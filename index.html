@@ -2,139 +2,104 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>React Projects for Beginners</title>
-  <link rel="shortcut icon" type="image/png" href="/rp.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/rp.png" />
-  <link rel="icon" type="image/png" href="/rp.png" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="./index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniruddha Adak's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="hero-section d-flex flex-column align-items-center">
-    <div class="container text-center p-3">
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-          <img src="./assets/logo.png" alt="react-icon" class="hero-section-logo" />
-          <h1 class="hero-text">React Projects for Beginners</h1>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" width="50">
+            <h1>Aniruddha Adak</h1>
         </div>
-        <div>
-          <img src="./Hacktoberfest_logo.svg" alt="Hacktober Fest Icon" class="Hacktoberfest_logo" />
-        </div>
-      </div>
-
-      <div class="d-flex flex-row justify-content-center mb-4 gap-3">
-        <!-- Star Repo Icon -->
-        <button class="btn custom-button">
-          <a href="https://github.com/ianshulx/React-projects-for-beginners" target="_blank" aria-label="Star Repository">
-            <i class="bi bi-star-fill"></i>
-          </a>
-        </button>
-        
-        <!-- Fork Repo Icon -->
-        <button class="btn custom-button">
-          <a href="https://github.com/ianshulx/React-projects-for-beginners/network" target="_blank" aria-label="Fork Repository">
-            <img src="./code-fork-solid.svg" style="width: 20px; color: white;">
-          </a>
-        </button>
-        
-        <!-- Contributors Icon -->
-        <button class="btn custom-button">
-          <a href="https://github.com/ianshulx/React-projects-for-beginners/graphs/contributors" target="_blank" aria-label="View Contributors">
-            <img src="./chess-king-solid.svg" style="width: 20px; color: white;">
-          </a>
-        </button>
-        
-        <!-- Maintainer Icon -->
-        <button class="btn custom-button">
-          <a href="https://github.com/ianshulx" target="_blank" aria-label="Maintainer Profile">
-            <img src="./profile.svg" style="width: 20px; color: white;">
-          </a>
-        </button>
-      </div>
-
-      <div class="d-sm-block d-md-flex justify-content-center">
-        <a href="https://github.com/ianshulx/React-projects-for-beginners/stargazers">
-          <img src="https://img.shields.io/github/stars/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub stars" />
-        </a>
-        <a href="https://github.com/ianshulx/React-projects-for-beginners/network">
-          <img src="https://img.shields.io/github/forks/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub forks" />
-        </a>
-        <a href="https://github.com/ianshulx/React-projects-for-beginners/graphs/contributors">
-          <img src="https://img.shields.io/github/contributors/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub contributors" />
-        </a>
-        <a href="https://github.com/ianshulx/React-projects-for-beginners/issues">
-          <img src="https://img.shields.io/github/issues/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub issues" />
-        </a>
-        <a href="https://github.com/ianshulx/React-projects-for-beginners/pulls">
-          <img src="https://img.shields.io/github/issues-pr/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub pull requests" />
-        </a>
-        <a href="https://github.com/ianshulx/React-projects-for-beginners/watchers">
-          <img src="https://img.shields.io/github/watchers/ianshulx/React-projects-for-beginners?style=flat-square" alt="GitHub watchers" />
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main class="mt-5">
-    <div class="container-fluid">
-      <div class="row">
-        <div id="projects-container" class="mt-4"></div>
-      </div>
-    </div>
-
-    <section class="contributors-section" style="padding: 20px;">
-      <h1 class="hero-text text-center">Our Contributors</h1>
-      <div id="contributors-box">
-        <ul id="contributors-list">
-          <!-- Contributors will be displayed here -->
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-dark text-light text-center py-3">
-    <div class="container">
-      <a href="https://github.com/ianshulx" target="_blank" aria-label="GitHub Profile"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/ianshulx/" target="_blank" aria-label="LinkedIn Profile"><i class="bi bi-linkedin"></i></a>
-      <a href="https://www.instagram.com/hackers.core/?hl=en" target="_blank" aria-label="Instagram Profile"><i class="bi bi-instagram"></i></a>
-      <p>
-        This repository is licensed under the MIT license. See the
-        <a href="https://github.com/ianshulx/React-projects-for-beginners/blob/main/LICENSE" target="_blank">LICENSE</a>
-        file for more information.
-      </p>
-    </div>
-  </footer>
-
-  <script>
-    const repoUrl = "https://api.github.com/repos/ianshulx/React-projects-for-beginners/contributors";
-    fetch(repoUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        const contributorsList = document.getElementById("contributors-list");
-        data.forEach((contributor) => {
-          const listItem = document.createElement("li");
-          listItem.innerHTML = `
-            <a href="${contributor.html_url}" target="_blank">
-              <img src="${contributor.avatar_url}" alt="${contributor.login}" width="100" height="100">
-              <p>${contributor.login}</p>
+        <div class="github-icon">
+            <a href="https://github.com/yourusername" target="_blank">
+                <img src="github-icon.png" alt="GitHub" width="30">
             </a>
-          `;
-          contributorsList.appendChild(listItem);
-        });
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  </script>
-  <script src="projects.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" style="background-image: url('hero-background.jpg');">
+        <div>
+            <h2 class="hero-text">Welcome to My Portfolio</h2>
+            <img src="hero-logo.png" alt="Hero Logo" class="hero-section-logo">
+            <p>I'm Aniruddha Adak, a passionate developer and the CEO of LinkConnect.</p>
+            <a href="#about" class="custom-button">Learn More</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="custom-box">
+        <h2>About Me</h2>
+        <p>
+            I am a full-stack developer with a keen interest in artificial intelligence, cloud computing, and web development.
+            I enjoy creating innovative solutions that make a difference.
+        </p>
+        <a href="#projects" class="custom-button">View My Projects</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="custom-box">
+        <h2>Projects</h2>
+        <div class="custom-card">
+            <a href="https://link-to-project1.com" target="_blank">Project 1</a>
+        </div>
+        <div class="custom-card">
+            <a href="https://link-to-project2.com" target="_blank">Project 2</a>
+        </div>
+        <div class="custom-card">
+            <a href="https://link-to-project3.com" target="_blank">Project 3</a>
+        </div>
+    </section>
+
+    <!-- Contributors Section -->
+    <section id="contributors-box">
+        <h2>Contributors</h2>
+        <ul id="contributors-list">
+            <li>
+                <a href="https://github.com/contributor1" target="_blank">
+                    <img src="contributor1.jpg" alt="Contributor 1" width="100">
+                    Contributor 1
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/contributor2" target="_blank">
+                    <img src="contributor2.jpg" alt="Contributor 2" width="100">
+                    Contributor 2
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/contributor3" target="_blank">
+                    <img src="contributor3.jpg" alt="Contributor 3" width="100">
+                    Contributor 3
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Aniruddha Adak. All rights reserved.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/aniruddha-adak" target="_blank">LinkedIn</a> |
+            <a href="https://x.com/skillful_mind" target="_blank">X.com</a> |
+            <a href="https://www.instagram.com/skillful__mind/" target="_blank">Instagram</a> |
+            <a href="mailto:your-email@example.com">Email Me</a> |
+            <span>Phone: +91 7029155691</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
