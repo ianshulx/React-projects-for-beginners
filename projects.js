@@ -245,6 +245,12 @@ const projects = [
     url: "https://landing.glitchastra.com/",
     description: "Common Landing Page for farmers",
     imgSrc: "assets/Farmer-landing.png"
+  },
+  {
+    title: "React-password-Manager",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-password-manager",
+    description: "A secure React-based password manager built with the MERN stack for storing and managing credentials.",
+    imgSrc: "assets/Manager.png"
   }
   
 ];
