@@ -282,55 +282,55 @@ const projects = [
     title: "MediSwift",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Medicine-Delivery-app",
     description: "MediSwift- Get your medicines at your doorstep",
-    imgSrc: "assets\medicine_delivery.png"
+    imgSrc: "assets/medicine_delivery.png"
   },
   {
     title: "MEME-generator",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/MEME-generator",
     description: "Generates meme on one click",
-    imgSrc: "assets\memeG.png"
+    imgSrc: "assets/memeG.png"
   },
   {
     title: "Personal Prtfolio",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Personal%20Portfolio",
     description: "A responsive personal website to showcase skills and projects",
-    imgSrc: "assets\Bportfolio.png"
+    imgSrc: "assets/Bportfolio.png"
   },
   {
     title: "React-file-size-converter",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-file-size-converter",
     description: "A website to perform conversion of file size",
-    imgSrc: "assets\file_size.png"
+    imgSrc: "assets/file_size.png"
   },
   {
     title: "React Prtfolio",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/reactPortfolio",
     description: "A responsive personal website to showcase skills and projects",
-    imgSrc: "assets\reactPortfolio.png"
+    imgSrc: "assets/reactPortfolio.png"
   },
   {
     title: "Resume Builder",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Resume%20builder",
     description: "Input your information to get your Resume",
-    imgSrc: "assets\resumeBuilder.png"
+    imgSrc: "assets/resumeBuilder.png"
   },
   {
     title: "Submission Form",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/SubmissionForm-React",
     description: "A form to submit details",
-    imgSrc: "assets\form.png"
+    imgSrc: "assets/form.png"
   },
   {
     title: "Task-Manager-App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Task-Manager-App",
     description: "A React-based task manager web application built using the browser's localStorage API.",
-    imgSrc: "assets\Taskmanager.png"
+    imgSrc: "assets/Taskmanager.png"
   },
   {
     title: "Wallet",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/wallet",
     description: "A full-stack web app built using the MERN stack where you can send money, accept money and perform transaction",
-    imgSrc: "assets\wallet.png"
+    imgSrc: "assets/wallet.png"
   },
  
 ];
