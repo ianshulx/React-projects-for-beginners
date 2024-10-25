@@ -139,6 +139,12 @@ const projects = [
     imgSrc: "assets/youtube.png"
   },
   {
+    title: "Photoshop Clone",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Photoshop-Clone",
+    description: "A photoshop like image editing application where you can edit brightness, saturation, hue, contrast etc. properties of the provided image",
+    imgSrc: "assets/photoshop.png"
+  },
+  {
     title: "Tic-Tac-Toe Game",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Tic-Tac-toe",
     description: "Tic-Tac-Toe Game is a classic two-player game where opponents strategically place Xs and Os on a 3x3 grid, aiming to achieve a winning pattern of three in a row, column, or diagonal.",
@@ -247,12 +253,86 @@ const projects = [
     imgSrc: "assets/Farmer-landing.png"
   },
   {
+
     title: "React-password-Manager",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-password-manager",
     description: "A secure React-based password manager built with the MERN stack for storing and managing credentials.",
     imgSrc: "assets/Manager.png"
-  }
+  },
   
+  {
+    title: "iNoteBook - A Platform for Notes",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/inotebook",
+    description: "iNoteBook - Your notes, organized and accessible.",
+    imgSrc: "assets/iNoteBook.png"
+  },
+  {
+    title: "Blood Donation",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Blood_Donation_Website/client",
+    description: "A website to find nearest place to donate Blood",
+    imgSrc: "assets/blood_bank.png"
+  },
+  {
+    title: "IP Info",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/ip-info",
+    description: "A website to know about your IP related information",
+    imgSrc: "assets/ip_info.png"
+  },
+  {
+    title: "MediSwift",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Medicine-Delivery-app",
+    description: "MediSwift- Get your medicines at your doorstep",
+    imgSrc: "assets\medicine_delivery.png"
+  },
+  {
+    title: "MEME-generator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/MEME-generator",
+    description: "Generates meme on one click",
+    imgSrc: "assets\memeG.png"
+  },
+  {
+    title: "Personal Prtfolio",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Personal%20Portfolio",
+    description: "A responsive personal website to showcase skills and projects",
+    imgSrc: "assets\Bportfolio.png"
+  },
+  {
+    title: "React-file-size-converter",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-file-size-converter",
+    description: "A website to perform conversion of file size",
+    imgSrc: "assets\file_size.png"
+  },
+  {
+    title: "React Prtfolio",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/reactPortfolio",
+    description: "A responsive personal website to showcase skills and projects",
+    imgSrc: "assets\reactPortfolio.png"
+  },
+  {
+    title: "Resume Builder",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Resume%20builder",
+    description: "Input your information to get your Resume",
+    imgSrc: "assets\resumeBuilder.png"
+  },
+  {
+    title: "Submission Form",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/SubmissionForm-React",
+    description: "A form to submit details",
+    imgSrc: "assets\form.png"
+  },
+  {
+    title: "Task-Manager-App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Task-Manager-App",
+    description: "A React-based task manager web application built using the browser's localStorage API.",
+    imgSrc: "assets\Taskmanager.png"
+  },
+  {
+    title: "Wallet",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/wallet",
+    description: "A full-stack web app built using the MERN stack where you can send money, accept money and perform transaction",
+    imgSrc: "assets\wallet.png"
+  },
+ 
 ];
 
 const container = document.getElementById('projects-container');
@@ -262,9 +342,9 @@ projects.forEach(project => {
   projectDiv.className = 'col-md-2 mb-4 d-md-inline-block';
   projectDiv.innerHTML = `
       <div class="custom-card text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="${project.description}">
-        <img src="${project.imgSrc}" class="card-img-top rounded-circle mx-auto d-block" alt="React App" style="width: 85px; height:85px">
         <div class="card-body">
           <a href="${project.url}" target="_blank">
+            <img src="${project.imgSrc}" class="card-img-top rounded-circle mx-auto d-block" alt="React App" style="width: 85px; height:85px">
             <h5 class="card-title">${project.title}</h5>
           </a>
         </div>

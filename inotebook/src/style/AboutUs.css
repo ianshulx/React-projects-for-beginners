@@ -1,0 +1,32 @@
+body {
+    background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+h1, h2, h3 {
+    color: #343a40; /* Darker text for headings */
+}
+
+blockquote {
+    border-left: 5px solid #007bff; /* Blue border for the quote */
+    padding-left: 1rem; /* Space between the border and text */
+    margin: 1rem 0; /* Margin for separation */
+    font-style: italic; /* Italic text for the quote */
+}
+
+.feedback-section {
+    background-color: #ffffff; /* White background for the feedback section */
+    padding: 20px; /* Padding around the feedback form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.social-links a {
+    font-size: 1.2rem; /* Larger font for social buttons */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .feedback-section {
+        margin-top: 30px; /* More spacing for smaller screens */
+    }
+}
