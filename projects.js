@@ -253,6 +253,14 @@ const projects = [
     imgSrc: "assets/Farmer-landing.png"
   },
   {
+
+    title: "React-password-Manager",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-password-manager",
+    description: "A secure React-based password manager built with the MERN stack for storing and managing credentials.",
+    imgSrc: "assets/Manager.png"
+  },
+  
+  {
     title: "iNoteBook - A Platform for Notes",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/inotebook",
     description: "iNoteBook - Your notes, organized and accessible.",
@@ -325,7 +333,6 @@ const projects = [
     imgSrc: "assets\wallet.png"
   },
  
-
 ];
 
 const container = document.getElementById('projects-container');
