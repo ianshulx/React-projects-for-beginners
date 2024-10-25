@@ -139,6 +139,12 @@ const projects = [
     imgSrc: "assets/youtube.png"
   },
   {
+    title: "Photoshop Clone",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Photoshop-Clone",
+    description: "A photoshop like image editing application where you can edit brightness, saturation, hue, contrast etc. properties of the provided image",
+    imgSrc: "assets/photoshop.png"
+  },
+  {
     title: "Tic-Tac-Toe Game",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Tic-Tac-toe",
     description: "Tic-Tac-Toe Game is a classic two-player game where opponents strategically place Xs and Os on a 3x3 grid, aiming to achieve a winning pattern of three in a row, column, or diagonal.",
