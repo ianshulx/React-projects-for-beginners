@@ -151,6 +151,12 @@ const projects = [
     imgSrc: "assets/tic.png"
   },
   {
+    title: "Credit-Card Validator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Credit-Card-Validator",
+    description: "The program prompts the user to enter a number and determines whether it is a valid credit card number.",
+    imgSrc: "assets/cc-validator.png"
+  },
+  {
     title: "Taskify Project",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Taskify-Project",
     description: "Taskify-Project is an organizational tool designed to streamline project management, enabling users to create, assign, and track tasks efficiently within a collaborative environment.",
