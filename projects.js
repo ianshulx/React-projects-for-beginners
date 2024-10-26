@@ -279,6 +279,12 @@ const projects = [
     imgSrc: "assets/iNoteBook.png"
   },
   {
+    title: "Typing Speed Tester",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Typing-test",
+    description: "An everday app for those who aspire to have a fast typing speed.",
+    imgSrc: "assets/typing.png"
+  },
+  {
     title: "Blood Donation",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Blood_Donation_Website/client",
     description: "A website to find nearest place to donate Blood",
