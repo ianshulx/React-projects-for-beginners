@@ -7,6 +7,12 @@ const projects = [
     imgSrc: "assets/todo.png"
   },
   {
+    title: "Curreny Converter App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Currency-Converter",
+    description: "Start your coding journey with a beginner-friendly React Currency-Converter App, a simple and efficient way for users to convert between different currencies in real-time ",
+    imgSrc: "assets/currency.png"
+  },
+  {
     title: "React Weather app",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Weather-app",
     description: "Explore weather effortlessly with a beginner-friendly React Weather App, providing real-time forecasts and an intuitive user experience.",
