@@ -13,6 +13,12 @@ const projects = [
     imgSrc: "assets/currency.png"
   },
   {
+    title: "Tip Calculator App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Tip-Calculator",
+    description: "Start your coding journey with a beginner-friendly React Tip-Calculator App, A simple and efficient way for users to calculate tips accurately and effortlessly. ",
+    imgSrc: "assets/tip.png"
+  },
+  {
     title: "React Weather app",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Weather-app",
     description: "Explore weather effortlessly with a beginner-friendly React Weather App, providing real-time forecasts and an intuitive user experience.",
