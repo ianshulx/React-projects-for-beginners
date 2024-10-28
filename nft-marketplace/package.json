@@ -1,0 +1,76 @@
+{
+  "name": "nft-marketplace",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^2.10.3",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@openzeppelin/contracts": "^5.1.0",
+    "@radix-ui/react-tabs": "^1.1.1",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "@taquito/beacon-wallet": "^20.1.0",
+    "@taquito/taquito": "^20.1.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.21.4",
+    "ethers": "^6.13.4",
+    "framer-motion": "^11.11.9",
+    "ipfs-http-client": "^60.0.1",
+    "lucide-react": "^0.453.0",
+    "next-themes": "^0.3.0",
+    "postcss": "^8.4.47",
+    "postcss-preset-env": "^10.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.27.0",
+    "react-scripts": "^5.0.1",
+    "react-toastify": "^10.0.6",
+    "styled-components": "^6.1.13",
+    "tailwindcss-animate": "^1.0.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "autoprefixer": "^10.4.14",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "cross-env": "^7.0.3",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "postcss": "^8.4.24",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "tailwindcss": "^3.3.2",
+    "url": "^0.11.4"
+  }
+}
