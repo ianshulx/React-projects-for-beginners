@@ -19,6 +19,18 @@ const projects = [
     imgSrc: "assets/tip.png"
   },
   {
+    title: "Fun-Fact Generator",
+    url: "https://github.com/Krishnap2k4/React-projects-for-beginners/tree/main/Fun-Fact%20Generator",
+    description: "Start your coding journey with a beginner-friendly React Fun-Fact Generator App, An easy and engaging way for users to discover interesting and surprising facts with just a click! ",
+    imgSrc: "assets/funfact.png"
+  },
+  {
+    title: "HEX-RGB Converter",
+    url: "https://github.com/Krishnap2k4/React-projects-for-beginners/tree/main/HEX-RGB%20Converter",
+    description: "Start your coding journey with a beginner-friendly React HEX/RGB Converter App, An intuitive tool for seamlessly converting colors between RGB and HEX formats with precision. ",
+    imgSrc: "assets/hex_rgb.png"
+  },
+  {
     title: "React Weather app",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Weather-app",
     description: "Explore weather effortlessly with a beginner-friendly React Weather App, providing real-time forecasts and an intuitive user experience.",
