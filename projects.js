@@ -20,15 +20,51 @@ const projects = [
   },
   {
     title: "Fun-Fact Generator",
-    url: "https://github.com/Krishnap2k4/React-projects-for-beginners/tree/main/Fun-Fact%20Generator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Fun-Fact%20Generator",
     description: "Start your coding journey with a beginner-friendly React Fun-Fact Generator App, An easy and engaging way for users to discover interesting and surprising facts with just a click! ",
     imgSrc: "assets/funfact.png"
   },
   {
     title: "HEX-RGB Converter",
-    url: "https://github.com/Krishnap2k4/React-projects-for-beginners/tree/main/HEX-RGB%20Converter",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/HEX-RGB%20Converter",
     description: "Start your coding journey with a beginner-friendly React HEX/RGB Converter App, An intuitive tool for seamlessly converting colors between RGB and HEX formats with precision. ",
     imgSrc: "assets/hex_rgb.png"
+  },
+  {
+    title: "Daily-Workout Randomizer",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Daily-Workout-Randomizer",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, An engaging tool for effortlessly generating daily workout routines, tailored to keep fitness fun and varied every day.",
+    imgSrc: "assets/workout.png"
+  },
+  {
+    title: "Recipe Finder",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Recipe-Finder",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, An interactive tool for discovering new and exciting recipes based on your ingredient preferences, making meal planning simple and inspiring.",
+    imgSrc: "assets/recipe.png"
+  },
+  {
+    title: "Positive News",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Positive-News",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, A uplifting platform that curates and displays positive news stories, bringing joy and optimism to your daily reading experience.",
+    imgSrc: "assets/news.png"
+  },
+  {
+    title: "InterestRate Calculator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/InterestRate-Calculator",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, An efficient tool for easily calculating simple and compound interest, helping users make informed financial decisions.",
+    imgSrc: "assets/interestrate.png"
+  },
+  {
+    title: "CryptoPrice Checker",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/CryptoPrice-Checker",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, A user-friendly tool for quickly checking real-time cryptocurrency prices, empowering users to stay informed about the crypto market.",
+    imgSrc: "assets/cryptoprice.png"
+  },
+  {
+    title: "TokenConversion-Calculator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/TokenConversion-Calculator",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, A convenient tool for effortlessly converting amounts between different cryptocurrency tokens using real-time exchange rates.",
+    imgSrc: "assets/token.png"
   },
   {
     title: "React Weather app",
