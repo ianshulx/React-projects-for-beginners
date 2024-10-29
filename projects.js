@@ -7,6 +7,66 @@ const projects = [
     imgSrc: "assets/todo.png"
   },
   {
+    title: "Curreny Converter App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Currency-Converter",
+    description: "Start your coding journey with a beginner-friendly React Currency-Converter App, a simple and efficient way for users to convert between different currencies in real-time ",
+    imgSrc: "assets/currency.png"
+  },
+  {
+    title: "Tip Calculator App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Tip-Calculator",
+    description: "Start your coding journey with a beginner-friendly React Tip-Calculator App, A simple and efficient way for users to calculate tips accurately and effortlessly. ",
+    imgSrc: "assets/tip.png"
+  },
+  {
+    title: "Fun-Fact Generator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Fun-Fact%20Generator",
+    description: "Start your coding journey with a beginner-friendly React Fun-Fact Generator App, An easy and engaging way for users to discover interesting and surprising facts with just a click! ",
+    imgSrc: "assets/funfact.png"
+  },
+  {
+    title: "HEX-RGB Converter",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/HEX-RGB%20Converter",
+    description: "Start your coding journey with a beginner-friendly React HEX/RGB Converter App, An intuitive tool for seamlessly converting colors between RGB and HEX formats with precision. ",
+    imgSrc: "assets/hex_rgb.png"
+  },
+  {
+    title: "Daily-Workout Randomizer",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Daily-Workout-Randomizer",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, An engaging tool for effortlessly generating daily workout routines, tailored to keep fitness fun and varied every day.",
+    imgSrc: "assets/workout.png"
+  },
+  {
+    title: "Recipe Finder",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Recipe-Finder",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, An interactive tool for discovering new and exciting recipes based on your ingredient preferences, making meal planning simple and inspiring.",
+    imgSrc: "assets/recipe.png"
+  },
+  {
+    title: "Positive News",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Positive-News",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, A uplifting platform that curates and displays positive news stories, bringing joy and optimism to your daily reading experience.",
+    imgSrc: "assets/news.png"
+  },
+  {
+    title: "InterestRate Calculator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/InterestRate-Calculator",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, An efficient tool for easily calculating simple and compound interest, helping users make informed financial decisions.",
+    imgSrc: "assets/interestrate.png"
+  },
+  {
+    title: "CryptoPrice Checker",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/CryptoPrice-Checker",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, A user-friendly tool for quickly checking real-time cryptocurrency prices, empowering users to stay informed about the crypto market.",
+    imgSrc: "assets/cryptoprice.png"
+  },
+  {
+    title: "TokenConversion-Calculator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/TokenConversion-Calculator",
+    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, A convenient tool for effortlessly converting amounts between different cryptocurrency tokens using real-time exchange rates.",
+    imgSrc: "assets/token.png"
+  },
+  {
     title: "React Weather app",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/React-Weather-app",
     description: "Explore weather effortlessly with a beginner-friendly React Weather App, providing real-time forecasts and an intuitive user experience.",
@@ -151,6 +211,12 @@ const projects = [
     imgSrc: "assets/tic.png"
   },
   {
+    title: "Credit-Card Validator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Credit-Card-Validator",
+    description: "The program prompts the user to enter a number and determines whether it is a valid credit card number.",
+    imgSrc: "assets/cc-validator.png"
+  },
+  {
     title: "Taskify Project",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Taskify-Project",
     description: "Taskify-Project is an organizational tool designed to streamline project management, enabling users to create, assign, and track tasks efficiently within a collaborative environment.",
@@ -267,6 +333,12 @@ const projects = [
     imgSrc: "assets/iNoteBook.png"
   },
   {
+    title: "Typing Speed Tester",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Typing-test",
+    description: "An everday app for those who aspire to have a fast typing speed.",
+    imgSrc: "assets/typing.png"
+  },
+  {
     title: "Blood Donation",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Blood_Donation_Website/client",
     description: "A website to find nearest place to donate Blood",
@@ -282,55 +354,55 @@ const projects = [
     title: "MediSwift",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Medicine-Delivery-app",
     description: "MediSwift- Get your medicines at your doorstep",
-    imgSrc: "assets\medicine_delivery.png"
+    imgSrc: "assets/medicine_delivery.png"
   },
   {
     title: "MEME-generator",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/MEME-generator",
     description: "Generates meme on one click",
-    imgSrc: "assets\memeG.png"
+    imgSrc: "assets/memeG.png"
   },
   {
     title: "Personal Prtfolio",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Personal%20Portfolio",
     description: "A responsive personal website to showcase skills and projects",
-    imgSrc: "assets\Bportfolio.png"
+    imgSrc: "assets/Bportfolio.png"
   },
   {
     title: "React-file-size-converter",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-file-size-converter",
     description: "A website to perform conversion of file size",
-    imgSrc: "assets\file_size.png"
+    imgSrc: "assets/file_size.png"
   },
   {
     title: "React Prtfolio",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/reactPortfolio",
     description: "A responsive personal website to showcase skills and projects",
-    imgSrc: "assets\reactPortfolio.png"
+    imgSrc: "assets/reactPortfolio.png"
   },
   {
     title: "Resume Builder",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Resume%20builder",
     description: "Input your information to get your Resume",
-    imgSrc: "assets\resumeBuilder.png"
+    imgSrc: "assets/resumeBuilder.png"
   },
   {
     title: "Submission Form",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/SubmissionForm-React",
     description: "A form to submit details",
-    imgSrc: "assets\form.png"
+    imgSrc: "assets/form.png"
   },
   {
     title: "Task-Manager-App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Task-Manager-App",
     description: "A React-based task manager web application built using the browser's localStorage API.",
-    imgSrc: "assets\Taskmanager.png"
+    imgSrc: "assets/Taskmanager.png"
   },
   {
     title: "Wallet",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/wallet",
     description: "A full-stack web app built using the MERN stack where you can send money, accept money and perform transaction",
-    imgSrc: "assets\wallet.png"
+    imgSrc: "assets/wallet.png"
   },
  
 ];
