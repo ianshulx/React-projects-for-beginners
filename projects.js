@@ -1,12 +1,6 @@
 // Please add your project details in the below array.
 const projects = [
   {
-    title: "React Todo App",
-    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-todo-app",
-    description: "Start your coding journey with a beginner-friendly React Todo App, perfect for learning task management and basic web development",
-    imgSrc: "assets/todo.png"
-  },
-  {
     title: "Curreny Converter App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Currency-Converter",
     description: "Start your coding journey with a beginner-friendly React Currency-Converter App, a simple and efficient way for users to convert between different currencies in real-time ",
@@ -39,32 +33,98 @@ const projects = [
   {
     title: "Recipe Finder",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Recipe-Finder",
-    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, An interactive tool for discovering new and exciting recipes based on your ingredient preferences, making meal planning simple and inspiring.",
+    description: "Start your coding journey with a beginner-friendly React Recipe Finder, An interactive tool for discovering new and exciting recipes based on your ingredient preferences, making meal planning simple and inspiring.",
     imgSrc: "assets/recipe.png"
   },
   {
     title: "Positive News",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Positive-News",
-    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, A uplifting platform that curates and displays positive news stories, bringing joy and optimism to your daily reading experience.",
+    description: "Start your coding journey with a beginner-friendly React Positive News, A uplifting platform that curates and displays positive news stories, bringing joy and optimism to your daily reading experience.",
     imgSrc: "assets/news.png"
   },
   {
     title: "InterestRate Calculator",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/InterestRate-Calculator",
-    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, An efficient tool for easily calculating simple and compound interest, helping users make informed financial decisions.",
+    description: "Start your coding journey with a beginner-friendly React InterestRate Calculator, An efficient tool for easily calculating simple and compound interest, helping users make informed financial decisions.",
     imgSrc: "assets/interestrate.png"
   },
   {
     title: "CryptoPrice Checker",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/CryptoPrice-Checker",
-    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, A user-friendly tool for quickly checking real-time cryptocurrency prices, empowering users to stay informed about the crypto market.",
+    description: "Start your coding journey with a beginner-friendly React CryptoPrice Checker, A user-friendly tool for quickly checking real-time cryptocurrency prices, empowering users to stay informed about the crypto market.",
     imgSrc: "assets/cryptoprice.png"
   },
   {
     title: "TokenConversion-Calculator",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/TokenConversion-Calculator",
-    description: "Start your coding journey with a beginner-friendly React Daily-Workout-Randomizer App, A convenient tool for effortlessly converting amounts between different cryptocurrency tokens using real-time exchange rates.",
+    description: "Start your coding journey with a beginner-friendly React TokenConversion-Calculator, A convenient tool for effortlessly converting amounts between different cryptocurrency tokens using real-time exchange rates.",
     imgSrc: "assets/token.png"
+  },
+  {
+    title: "RGB Color Guesser Game ",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/RGB-Color-Guesser",
+    description: "Start your coding journey with a beginner-friendly RGB Color Guesser Game , A fun and interactive game where users guess the correct color based on a given RGB code, testing their color-matching skills.",
+    imgSrc: "assets/rgbguess.png"
+  },
+  {
+    title: "BMI Calculator ",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/BMI-Calculator",
+    description: "Start your coding journey with a beginner-friendly React BMI-Calculator, An easy-to-use tool that calculates Body Mass Index (BMI) based on user-provided height and weight, helping users monitor their health.",
+    imgSrc: "assets/bmi.png"
+  },
+  {
+    title: "Emoji-Search-App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Emoji-Search-App",
+    description: "Start your coding journey with a beginner-friendly React Emoji-Search-App, A handy app that lets users quickly find the perfect emoji by filtering results based on a search query.",
+    imgSrc: "assets/emojisearch.png"
+  },
+  {
+    title: "Simple-Horoscope-Generator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Simple-Horoscope-Generator",
+    description: "Start your coding journey with a beginner-friendly React Simple-Horoscope-Generator, A straightforward tool that provides daily horoscope insights for each zodiac sign, adding a touch of guidance to users' day.",
+    imgSrc: "assets/horo.png"
+  },
+  {
+    title: "Fruit-Matcher-Game",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Fruit-Matcher-Game",
+    description: "Start your coding journey with a beginner-friendly React Fruit-Matcher-Game, An engaging matching game where users pair up different fruit icons, enhancing memory and concentration skills in a fun way.",
+    imgSrc: "assets/fruits.png"
+  },
+  {
+    title: "Weight-Converter",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Weight-Converter",
+    description: "Start your coding journey with a beginner-friendly React Weight-Converter, A quick and easy tool for converting weight between units like pounds and kilograms, simplifying weight measurements for users.",
+    imgSrc: "assets/weight.png"
+  },
+  {
+    title: "Countdown-To-Birthday",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Countdown-To-Birthday",
+    description: "Start your coding journey with a beginner-friendly React Countdown-To-Birthday, A simple app that counts down the days remaining until a specified birthday, helping users anticipate and celebrate special occasions.",
+    imgSrc: "assets/birthday.png"
+  },
+  {
+    title: "Water-Intake-Tracker",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Water-Intake-Tracker",
+    description: "Start your coding journey with a beginner-friendly React Water-Intake-Tracker, A convenient tool for users to log and track their daily water intake, promoting hydration and healthy drinking habits.",
+    imgSrc: "assets/water.png"
+  },
+  {
+    title: "Random-Travel-Destination-Suggester",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Random-Travel-Destination-Suggester",
+    description: "Start your coding journey with a beginner-friendly React Random-Travel-Destination-Suggester, An exciting tool that randomly suggests travel destinations, inspiring users to explore new places and plan their next adventure.",
+    imgSrc: "assets/travel.png"
+  },
+  {
+    title: "Frequency-Generator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Frequency-Generator",
+    description: "Start your coding journey with a beginner-friendly React Frequency-Generator, A versatile frequency generator that allows users to create and play various sound frequencies, providing a practical tool for audio experimentation and sound design.",
+    imgSrc: "assets/frequency.png"
+  },
+  {
+    title: "React Todo App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/react-todo-app",
+    description: "Start your coding journey with a beginner-friendly React Todo App, perfect for learning task management and basic web development",
+    imgSrc: "assets/todo.png"
   },
   {
     title: "React Weather app",
