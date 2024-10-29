@@ -468,7 +468,7 @@ const projects = [
     title:"Patreon clone",
     url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main/patreon",
     description:"A Patreon clone is a platform that enables creators to earn recurring income by offering exclusive content and rewards to supporters",
-    imgSrc:"public/vercel.svg"
+    imgSrc:"assets/patreon.png"
   }
  
 ];
