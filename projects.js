@@ -404,6 +404,12 @@ const projects = [
     description: "A full-stack web app built using the MERN stack where you can send money, accept money and perform transaction",
     imgSrc: "assets/wallet.png"
   },
+  {
+    title:"Patreon clone",
+    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main/patreon",
+    description:"A Patreon clone is a platform that enables creators to earn recurring income by offering exclusive content and rewards to supporters",
+    imgSrc:"public/vercel.svg"
+  }
  
 ];
 
