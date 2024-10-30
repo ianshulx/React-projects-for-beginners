@@ -1,0 +1,69 @@
+{
+  "short_name": "Portfolio",
+  "name": "Bijoy Kar - Portfolio",
+  "version": "0.0.1",
+  "icons": [
+    {
+      "src": "/tab-logo/2.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    },
+    {
+      "src": "/tab-logo/1.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    },
+    {
+      "src": "/tab-logo/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "offline_enabled": true,
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": "#0e2954",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#0e2954",
+  "shortcuts": [
+    {
+      "name": "About",
+      "url": "/about",
+      "description": "About me"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact",
+      "description": "Contact me"
+    },
+    {
+      "name": "Projects",
+      "url": "/projects",
+      "description": "My projects"
+    },
+    {
+      "name": "Resume",
+      "url": "/resume",
+      "description": "My resume"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog",
+      "description": "My blog"
+    },
+    {
+      "name": "Home",
+      "url": "/",
+      "description": "Home"
+    },
+    {
+      "name": "Skills",
+      "url": "/skills",
+      "description": "My skills"
+    }
+  ],
+
+  "description": "Bijoy Kar - Portfolio",
+  "screenshots": []
+}

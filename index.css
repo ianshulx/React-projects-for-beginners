@@ -1,0 +1,176 @@
+.custom-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  * {
+		padding: 0;
+		margin: 0;
+	}
+	svg {
+		position: fixed;
+		top: 0;
+		left: 0;
+    width: 100%;
+		box-sizing: border-box;
+		display: block;
+		background-color: #0e4166;
+    background-image: linear-gradient(to bottom, rgba(0, 118, 203, 0.86), #05406b);
+    z-index: -1;
+	}
+
+  /* Aesthetic background */
+  /* body {
+    background: rgb(249,135,240);
+    background: linear-gradient(90deg, rgba(249,135,240,1) 2%, rgba(54,241,236,1) 40%, rgba(245,132,242,1) 83%);
+    color: white;
+  } */
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  nav {
+    background-color: rgba(0, 0, 0, 0.408);
+
+    color: rgba(255, 255, 255, 0.399);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    margin-right: 10px;
+    /* Add spacing between the logo and text */
+  }
+
+  .github-icon img {
+    cursor: pointer;
+    /* Add a pointer cursor to the GitHub icon */
+  }
+
+  /* Styling for the section with background image */
+  .hero-section {
+    /* Add your image URL here */
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    text-align: center;
+    color: #56ddcd;
+  }
+
+  .hero-section div{
+    background-color: #020205;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-text::first-line{
+    float: left;
+  }
+
+  .hero-section-logo, .Hacktoberfest_logo {
+    width: 100px; 
+    height: 100px;
+  }
+
+  
+
+  .custom-card a{
+    text-decoration: none;
+    color: black;
+    text-wrap: balance;
+  }
+  
+  .custom-button {
+    background-color: #56ddcd;
+    margin-left: 10px;
+    font-size: 20px;
+    width: max-content;
+    display: inline-flex;
+    border-radius: 25px;
+  }
+
+  .custom-button:hover, .custom-button:active, .custom-button:focus-visible {
+    background-color: #56ddcd;
+  }
+
+  .custom-button a{
+    text-decoration: none;
+    color: #545554;
+  }
+
+  .custom-button img{
+    height: 10%;
+  }
+
+  #contributors-box {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  #contributors-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #contributors-list li {
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    /* Reduced the width */
+    text-align: center;
+  }
+
+  #contributors-list li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #contributors-list li img {
+    border-radius: 50%;
+  }
+
+  .card-body{
+    cursor: pointer;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    padding: 20px 0px;
+    border-radius: 18px;
+  }
+  .card-body:hover{
+    cursor: pointer;
+    transform: scale(1.1); /* Enlarge the element */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+  @media (min-width:768px){
+    .col-md-2{
+      width: 15.66667%;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .card-body{
+      transition: none;
+    }
+    .card-body:hover{
+      box-shadow: none;
+      transform: none;
+    }
+  }

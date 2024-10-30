@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    /*~~~~~Font-Sizes~~~~~*/
+    --fs-20 : 20px;
+    --fs-33 : 33px;
+    --fs-40 : 40px;
+    --fs-60 : 60px;
+    --fs-70 : 70px;
+    --fs-95 : 95px;
+    /*~~~~~Font-weight~~~~~*/
+    --fw-200 : 200;
+    --fw-300 : 300;
+    --fw-500 : 500;
+    --fw-750 : 700;
+    /*~~~~~Font-Faces~~~~~*/
+    --ff--roboto : "Roboto", sans-serif;
+    --ff--OpenSans : "Open Sans" , sans-serif;
+    --ff--Poppins : "Poppins", sans-serif;
+    --ff--Raleway : "Raleway",sans-serif;
+    /*~~~~~Colors~~~~~*/
+    --light-gray : #ececec;
+    --light-green : #9fd3c7;
+    --persian-blue : #142d4c;
+    --jade-blue : #233142;
+    --redPink-comb : #f95959;
+    --lightdark-cmob : #393e46;
+    --light-Orange : #fdb44b;
+    --medium-blue : #0092ca;
+    --mediumDark-green : #347474;
+    --sky : #d5eeff;
+    --coffe : #975a5e;
+    --Dark-purple: #522546;
+    --light-wheat : #f6e5e4;
+    --light-purple : #8a79af;
+    --light-blue : #1ca2bb;
+    --DarkLight : #424153;
+    --medium-spring-green: hsl(156, 100%, 50%);
+    --red-orange-creyola: hsl(0, 100%, 68%);
+    --caribbean-green: hsl(160, 98%, 39%);
+    --oxford-blue_50: hsla(213, 86%, 16%, 0.5);
+    --oxford-blue_70: hsla(213, 86%, 16%, 0.7);
+    --prussian-blue: hsl(210, 100%, 20%);
+    --oxford-blue: hsl(213, 86%, 16%);
+    --orange-peel: hsl(37, 100%, 50%);
+    --cultured_20: hsla(206, 23%, 94%, 0.2);
+    --winter-sky: hsl(341, 100%, 60%);
+    --light-gray: hsl(0, 0%, 80%);
+    --malachite: hsl(120, 70%, 59%);
+    --indigo-dye: hsl(213, 81%, 25%);
+    --dim-gray: hsl(0, 0%, 41%);
+    --black_20: hsla(0, 0%, 0%, 0.2);
+    --silver: hsl(0, 0%, 76%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    /*~~~~~Shadows~~~~~~*/
+    --shadow-1: 0 0 10px hsla(0, 0%, 0%, 0.1);
+    --shadow-2: 0 9px 9px 9px hsla(0, 0%, 100%, 0.2);
+    --shadow-3: 0 0 24px hsla(341, 100%, 60%, 0.3);
+    /*~~~~~Border-radius~~~~~*/
+    --br-50 : 50%;
+    --br-normal : 8px;
+    --br-6 : 6px;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes skeleton-loading {
+  0%{
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+
+.skeleton {
+  opacity: .7;
+  animation:  skeleton-loading 1s linear infinite alternate;
+}

@@ -1,0 +1,61 @@
+/* App.css */
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh; /* Ensure the container covers the full viewport height */
+  background: linear-gradient(to bottom, #f0f2f5, #ffffff); /* Gradient background for a subtle effect */
+  color: #333; /* Darker text color for better readability */
+  font-family: 'Arial', sans-serif; /* Clean, modern font */
+}
+
+.App-logo {
+  height: 60vmin; /* Slightly larger logo */
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect on hover */
+}
+
+.App-logo:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s linear; /* Faster spin animation */
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin); /* Slightly larger font size */
+  color: #ffffff;
+  padding: 20px; /* Added padding for spacing */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the link text bold */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.App-link:hover {
+  color: #21a1f1; /* Change color on hover */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

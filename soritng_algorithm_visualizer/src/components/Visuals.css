@@ -1,0 +1,88 @@
+.visuals {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.visualizer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.legend {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 2px 5px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.legend__lable {
+  height: 5px;
+  width: 20px;
+  background-color: black;
+  margin-right: 3px;
+}
+
+.visual__items {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 340px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.visual__item {
+  position: absolute;
+}
+
+.visual__item > h4 {
+  font-size: 0.4rem;
+}
+
+.visual__btns > button {
+  width: 150px;
+  background-color: rgb(0, 149, 199);
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .visuals {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .visual__btns {
+    display: flex;
+    margin-top: -20px;
+  }
+
+  .visuals {
+    padding-top: 10px;
+  }
+
+  .visual__btns > button {
+    margin-bottom: -3px;
+  }
+}

@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("../components/6262.jpg") no-repeat center center/cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: black;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  padding: 10px 20px;
+  background-color: #e60000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.hero-button:hover {
+  background-color: #cc0000;
+}
+
+/* About Section */
+.about-section {
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Stats Section */
+.stats-section {
+  padding: 40px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.stats-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  color: #e60000;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+}
+
+/* How to Donate Section */
+.how-to-donate {
+  background-color: white;
+  padding: 40px;
+}
+
+.how-to-donate h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.how-to-donate ol {
+  margin: 20px auto;
+  padding-left: 20px;
+  max-width: 600px;
+}
+
+.how-to-donate li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.donate-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #e60000;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.donate-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1rem;
+}

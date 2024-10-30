@@ -1,0 +1,107 @@
+/**
+ * @fileOverview reset基础样式
+ */
+* {
+    webkit-tap-highlight-color: transparent;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    /*vertical-align: baseline; delete by jican*/
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:focus,a:hover,a:visited {
+    outline: 0;
+    text-decoration: none;
+}
+a:active,a:hover {
+    outline: 0;
+}
+div {
+    -webkit-tap-highlight-color: rgba(0 , 0, 0, 0);
+}
+
+input{
+    outline:none;
+    font-size: 14px;
+}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 14px;
+    font-weight: normal;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+body {
+    -webkit-text-size-adjust:none;
+    font-size: 14px;
+    color: #333;
+    background: #f5f5f5;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,PingFang SC,Source Han Sans CN,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+img,table{
+    border:0
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+select {
+    -webkit-appearance:button;
+    border: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

@@ -1,0 +1,103 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.title {
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 1vh 5vw;
+  margin: 6vh;
+  border: 7px dashed rgb(1, 17, 160);
+  
+}
+
+.heading {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin-top: 10px;
+}
+
+input[type="number"] {
+  margin-top: 10px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.attempts {
+  text-align: center;
+  color: #333;
+}
+
+.button {
+  width: 100%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.inputfield {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.inputfield:focus {
+  outline: none;
+  border-color: #4CAF50; 
+}
+
+.inputfield::placeholder {
+  color: #999;
+}
+.result-message {
+  font-size: 18px;
+  color:orangered;
+  margin-bottom: 10px;
+}
+.container.win {
+  background-color: green;
+}

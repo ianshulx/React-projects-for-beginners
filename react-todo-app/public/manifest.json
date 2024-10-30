@@ -1,0 +1,8 @@
+{
+	"short_name": "Todo App",
+	"name": "Todo App - by Shaif Arfan",
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}
