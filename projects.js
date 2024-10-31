@@ -469,6 +469,12 @@ const projects = [
     url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main/patreon",
     description:"A Patreon clone is a platform that enables creators to earn recurring income by offering exclusive content and rewards to supporters",
     imgSrc:"assets/patreon.png"
+  },
+  {
+    title:"Flash light toggle",
+    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Flashlight-Toggle-App",
+    description:"This app changes the background color to simulate a flashlight turning on and off.",
+    imgSrc:"assets/flashlight.png"
   }
  
 ];
