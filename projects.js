@@ -1,6 +1,12 @@
 // Please add your project details in the below array.
 const projects = [
   {
+    title: "Personalised Greeing Generator App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/persolanised-greeting-generator",
+    description: "Start your coding journey with a beginner-friendly React Personalised Greeting Generator App, a simple and sweet way for users to generate personalised greetings with just one click.",
+    imgSrc: "assets/greeting.png"
+  },
+  {
     title: "Curreny Converter App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Currency-Converter",
     description: "Start your coding journey with a beginner-friendly React Currency-Converter App, a simple and efficient way for users to convert between different currencies in real-time ",
