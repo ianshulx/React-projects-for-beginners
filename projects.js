@@ -1,6 +1,12 @@
 // Please add your project details in the below array.
 const projects = [
   {
+    title: "Mood Tracker App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/mood-tracker",
+    description: "Start your coding journey with a beginner-friendly React Mood Tracker App, a simple and easy way for users to keep a weekly track of their mood and understand themselves better.",
+    imgSrc: "assets/mood.png"
+  },
+  {
     title: "Personalised Greeing Generator App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/persolanised-greeting-generator",
     description: "Start your coding journey with a beginner-friendly React Personalised Greeting Generator App, a simple and sweet way for users to generate personalised greetings with just one click.",
