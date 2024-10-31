@@ -1,5 +1,12 @@
 // Please add your project details in the below array.
 const projects = [
+    
+  {
+    title: "Typing-Speed Tester App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/typing-speed-tester",
+    description: "Start your coding journey with a beginner-friendly React Typing Speed Tester App, a simple and efficient way for users to check their typing speed accurately and  effortlessly.",
+    imgSrc: "assets/typing-speed.png"
+  },
   {
     title: "Curreny Converter App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Currency-Converter",
