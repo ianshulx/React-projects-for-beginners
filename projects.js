@@ -475,7 +475,13 @@ const projects = [
     url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Flashlight-Toggle-App",
     description:"This app changes the background color to simulate a flashlight turning on and off.",
     imgSrc:"assets/flashlight.png"
-  }
+  },
+  {
+    title:"Reaction-time tester",
+    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Reaction-Time-Tester",
+    description:"A React app that tests your reaction speed by measuring the time taken to respond to prompts",
+    imgSrc:"assets/response.png"
+  },
  
 ];
 
