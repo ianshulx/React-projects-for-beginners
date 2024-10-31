@@ -1,6 +1,12 @@
 // Please add your project details in the below array.
 const projects = [
   {
+    title: "Password Generator App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/password-generator",
+    description: "Start your coding journey with a beginner-friendly React Password-Generator App, A simple and efficient way for users to generate customised passwords with copy and paste feature. ",
+  imgSrc: "assets/password-generator.png",
+  },
+  {
     title: "Curreny Converter App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Currency-Converter",
     description: "Start your coding journey with a beginner-friendly React Currency-Converter App, a simple and efficient way for users to convert between different currencies in real-time ",
