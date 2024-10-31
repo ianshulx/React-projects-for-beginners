@@ -482,6 +482,12 @@ const projects = [
     description:"A React app that tests your reaction speed by measuring the time taken to respond to prompts",
     imgSrc:"assets/response.png"
   },
+  {
+    title:"Learning Streak Tracker",
+    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Learning%20Streak%20Tracker",
+    description:"A React app that tracks and motivates your daily learning streaks to build consistent study habits.",
+    imgSrc:"assets/streak.png"
+  },
  
 ];
 
