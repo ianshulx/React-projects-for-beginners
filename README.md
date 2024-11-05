@@ -1,7 +1,7 @@
 <h1>React Project for Beginners Repository</h1>
 
-Welcome to the React Project for Beginners Repository! This is a special place for beginners who are passionate about learning and contributing to open-source projects using React JS.
-Its Hacktoberfest currently!
+Welcome to the React Project for Beginners Repository! This is a special place for beginners passionate about learning and contributing to React JS open-source projects.
+(85 ++ Projects)
 <h3>NOTE#1: PLEASE CHECK YOUR PROJECT CAREFULLY, IT SHOULD BE ERROR-FREE, YOUR PROJECT WILL BE REVIEWED, IF THE REVIEWER FOUND ANY ERROR YOUR REQUEST WILL MARKED AS "INVALID".<h3>
 
 <h3>NOTE#2: DON'T FORGET TO LIST YOUR PROJECT IN THE `projects.js` FILE IN THE ROOT FOLDER OF THE REPO. YOU CAN ALSO ADD THE DEMO LINK OF YOUR PROJECT(IF ANY)<h3>
