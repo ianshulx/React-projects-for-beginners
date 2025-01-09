@@ -13,6 +13,12 @@ const projects = [
     imgSrc: "assets/greeting.png"
   },
   {
+    title: "Dictionary API Project",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/DictionaryApi",
+    description: "Start your coding journey with a beginner-friendly React Personalised Greeting Generator App, a simple and sweet way for users to generate personalised greetings with just one click.",
+    imgSrc: "assets/book.avif"
+  },
+  {
     title: "Curreny Converter App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Currency-Converter",
     description: "Start your coding journey with a beginner-friendly React Currency-Converter App, a simple and efficient way for users to convert between different currencies in real-time ",
