@@ -3,9 +3,9 @@ import Box from '@mui/material/Box';
 import { Button, TextField, Typography } from '@mui/material';
 
 const BMICalculators = () => {
-    const [height, setHeight] = useState();
-    const [weight, setWeight] = useState();
-    const [bmiValue, setBmiValue] = useState();
+    const [height, setHeight] = useState(null);
+    const [weight, setWeight] = useState(null);
+    const [bmiValue, setBmiValue] = useState(null);
     const [message, setMessage] = useState("");
 
 
@@ -30,10 +30,18 @@ const BMICalculators = () => {
 
     };
 
+    const handleReset = () => {
+        setHeight("");
+        setWeight("");
+        setBmiValue(null);
+        setMessage("")
+    }
+
     return (
-        <Box sx={{ minWidth: "350px", minHeight: "auto", padding: "20px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: "10px", boxShadow: "10px 15px 15px rgba(155, 199, 171, 0.6)", gap: 2, bgcolor:"white" }}>
+        <Box sx={{ minWidth: "350px", minHeight: "auto", padding: "20px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: "10px", boxShadow: "10px 15px 15px rgba(155, 199, 171, 0.6)", gap: 2, bgcolor: "white" }}>
             <Typography variant='h4' component="h2">BMI Calculator</Typography>
             <TextField
+                type='number'
                 required
                 label="Height in meter"
                 placeholder='eg:1.75'
@@ -41,6 +49,7 @@ const BMICalculators = () => {
                 onChange={(e) => setHeight(e.target.value)}
             />
             <TextField
+                type='number'
                 required
                 label="Weight in kg"
                 placeholder='eg:60'
@@ -52,7 +61,8 @@ const BMICalculators = () => {
                 bmiValue && (
                     <>
                         <Typography variant='h6' component="body1">Your BMI:{bmiValue} </Typography>
-                        <Typography variant='subtitle1' component="body1" mt="-14px">{message}</Typography>
+                        <Typography variant='subtitle1' mt="-14px">{message}</Typography>
+                        <Button variant='contained' color="error" onClick={handleReset}>Reset</Button>
                     </>
                 )
             }
@@ -60,4 +70,4 @@ const BMICalculators = () => {
     )
 }
 
-export default BMICalculators
+export default BMICalculators;
