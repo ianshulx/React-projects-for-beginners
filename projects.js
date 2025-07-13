@@ -1,6 +1,12 @@
 // Please add your project details in the below array.
 const projects = [
   {
+  title: "Weather App",
+  url: "https://github.com/Asfand-Yar-dev/React-projects-for-beginners/tree/main/weather-app",
+  description: "A React-based weather application that lets users search for any city and view its current temperature and weather condition using the Open-Meteo API.",
+  author: "assets/download.jpeg",
+  },
+  {
     title: "Mood Tracker App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/mood-tracker",
     description: "Start your coding journey with a beginner-friendly React Mood Tracker App, a simple and easy way for users to keep a weekly track of their mood and understand themselves better.",
