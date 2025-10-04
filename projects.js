@@ -2,7 +2,7 @@
 const projects = [
   {
     title: "Retro Desktop Simulator",
-    url: "https://github.com/AdityaDwiNugroho/React-projects-for-beginners/tree/main/Retro-Desktop-Simulator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Retro-Desktop-Simulator",
     description: "A nostalgic Windows 95-style desktop simulator with draggable windows, working calculator, notepad, and paint applications. Experience the classic 90s computing interface.",
     imgSrc: "assets/retro-desktop.svg"
   },
