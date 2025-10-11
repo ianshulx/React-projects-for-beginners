@@ -62,7 +62,7 @@ Once it's filed:
 - If the team is able to reproduce the issue, it will be marked `needs-fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be [implemented by someone](#your-first-code-contribution).
 
 
-#### Submitting a Project
+### Submitting a Project
 
 - Make sure you title the project the same as the folder with all relevant information so the team can easilt find and approve the project submmission.
 - Make sure to include in the pull request that you are adding a new project to the repository
