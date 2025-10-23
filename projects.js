@@ -763,12 +763,21 @@ const projects = [
     imgSrc: "assets/avatar-jessica.jpeg",
   },
   {
-    title: 'Hacker Typer',
+    title: "Code Stats Tracker",
+    url: "https://codetrackr.netlify.app/",
+    description:
+      "CodeTrackr is a React-based app that lets users view their Codeforces profile, track solved problems, and visualize rating changes through interactive graphs and stats.",
+    author:"parth10P",
+    imgSrc: "assets/codeStats.png",
+  },
+  {
+    title: "Hacker Typer",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Hacker-Typer",
-    description: 'A cinematic faux-programming simulator that runs through a realistic hacking sequence, ending with a Matrix-style success screen.',
-    author: 'karthik-srivathsa-05',
+    description:
+      "A cinematic faux-programming simulator that runs through a realistic hacking sequence, ending with a Matrix-style success screen.",
+    author: "karthik-srivathsa-05",
     imgSrc: "assets/Hacker-Typer.png",
-    tags: ['React', 'useEffect', 'Canvas', 'Animation', 'UI']
+    tags: ["React", "useEffect", "Canvas", "Animation", "UI"],
   },
 ];
 
