@@ -1,0 +1,105 @@
+body {
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bmi-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bmi-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px;
+  width: 320px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.bmi-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.45);
+}
+
+.bmi-card h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.bmi-card label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+.bmi-card input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  color: #222;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.calc-btn,
+.reset-btn {
+  width: 48%;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.calc-btn {
+  background: #5edfff;
+  color: #004e7c;
+}
+
+.calc-btn:hover {
+  background: #56cfe1;
+}
+
+.reset-btn {
+  background: #a66cff;
+  color: #fff;
+}
+
+.reset-btn:hover {
+  background: #9a5ef7;
+}
+
+.result {
+  margin-top: 25px;
+}
+
+.result h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.result p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
