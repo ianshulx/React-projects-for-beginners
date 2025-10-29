@@ -1,0 +1,20 @@
+{
+  "name": "reading-progress-tracker",
+  "version": "1.0.0",
+  "description": "A MERN stack application to track reading progress of books",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client"
+  },
+  "keywords": ["mern", "reading", "tracker", "books", "progress", "hacktoberfest"],
+  "author": "Reading Progress Tracker Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
