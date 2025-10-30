@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import { BookOpen, User, LogOut, Menu, X, Plus, BarChart3 } from 'lucide-react';
+import { useTheme } from '../../contexts/ThemeContext';
+import { BookOpen, User, LogOut, Menu, X, Plus, BarChart3, Moon, Sun } from 'lucide-react';
 
 const Navbar = () => {
   const { user, logout } = useAuth();
+  const { isDarkMode, toggleTheme } = useTheme();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -97,6 +99,16 @@ const Navbar = () => {
 
             {/* User Menu */}
             <div className="flex items-center space-x-4 border-l border-gray-200 pl-6">
+              {/* Theme Toggle */}
+              <button
+                onClick={toggleTheme}
+                className="flex items-center space-x-1 px-3 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-600 transition-colors"
+                title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+              >
+                {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+                <span className="hidden lg:inline">{isDarkMode ? 'Light' : 'Dark'}</span>
+              </button>
+
               <Link 
                 to="/profile" 
                 className={`flex items-center space-x-1 px-3 py-2 rounded-lg font-medium transition-colors ${
@@ -158,6 +170,15 @@ const Navbar = () => {
                 <span>Add Book</span>
               </Link>
               
+              {/* Theme Toggle Mobile */}
+              <button
+                onClick={toggleTheme}
+                className="flex items-center space-x-2 px-3 py-2 rounded-lg font-medium text-gray-700 hover:text-primary-600 transition-colors text-left"
+              >
+                {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+                <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
+              </button>
+
               <Link 
                 to="/profile" 
                 onClick={() => setIsMobileMenuOpen(false)}
