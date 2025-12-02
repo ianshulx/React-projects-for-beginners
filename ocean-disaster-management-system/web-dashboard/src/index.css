@@ -1,0 +1,194 @@
+@import 'leaflet/dist/leaflet.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Import Leaflet CSS */
+
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 84% 5%;
+
+    --card: 210 40% 99%;
+    --card-foreground: 222 84% 5%;
+
+    --popover: 210 40% 99%;
+    --popover-foreground: 222 84% 5%;
+
+    --primary: 200 100% 28%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 200 20% 95%;
+    --secondary-foreground: 200 50% 25%;
+
+    --muted: 200 20% 96%;
+    --muted-foreground: 200 10% 50%;
+
+    --accent: 45 100% 60%;
+    --accent-foreground: 45 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 20% 90%;
+    --input: 200 20% 94%;
+    --ring: 200 100% 28%;
+
+    /* Ocean Hazard Theme Colors */
+    --ocean-blue: 200 100% 28%;
+    --ocean-light: 200 60% 85%;
+    --emergency-red: 0 84% 60%;
+    --emergency-orange: 25 95% 53%;
+    --safe-green: 142 71% 45%;
+    --warning-yellow: 45 93% 47%;
+    
+    /* Gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(200 100% 28%), hsl(220 100% 35%));
+    --gradient-emergency: linear-gradient(135deg, hsl(0 84% 60%), hsl(25 95% 53%));
+    --gradient-safe: linear-gradient(135deg, hsl(142 71% 45%), hsl(160 71% 50%));
+    --gradient-hero: linear-gradient(180deg, hsl(200 60% 95%), hsl(200 40% 98%));
+    
+    /* Shadows */
+    --shadow-ocean: 0 10px 30px -10px hsl(200 100% 28% / 0.3);
+    --shadow-emergency: 0 8px 25px -8px hsl(0 84% 60% / 0.4);
+    --shadow-card: 0 4px 20px -4px hsl(200 50% 25% / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --pulse-emergency: pulse 2s infinite;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 200 50% 3%;
+    --foreground: 210 40% 98%;
+
+    --card: 200 50% 4%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 200 50% 4%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 200 100% 50%;
+    --primary-foreground: 200 50% 3%;
+
+    --secondary: 200 20% 8%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 200 20% 8%;
+    --muted-foreground: 200 10% 70%;
+
+    --accent: 45 100% 60%;
+    --accent-foreground: 45 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 20% 12%;
+    --input: 200 20% 8%;
+    --ring: 200 100% 50%;
+
+    /* Ocean Hazard Dark Theme */
+    --ocean-blue: 200 100% 50%;
+    --ocean-light: 200 60% 15%;
+    --emergency-red: 0 84% 60%;
+    --emergency-orange: 25 95% 53%;
+    --safe-green: 142 71% 45%;
+    --warning-yellow: 45 93% 47%;
+    
+    --gradient-ocean: linear-gradient(135deg, hsl(200 100% 28%), hsl(220 100% 35%));
+    --gradient-emergency: linear-gradient(135deg, hsl(0 84% 60%), hsl(25 95% 53%));
+    --gradient-safe: linear-gradient(135deg, hsl(142 71% 45%), hsl(160 71% 50%));
+    --gradient-hero: linear-gradient(180deg, hsl(200 60% 5%), hsl(200 50% 3%));
+    
+    --shadow-ocean: 0 10px 30px -10px hsl(200 100% 50% / 0.3);
+    --shadow-emergency: 0 8px 25px -8px hsl(0 84% 60% / 0.4);
+    --shadow-card: 0 4px 20px -4px hsl(200 100% 50% / 0.2);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .ocean-gradient {
+    background: var(--gradient-ocean);
+  }
+  
+  .emergency-gradient {
+    background: var(--gradient-emergency);
+  }
+  
+  .safe-gradient {
+    background: var(--gradient-safe);
+  }
+  
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .shadow-ocean {
+    box-shadow: var(--shadow-ocean);
+  }
+  
+  .shadow-emergency {
+    box-shadow: var(--shadow-emergency);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .pulse-emergency {
+    animation: var(--pulse-emergency);
+  }
+}
+
+
+/* Custom styles for the map */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
