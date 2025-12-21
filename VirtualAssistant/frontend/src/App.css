@@ -1,0 +1,24 @@
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    background: radial-gradient(circle at 30% 30%, rgba(0, 255, 255, 0.9), rgba(0, 0, 255, 0.3));
+    border-radius: 50%;
+    animation: rise infinite ease-in;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translateY(-50vh) scale(1.2);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(-100vh) scale(1);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+/* * 1. Include the main daisyUI plugin. 
+ * We set 'themes: false' to prevent loading all built-in themes 
+ * since we are defining a single custom theme right below it.
+ */
+@plugin "daisyui" {
+  themes: false;
+}
+
+/*
+ * 2. Define the custom 'night' theme using the configuration you provided.
+ */
+@plugin "daisyui/theme" {
+  name: "night";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(12% 0.042 264.695);
+  --color-base-200: oklch(20% 0.042 265.755);
+  --color-base-300: oklch(27% 0.041 260.031);
+  --color-base-content: oklch(96% 0.007 247.896);
+  --color-primary: oklch(60% 0.126 221.723);
+  --color-primary-content: oklch(98% 0.019 200.873);
+  --color-secondary: oklch(59% 0.145 163.225);
+  --color-secondary-content: oklch(97% 0.021 166.113);
+  --color-accent: oklch(54% 0.281 293.009);
+  --color-accent-content: oklch(96% 0.016 293.756);
+  --color-neutral: oklch(12% 0.042 264.695);
+  --color-neutral-content: oklch(98% 0.003 247.858);
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(84% 0.238 128.85);
+  --color-success-content: oklch(27% 0.072 132.109);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(27% 0.077 45.635);
+  --color-error: oklch(70% 0.191 22.216);
+  --color-error-content: oklch(25% 0.092 26.042);
+  --radius-selector: 0.5rem;
+  --radius-field: 0rem;
+  --radius-box: 2rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+
+
+.text-gradient-accent {
+  color: transparent;
+  background-image: linear-gradient(90deg,
+      #8C5BF6,
+      #492b88);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+/* Add these new styles for the modal */
+.modal-backdrop {
+  @apply fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 transition-opacity duration-300;
+}
+
+.modal-content {
+  @apply bg-[#2a2a2e] rounded-2xl shadow-xl w-full h-full flex flex-col transition-all duration-300;
+}
+
+/* Enter Animation */
+.modal-enter-active {
+  @apply opacity-100;
+}
+
+.modal-enter-active .modal-content {
+  @apply scale-100 opacity-100;
+}
+
+/* Initial State (Before Enter) */
+.modal-backdrop:not(.modal-enter-active) {
+  @apply opacity-0;
+}
+
+.modal-backdrop:not(.modal-enter-active) .modal-content {
+  @apply scale-95 opacity-0;
+}
+
+/* Leave Animation */
+.modal-leave-active {
+  @apply opacity-0;
+}
+
+.modal-leave-active .modal-content {
+  @apply scale-95 opacity-0;
+}
+
+/* Loading animation */
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Smooth animations */
+@keyframes slide-in-from-top-2 {
+  from {
+    transform: translateY(-0.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  animation: slide-in-from-top-2 0.3s ease-out;
+}
+
+/* Enhanced shadows */
+.shadow-3xl {
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth transitions for interactive elements */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.iugghjogyuhvhvwdsudvdeh{
+  color: red;
+}
