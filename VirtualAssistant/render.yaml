@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: virtualassistant-backend
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend
+    startCommand: npm start --prefix backend
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8080
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: FRONTEND_URL
+        fromService:
+          type: web
+          name: virtualassistant-backend
+          property: url
+      - key: MY_MAIL
+        sync: false
+      - key: MY_PASSWORD
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: GEMINI_API_URL
+        sync: false
+      - key: APITEMPLATE_API_KEY
+        sync: false
+      - key: APITEMPLATE_TEMPLATE_ID
+        sync: false
+
