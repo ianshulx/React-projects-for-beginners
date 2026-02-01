@@ -1,0 +1,2204 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700');
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #27ae60;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.dot {
+    transform: scale(0);
+}
+
+
+.ring-1 .dot {
+    animation: dot 4s infinite ease-in-out
+}
+
+.ring-2 .dot {
+    animation: dot 4s infinite ease-in-out 0.4s
+}
+
+.ring-3 .dot {
+    animation: dot 4s infinite ease-in-out 0.8s
+}
+
+.ring-4 .dot {
+    animation: dot 4s infinite ease-in-out 1.2s
+}
+
+.ring-5 .dot {
+    animation: dot 4s infinite ease-in-out 1.6s
+}
+
+.ring-6 .dot {
+    animation: dot 4s infinite ease-in-out 2s
+}
+
+.ring-7 .dot {
+    animation: dot 4s infinite ease-in-out 2.4s
+}
+
+.ring-8 .dot {
+    animation: dot 4s infinite ease-in-out 2.8s
+}
+
+.ring-9 .dot {
+    animation: dot 4s infinite ease-in-out 3.2s
+}
+
+.ring-10 .dot {
+    animation: dot 4s infinite ease-in-out 3.6s
+}
+
+
+@keyframes dot {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+
+
+.ring-1 {
+    width: 80px;
+    height: 80px;
+}
+
+.ring-2 {
+    width: 100px;
+    height: 100px;
+}
+
+
+.ring-3 {
+    width: 120px;
+    height: 120px;
+}
+
+
+.ring-4 {
+    width: 140px;
+    height: 140px;
+}
+
+
+.ring-5 {
+    width: 160px;
+    height: 160px;
+}
+
+
+.ring-6 {
+    width: 180px;
+    height: 180px;
+}
+
+
+.ring-7 {
+    width: 200px;
+    height: 200px;
+}
+
+
+.ring-8 {
+    width: 220px;
+    height: 220px;
+}
+
+
+.ring-9 {
+    width: 240px;
+    height: 240px;
+}
+
+
+.ring-10 {
+    width: 260px;
+    height: 260px;
+}
+
+
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+.rotable-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-origin: 50% 50%;
+}
+
+.ring-1 .dot-1 {
+    transform: rotate(15deg);
+}
+
+.ring-1 .dot-2 {
+    transform: rotate(30deg);
+}
+
+.ring-1 .dot-3 {
+    transform: rotate(45deg);
+}
+
+.ring-1 .dot-4 {
+    transform: rotate(60deg);
+}
+
+.ring-1 .dot-5 {
+    transform: rotate(75deg);
+}
+
+.ring-1 .dot-6 {
+    transform: rotate(90deg);
+}
+
+.ring-1 .dot-7 {
+    transform: rotate(105deg);
+}
+
+.ring-1 .dot-8 {
+    transform: rotate(120deg);
+}
+
+.ring-1 .dot-9 {
+    transform: rotate(135deg);
+}
+
+.ring-1 .dot-10 {
+    transform: rotate(150deg);
+}
+
+.ring-1 .dot-11 {
+    transform: rotate(165deg);
+}
+
+.ring-1 .dot-12 {
+    transform: rotate(180deg);
+}
+
+.ring-1 .dot-13 {
+    transform: rotate(195deg);
+}
+
+.ring-1 .dot-14 {
+    transform: rotate(210deg);
+}
+
+.ring-1 .dot-15 {
+    transform: rotate(225deg);
+}
+
+.ring-1 .dot-16 {
+    transform: rotate(240deg);
+}
+
+.ring-1 .dot-17 {
+    transform: rotate(255deg);
+}
+
+.ring-1 .dot-18 {
+    transform: rotate(270deg);
+}
+
+.ring-1 .dot-19 {
+    transform: rotate(285deg);
+}
+
+.ring-1 .dot-20 {
+    transform: rotate(300deg);
+}
+
+.ring-1 .dot-21 {
+    transform: rotate(315deg);
+}
+
+.ring-1 .dot-22 {
+    transform: rotate(330deg);
+}
+
+.ring-1 .dot-23 {
+    transform: rotate(345deg);
+}
+
+.ring-1 .dot-24 {
+    transform: rotate(360deg);
+}
+
+.ring-2 .dot-1 {
+    transform: rotate(12deg);
+}
+
+.ring-2 .dot-2 {
+    transform: rotate(24deg);
+}
+
+.ring-2 .dot-3 {
+    transform: rotate(36deg);
+}
+
+.ring-2 .dot-4 {
+    transform: rotate(48deg);
+}
+
+.ring-2 .dot-5 {
+    transform: rotate(60deg);
+}
+
+.ring-2 .dot-6 {
+    transform: rotate(72deg);
+}
+
+.ring-2 .dot-7 {
+    transform: rotate(84deg);
+}
+
+.ring-2 .dot-8 {
+    transform: rotate(96deg);
+}
+
+.ring-2 .dot-9 {
+    transform: rotate(108deg);
+}
+
+.ring-2 .dot-10 {
+    transform: rotate(120deg);
+}
+
+.ring-2 .dot-11 {
+    transform: rotate(132deg);
+}
+
+.ring-2 .dot-12 {
+    transform: rotate(144deg);
+}
+
+.ring-2 .dot-13 {
+    transform: rotate(156deg);
+}
+
+.ring-2 .dot-14 {
+    transform: rotate(168deg);
+}
+
+.ring-2 .dot-15 {
+    transform: rotate(180deg);
+}
+
+.ring-2 .dot-16 {
+    transform: rotate(192deg);
+}
+
+.ring-2 .dot-17 {
+    transform: rotate(204deg);
+}
+
+.ring-2 .dot-18 {
+    transform: rotate(216deg);
+}
+
+.ring-2 .dot-19 {
+    transform: rotate(228deg);
+}
+
+.ring-2 .dot-20 {
+    transform: rotate(240deg);
+}
+
+.ring-2 .dot-21 {
+    transform: rotate(252deg);
+}
+
+.ring-2 .dot-22 {
+    transform: rotate(264deg);
+}
+
+.ring-2 .dot-23 {
+    transform: rotate(276deg);
+}
+
+.ring-2 .dot-24 {
+    transform: rotate(288deg);
+}
+
+.ring-2 .dot-25 {
+    transform: rotate(300deg);
+}
+
+.ring-2 .dot-26 {
+    transform: rotate(312deg);
+}
+
+.ring-2 .dot-27 {
+    transform: rotate(324deg);
+}
+
+.ring-2 .dot-28 {
+    transform: rotate(336deg);
+}
+
+.ring-2 .dot-29 {
+    transform: rotate(348deg);
+}
+
+.ring-2 .dot-30 {
+    transform: rotate(360deg);
+}
+
+.ring-3 .dot-1 {
+    transform: rotate(10deg);
+}
+
+.ring-3 .dot-2 {
+    transform: rotate(20deg);
+}
+
+.ring-3 .dot-3 {
+    transform: rotate(30deg);
+}
+
+.ring-3 .dot-4 {
+    transform: rotate(40deg);
+}
+
+.ring-3 .dot-5 {
+    transform: rotate(50deg);
+}
+
+.ring-3 .dot-6 {
+    transform: rotate(60deg);
+}
+
+.ring-3 .dot-7 {
+    transform: rotate(70deg);
+}
+
+.ring-3 .dot-8 {
+    transform: rotate(80deg);
+}
+
+.ring-3 .dot-9 {
+    transform: rotate(90deg);
+}
+
+.ring-3 .dot-10 {
+    transform: rotate(100deg);
+}
+
+.ring-3 .dot-11 {
+    transform: rotate(110deg);
+}
+
+.ring-3 .dot-12 {
+    transform: rotate(120deg);
+}
+
+.ring-3 .dot-13 {
+    transform: rotate(130deg);
+}
+
+.ring-3 .dot-14 {
+    transform: rotate(140deg);
+}
+
+.ring-3 .dot-15 {
+    transform: rotate(150deg);
+}
+
+.ring-3 .dot-16 {
+    transform: rotate(160deg);
+}
+
+.ring-3 .dot-17 {
+    transform: rotate(170deg);
+}
+
+.ring-3 .dot-18 {
+    transform: rotate(180deg);
+}
+
+.ring-3 .dot-19 {
+    transform: rotate(190deg);
+}
+
+.ring-3 .dot-20 {
+    transform: rotate(200deg);
+}
+
+.ring-3 .dot-21 {
+    transform: rotate(210deg);
+}
+
+.ring-3 .dot-22 {
+    transform: rotate(220deg);
+}
+
+.ring-3 .dot-23 {
+    transform: rotate(230deg);
+}
+
+.ring-3 .dot-24 {
+    transform: rotate(240deg);
+}
+
+.ring-3 .dot-25 {
+    transform: rotate(250deg);
+}
+
+.ring-3 .dot-26 {
+    transform: rotate(260deg);
+}
+
+.ring-3 .dot-27 {
+    transform: rotate(270deg);
+}
+
+.ring-3 .dot-28 {
+    transform: rotate(280deg);
+}
+
+.ring-3 .dot-29 {
+    transform: rotate(290deg);
+}
+
+.ring-3 .dot-30 {
+    transform: rotate(300deg);
+}
+
+.ring-3 .dot-31 {
+    transform: rotate(310deg);
+}
+
+.ring-3 .dot-32 {
+    transform: rotate(320deg);
+}
+
+.ring-3 .dot-33 {
+    transform: rotate(330deg);
+}
+
+.ring-3 .dot-34 {
+    transform: rotate(340deg);
+}
+
+.ring-3 .dot-35 {
+    transform: rotate(350deg);
+}
+
+.ring-3 .dot-36 {
+    transform: rotate(360deg);
+}
+
+.ring-4 .dot-1 {
+    transform: rotate(8.57deg);
+}
+
+.ring-4 .dot-2 {
+    transform: rotate(17.14deg);
+}
+
+.ring-4 .dot-3 {
+    transform: rotate(25.71deg);
+}
+
+.ring-4 .dot-4 {
+    transform: rotate(34.28deg);
+}
+
+.ring-4 .dot-5 {
+    transform: rotate(42.85deg);
+}
+
+.ring-4 .dot-6 {
+    transform: rotate(51.42deg);
+}
+
+.ring-4 .dot-7 {
+    transform: rotate(60deg);
+}
+
+.ring-4 .dot-8 {
+    transform: rotate(68.57deg);
+}
+
+.ring-4 .dot-9 {
+    transform: rotate(77.14deg);
+}
+
+.ring-4 .dot-10 {
+    transform: rotate(85.71deg);
+}
+
+.ring-4 .dot-11 {
+    transform: rotate(94.28deg);
+}
+
+.ring-4 .dot-12 {
+    transform: rotate(102.85deg);
+}
+
+.ring-4 .dot-13 {
+    transform: rotate(111.42deg);
+}
+
+.ring-4 .dot-14 {
+    transform: rotate(120deg);
+}
+
+.ring-4 .dot-15 {
+    transform: rotate(128.57deg);
+}
+
+.ring-4 .dot-16 {
+    transform: rotate(137.14deg);
+}
+
+.ring-4 .dot-17 {
+    transform: rotate(145.71deg);
+}
+
+.ring-4 .dot-18 {
+    transform: rotate(154.28deg);
+}
+
+.ring-4 .dot-19 {
+    transform: rotate(162.85deg);
+}
+
+.ring-4 .dot-20 {
+    transform: rotate(171.42deg);
+}
+
+.ring-4 .dot-21 {
+    transform: rotate(180deg);
+}
+
+.ring-4 .dot-22 {
+    transform: rotate(188.57deg);
+}
+
+.ring-4 .dot-23 {
+    transform: rotate(197.14deg);
+}
+
+.ring-4 .dot-24 {
+    transform: rotate(205.71deg);
+}
+
+.ring-4 .dot-25 {
+    transform: rotate(214.28deg);
+}
+
+.ring-4 .dot-26 {
+    transform: rotate(222.85deg);
+}
+
+.ring-4 .dot-27 {
+    transform: rotate(231.42deg);
+}
+
+.ring-4 .dot-28 {
+    transform: rotate(240deg);
+}
+
+.ring-4 .dot-29 {
+    transform: rotate(248.57deg);
+}
+
+.ring-4 .dot-30 {
+    transform: rotate(257.14deg);
+}
+
+.ring-4 .dot-31 {
+    transform: rotate(265.71deg);
+}
+
+.ring-4 .dot-32 {
+    transform: rotate(274.28deg);
+}
+
+.ring-4 .dot-33 {
+    transform: rotate(282.85deg);
+}
+
+.ring-4 .dot-34 {
+    transform: rotate(291.42deg);
+}
+
+.ring-4 .dot-35 {
+    transform: rotate(300deg);
+}
+
+.ring-4 .dot-36 {
+    transform: rotate(308.57deg);
+}
+
+.ring-4 .dot-37 {
+    transform: rotate(317.14deg);
+}
+
+.ring-4 .dot-38 {
+    transform: rotate(325.71deg);
+}
+
+.ring-4 .dot-39 {
+    transform: rotate(334.28deg);
+}
+
+.ring-4 .dot-40 {
+    transform: rotate(342.85deg);
+}
+
+.ring-4 .dot-41 {
+    transform: rotate(351.42deg);
+}
+
+.ring-4 .dot-42 {
+    transform: rotate(360deg);
+}
+
+.ring-5 .dot-1 {
+    transform: rotate(7.5deg);
+}
+
+.ring-5 .dot-2 {
+    transform: rotate(15deg);
+}
+
+.ring-5 .dot-3 {
+    transform: rotate(22.5deg);
+}
+
+.ring-5 .dot-4 {
+    transform: rotate(30deg);
+}
+
+.ring-5 .dot-5 {
+    transform: rotate(37.5deg);
+}
+
+.ring-5 .dot-6 {
+    transform: rotate(45deg);
+}
+
+.ring-5 .dot-7 {
+    transform: rotate(52.5deg);
+}
+
+.ring-5 .dot-8 {
+    transform: rotate(60deg);
+}
+
+.ring-5 .dot-9 {
+    transform: rotate(67.5deg);
+}
+
+.ring-5 .dot-10 {
+    transform: rotate(75deg);
+}
+
+.ring-5 .dot-11 {
+    transform: rotate(82.5deg);
+}
+
+.ring-5 .dot-12 {
+    transform: rotate(90deg);
+}
+
+.ring-5 .dot-13 {
+    transform: rotate(97.5deg);
+}
+
+.ring-5 .dot-14 {
+    transform: rotate(105deg);
+}
+
+.ring-5 .dot-15 {
+    transform: rotate(112.5deg);
+}
+
+.ring-5 .dot-16 {
+    transform: rotate(120deg);
+}
+
+.ring-5 .dot-17 {
+    transform: rotate(127.5deg);
+}
+
+.ring-5 .dot-18 {
+    transform: rotate(135deg);
+}
+
+.ring-5 .dot-19 {
+    transform: rotate(142.5deg);
+}
+
+.ring-5 .dot-20 {
+    transform: rotate(150deg);
+}
+
+.ring-5 .dot-21 {
+    transform: rotate(157.5deg);
+}
+
+.ring-5 .dot-22 {
+    transform: rotate(165deg);
+}
+
+.ring-5 .dot-23 {
+    transform: rotate(172.5deg);
+}
+
+.ring-5 .dot-24 {
+    transform: rotate(180deg);
+}
+
+.ring-5 .dot-25 {
+    transform: rotate(187.5deg);
+}
+
+.ring-5 .dot-26 {
+    transform: rotate(195deg);
+}
+
+.ring-5 .dot-27 {
+    transform: rotate(202.5deg);
+}
+
+.ring-5 .dot-28 {
+    transform: rotate(210deg);
+}
+
+.ring-5 .dot-29 {
+    transform: rotate(217.5deg);
+}
+
+.ring-5 .dot-30 {
+    transform: rotate(225deg);
+}
+
+.ring-5 .dot-31 {
+    transform: rotate(232.5deg);
+}
+
+.ring-5 .dot-32 {
+    transform: rotate(240deg);
+}
+
+.ring-5 .dot-33 {
+    transform: rotate(247.5deg);
+}
+
+.ring-5 .dot-34 {
+    transform: rotate(255deg);
+}
+
+.ring-5 .dot-35 {
+    transform: rotate(262.5deg);
+}
+
+.ring-5 .dot-36 {
+    transform: rotate(270deg);
+}
+
+.ring-5 .dot-37 {
+    transform: rotate(277.5deg);
+}
+
+.ring-5 .dot-38 {
+    transform: rotate(285deg);
+}
+
+.ring-5 .dot-39 {
+    transform: rotate(292.5deg);
+}
+
+.ring-5 .dot-40 {
+    transform: rotate(300deg);
+}
+
+.ring-5 .dot-41 {
+    transform: rotate(307.5deg);
+}
+
+.ring-5 .dot-42 {
+    transform: rotate(315deg);
+}
+
+.ring-5 .dot-43 {
+    transform: rotate(322.5deg);
+}
+
+.ring-5 .dot-44 {
+    transform: rotate(330deg);
+}
+
+.ring-5 .dot-45 {
+    transform: rotate(337.5deg);
+}
+
+.ring-5 .dot-46 {
+    transform: rotate(345deg);
+}
+
+.ring-5 .dot-47 {
+    transform: rotate(352.5deg);
+}
+
+.ring-5 .dot-48 {
+    transform: rotate(360deg);
+}
+
+.ring-6 .dot-1 {
+    transform: rotate(6.66deg);
+}
+
+.ring-6 .dot-2 {
+    transform: rotate(13.33deg);
+}
+
+.ring-6 .dot-3 {
+    transform: rotate(20deg);
+}
+
+.ring-6 .dot-4 {
+    transform: rotate(26.66deg);
+}
+
+.ring-6 .dot-5 {
+    transform: rotate(33.33deg);
+}
+
+.ring-6 .dot-6 {
+    transform: rotate(40deg);
+}
+
+.ring-6 .dot-7 {
+    transform: rotate(46.66deg);
+}
+
+.ring-6 .dot-8 {
+    transform: rotate(53.33deg);
+}
+
+.ring-6 .dot-9 {
+    transform: rotate(60deg);
+}
+
+.ring-6 .dot-10 {
+    transform: rotate(66.66deg);
+}
+
+.ring-6 .dot-11 {
+    transform: rotate(73.33deg);
+}
+
+.ring-6 .dot-12 {
+    transform: rotate(80deg);
+}
+
+.ring-6 .dot-13 {
+    transform: rotate(86.66deg);
+}
+
+.ring-6 .dot-14 {
+    transform: rotate(93.33deg);
+}
+
+.ring-6 .dot-15 {
+    transform: rotate(100deg);
+}
+
+.ring-6 .dot-16 {
+    transform: rotate(106.66deg);
+}
+
+.ring-6 .dot-17 {
+    transform: rotate(113.33deg);
+}
+
+.ring-6 .dot-18 {
+    transform: rotate(120deg);
+}
+
+.ring-6 .dot-19 {
+    transform: rotate(126.66deg);
+}
+
+.ring-6 .dot-20 {
+    transform: rotate(133.33deg);
+}
+
+.ring-6 .dot-21 {
+    transform: rotate(140deg);
+}
+
+.ring-6 .dot-22 {
+    transform: rotate(146.66deg);
+}
+
+.ring-6 .dot-23 {
+    transform: rotate(153.33deg);
+}
+
+.ring-6 .dot-24 {
+    transform: rotate(160deg);
+}
+
+.ring-6 .dot-25 {
+    transform: rotate(166.66deg);
+}
+
+.ring-6 .dot-26 {
+    transform: rotate(173.33deg);
+}
+
+.ring-6 .dot-27 {
+    transform: rotate(180deg);
+}
+
+.ring-6 .dot-28 {
+    transform: rotate(186.66deg);
+}
+
+.ring-6 .dot-29 {
+    transform: rotate(193.33deg);
+}
+
+.ring-6 .dot-30 {
+    transform: rotate(200deg);
+}
+
+.ring-6 .dot-31 {
+    transform: rotate(206.66deg);
+}
+
+.ring-6 .dot-32 {
+    transform: rotate(213.33deg);
+}
+
+.ring-6 .dot-33 {
+    transform: rotate(220deg);
+}
+
+.ring-6 .dot-34 {
+    transform: rotate(226.66deg);
+}
+
+.ring-6 .dot-35 {
+    transform: rotate(233.33deg);
+}
+
+.ring-6 .dot-36 {
+    transform: rotate(240deg);
+}
+
+.ring-6 .dot-37 {
+    transform: rotate(246.66deg);
+}
+
+.ring-6 .dot-38 {
+    transform: rotate(253.33deg);
+}
+
+.ring-6 .dot-39 {
+    transform: rotate(260deg);
+}
+
+.ring-6 .dot-40 {
+    transform: rotate(266.66deg);
+}
+
+.ring-6 .dot-41 {
+    transform: rotate(273.33deg);
+}
+
+.ring-6 .dot-42 {
+    transform: rotate(280deg);
+}
+
+.ring-6 .dot-43 {
+    transform: rotate(286.66deg);
+}
+
+.ring-6 .dot-44 {
+    transform: rotate(293.33deg);
+}
+
+.ring-6 .dot-45 {
+    transform: rotate(300deg);
+}
+
+.ring-6 .dot-46 {
+    transform: rotate(306.66deg);
+}
+
+.ring-6 .dot-47 {
+    transform: rotate(313.33deg);
+}
+
+.ring-6 .dot-48 {
+    transform: rotate(320deg);
+}
+
+.ring-6 .dot-49 {
+    transform: rotate(326.66deg);
+}
+
+.ring-6 .dot-50 {
+    transform: rotate(333.33deg);
+}
+
+.ring-6 .dot-51 {
+    transform: rotate(340deg);
+}
+
+.ring-6 .dot-52 {
+    transform: rotate(346.66deg);
+}
+
+.ring-6 .dot-53 {
+    transform: rotate(353.33deg);
+}
+
+.ring-6 .dot-54 {
+    transform: rotate(360deg);
+}
+
+.ring-7 .dot-1 {
+    transform: rotate(6deg);
+}
+
+.ring-7 .dot-2 {
+    transform: rotate(12deg);
+}
+
+.ring-7 .dot-3 {
+    transform: rotate(18deg);
+}
+
+.ring-7 .dot-4 {
+    transform: rotate(24deg);
+}
+
+.ring-7 .dot-5 {
+    transform: rotate(30deg);
+}
+
+.ring-7 .dot-6 {
+    transform: rotate(36deg);
+}
+
+.ring-7 .dot-7 {
+    transform: rotate(42deg);
+}
+
+.ring-7 .dot-8 {
+    transform: rotate(48deg);
+}
+
+.ring-7 .dot-9 {
+    transform: rotate(54deg);
+}
+
+.ring-7 .dot-10 {
+    transform: rotate(60deg);
+}
+
+.ring-7 .dot-11 {
+    transform: rotate(66deg);
+}
+
+.ring-7 .dot-12 {
+    transform: rotate(72deg);
+}
+
+.ring-7 .dot-13 {
+    transform: rotate(78deg);
+}
+
+.ring-7 .dot-14 {
+    transform: rotate(84deg);
+}
+
+.ring-7 .dot-15 {
+    transform: rotate(90deg);
+}
+
+.ring-7 .dot-16 {
+    transform: rotate(96deg);
+}
+
+.ring-7 .dot-17 {
+    transform: rotate(102deg);
+}
+
+.ring-7 .dot-18 {
+    transform: rotate(108deg);
+}
+
+.ring-7 .dot-19 {
+    transform: rotate(114deg);
+}
+
+.ring-7 .dot-20 {
+    transform: rotate(120deg);
+}
+
+.ring-7 .dot-21 {
+    transform: rotate(126deg);
+}
+
+.ring-7 .dot-22 {
+    transform: rotate(132deg);
+}
+
+.ring-7 .dot-23 {
+    transform: rotate(138deg);
+}
+
+.ring-7 .dot-24 {
+    transform: rotate(144deg);
+}
+
+.ring-7 .dot-25 {
+    transform: rotate(150deg);
+}
+
+.ring-7 .dot-26 {
+    transform: rotate(156deg);
+}
+
+.ring-7 .dot-27 {
+    transform: rotate(162deg);
+}
+
+.ring-7 .dot-28 {
+    transform: rotate(168deg);
+}
+
+.ring-7 .dot-29 {
+    transform: rotate(174deg);
+}
+
+.ring-7 .dot-30 {
+    transform: rotate(180deg);
+}
+
+.ring-7 .dot-31 {
+    transform: rotate(186deg);
+}
+
+.ring-7 .dot-32 {
+    transform: rotate(192deg);
+}
+
+.ring-7 .dot-33 {
+    transform: rotate(198deg);
+}
+
+.ring-7 .dot-34 {
+    transform: rotate(204deg);
+}
+
+.ring-7 .dot-35 {
+    transform: rotate(210deg);
+}
+
+.ring-7 .dot-36 {
+    transform: rotate(216deg);
+}
+
+.ring-7 .dot-37 {
+    transform: rotate(222deg);
+}
+
+.ring-7 .dot-38 {
+    transform: rotate(228deg);
+}
+
+.ring-7 .dot-39 {
+    transform: rotate(234deg);
+}
+
+.ring-7 .dot-40 {
+    transform: rotate(240deg);
+}
+
+.ring-7 .dot-41 {
+    transform: rotate(246deg);
+}
+
+.ring-7 .dot-42 {
+    transform: rotate(252deg);
+}
+
+.ring-7 .dot-43 {
+    transform: rotate(258deg);
+}
+
+.ring-7 .dot-44 {
+    transform: rotate(264deg);
+}
+
+.ring-7 .dot-45 {
+    transform: rotate(270deg);
+}
+
+.ring-7 .dot-46 {
+    transform: rotate(276deg);
+}
+
+.ring-7 .dot-47 {
+    transform: rotate(282deg);
+}
+
+.ring-7 .dot-48 {
+    transform: rotate(288deg);
+}
+
+.ring-7 .dot-49 {
+    transform: rotate(294deg);
+}
+
+.ring-7 .dot-50 {
+    transform: rotate(300deg);
+}
+
+.ring-7 .dot-51 {
+    transform: rotate(306deg);
+}
+
+.ring-7 .dot-52 {
+    transform: rotate(312deg);
+}
+
+.ring-7 .dot-53 {
+    transform: rotate(318deg);
+}
+
+.ring-7 .dot-54 {
+    transform: rotate(324deg);
+}
+
+.ring-7 .dot-55 {
+    transform: rotate(330deg);
+}
+
+.ring-7 .dot-56 {
+    transform: rotate(336deg);
+}
+
+.ring-7 .dot-57 {
+    transform: rotate(342deg);
+}
+
+.ring-7 .dot-58 {
+    transform: rotate(348deg);
+}
+
+.ring-7 .dot-59 {
+    transform: rotate(354deg);
+}
+
+.ring-7 .dot-60 {
+    transform: rotate(360deg);
+}
+
+.ring-8 .dot-1 {
+    transform: rotate(5.45deg);
+}
+
+.ring-8 .dot-2 {
+    transform: rotate(10.9deg);
+}
+
+.ring-8 .dot-3 {
+    transform: rotate(16.36deg);
+}
+
+.ring-8 .dot-4 {
+    transform: rotate(21.81deg);
+}
+
+.ring-8 .dot-5 {
+    transform: rotate(27.27deg);
+}
+
+.ring-8 .dot-6 {
+    transform: rotate(32.72deg);
+}
+
+.ring-8 .dot-7 {
+    transform: rotate(38.18deg);
+}
+
+.ring-8 .dot-8 {
+    transform: rotate(43.63deg);
+}
+
+.ring-8 .dot-9 {
+    transform: rotate(49.09deg);
+}
+
+.ring-8 .dot-10 {
+    transform: rotate(54.54deg);
+}
+
+.ring-8 .dot-11 {
+    transform: rotate(59.99deg);
+}
+
+.ring-8 .dot-12 {
+    transform: rotate(65.45deg);
+}
+
+.ring-8 .dot-13 {
+    transform: rotate(70.9deg);
+}
+
+.ring-8 .dot-14 {
+    transform: rotate(76.36deg);
+}
+
+.ring-8 .dot-15 {
+    transform: rotate(81.81deg);
+}
+
+.ring-8 .dot-16 {
+    transform: rotate(87.27deg);
+}
+
+.ring-8 .dot-17 {
+    transform: rotate(92.72deg);
+}
+
+.ring-8 .dot-18 {
+    transform: rotate(98.18deg);
+}
+
+.ring-8 .dot-19 {
+    transform: rotate(103.63deg);
+}
+
+.ring-8 .dot-20 {
+    transform: rotate(109.09deg);
+}
+
+.ring-8 .dot-21 {
+    transform: rotate(114.54deg);
+}
+
+.ring-8 .dot-22 {
+    transform: rotate(119.99deg);
+}
+
+.ring-8 .dot-23 {
+    transform: rotate(125.45deg);
+}
+
+.ring-8 .dot-24 {
+    transform: rotate(130.9deg);
+}
+
+.ring-8 .dot-25 {
+    transform: rotate(136.36deg);
+}
+
+.ring-8 .dot-26 {
+    transform: rotate(141.81deg);
+}
+
+.ring-8 .dot-27 {
+    transform: rotate(147.27deg);
+}
+
+.ring-8 .dot-28 {
+    transform: rotate(152.72deg);
+}
+
+.ring-8 .dot-29 {
+    transform: rotate(158.18deg);
+}
+
+.ring-8 .dot-30 {
+    transform: rotate(163.63deg);
+}
+
+.ring-8 .dot-31 {
+    transform: rotate(169.09deg);
+}
+
+.ring-8 .dot-32 {
+    transform: rotate(174.54deg);
+}
+
+.ring-8 .dot-33 {
+    transform: rotate(180deg);
+}
+
+.ring-8 .dot-34 {
+    transform: rotate(185.45deg);
+}
+
+.ring-8 .dot-35 {
+    transform: rotate(190.9deg);
+}
+
+.ring-8 .dot-36 {
+    transform: rotate(196.36deg);
+}
+
+.ring-8 .dot-37 {
+    transform: rotate(201.81deg);
+}
+
+.ring-8 .dot-38 {
+    transform: rotate(207.27deg);
+}
+
+.ring-8 .dot-39 {
+    transform: rotate(212.72deg);
+}
+
+.ring-8 .dot-40 {
+    transform: rotate(218.18deg);
+}
+
+.ring-8 .dot-41 {
+    transform: rotate(223.63deg);
+}
+
+.ring-8 .dot-42 {
+    transform: rotate(229.09deg);
+}
+
+.ring-8 .dot-43 {
+    transform: rotate(234.54deg);
+}
+
+.ring-8 .dot-44 {
+    transform: rotate(239.99deg);
+}
+
+.ring-8 .dot-45 {
+    transform: rotate(245.45deg);
+}
+
+.ring-8 .dot-46 {
+    transform: rotate(250.9deg);
+}
+
+.ring-8 .dot-47 {
+    transform: rotate(256.36deg);
+}
+
+.ring-8 .dot-48 {
+    transform: rotate(261.81deg);
+}
+
+.ring-8 .dot-49 {
+    transform: rotate(267.27deg);
+}
+
+.ring-8 .dot-50 {
+    transform: rotate(272.72deg);
+}
+
+.ring-8 .dot-51 {
+    transform: rotate(278.18deg);
+}
+
+.ring-8 .dot-52 {
+    transform: rotate(283.63deg);
+}
+
+.ring-8 .dot-53 {
+    transform: rotate(289.09deg);
+}
+
+.ring-8 .dot-54 {
+    transform: rotate(294.54deg);
+}
+
+.ring-8 .dot-55 {
+    transform: rotate(300deg);
+}
+
+.ring-8 .dot-56 {
+    transform: rotate(305.45deg);
+}
+
+.ring-8 .dot-57 {
+    transform: rotate(310.9deg);
+}
+
+.ring-8 .dot-58 {
+    transform: rotate(316.36deg);
+}
+
+.ring-8 .dot-59 {
+    transform: rotate(321.81deg);
+}
+
+.ring-8 .dot-60 {
+    transform: rotate(327.27deg);
+}
+
+.ring-8 .dot-61 {
+    transform: rotate(332.72deg);
+}
+
+.ring-8 .dot-62 {
+    transform: rotate(338.18deg);
+}
+
+.ring-8 .dot-63 {
+    transform: rotate(343.63deg);
+}
+
+.ring-8 .dot-64 {
+    transform: rotate(349.09deg);
+}
+
+.ring-8 .dot-65 {
+    transform: rotate(354.54deg);
+}
+
+.ring-8 .dot-66 {
+    transform: rotate(360deg);
+}
+
+.ring-9 .dot-1 {
+    transform: rotate(5deg);
+}
+
+.ring-9 .dot-2 {
+    transform: rotate(10deg);
+}
+
+.ring-9 .dot-3 {
+    transform: rotate(15deg);
+}
+
+.ring-9 .dot-4 {
+    transform: rotate(20deg);
+}
+
+.ring-9 .dot-5 {
+    transform: rotate(25deg);
+}
+
+.ring-9 .dot-6 {
+    transform: rotate(30deg);
+}
+
+.ring-9 .dot-7 {
+    transform: rotate(35deg);
+}
+
+.ring-9 .dot-8 {
+    transform: rotate(40deg);
+}
+
+.ring-9 .dot-9 {
+    transform: rotate(45deg);
+}
+
+.ring-9 .dot-10 {
+    transform: rotate(50deg);
+}
+
+.ring-9 .dot-11 {
+    transform: rotate(55deg);
+}
+
+.ring-9 .dot-12 {
+    transform: rotate(60deg);
+}
+
+.ring-9 .dot-13 {
+    transform: rotate(65deg);
+}
+
+.ring-9 .dot-14 {
+    transform: rotate(70deg);
+}
+
+.ring-9 .dot-15 {
+    transform: rotate(75deg);
+}
+
+.ring-9 .dot-16 {
+    transform: rotate(80deg);
+}
+
+.ring-9 .dot-17 {
+    transform: rotate(85deg);
+}
+
+.ring-9 .dot-18 {
+    transform: rotate(90deg);
+}
+
+.ring-9 .dot-19 {
+    transform: rotate(95deg);
+}
+
+.ring-9 .dot-20 {
+    transform: rotate(100deg);
+}
+
+.ring-9 .dot-21 {
+    transform: rotate(105deg);
+}
+
+.ring-9 .dot-22 {
+    transform: rotate(110deg);
+}
+
+.ring-9 .dot-23 {
+    transform: rotate(115deg);
+}
+
+.ring-9 .dot-24 {
+    transform: rotate(120deg);
+}
+
+.ring-9 .dot-25 {
+    transform: rotate(125deg);
+}
+
+.ring-9 .dot-26 {
+    transform: rotate(130deg);
+}
+
+.ring-9 .dot-27 {
+    transform: rotate(135deg);
+}
+
+.ring-9 .dot-28 {
+    transform: rotate(140deg);
+}
+
+.ring-9 .dot-29 {
+    transform: rotate(145deg);
+}
+
+.ring-9 .dot-30 {
+    transform: rotate(150deg);
+}
+
+.ring-9 .dot-31 {
+    transform: rotate(155deg);
+}
+
+.ring-9 .dot-32 {
+    transform: rotate(160deg);
+}
+
+.ring-9 .dot-33 {
+    transform: rotate(165deg);
+}
+
+.ring-9 .dot-34 {
+    transform: rotate(170deg);
+}
+
+.ring-9 .dot-35 {
+    transform: rotate(175deg);
+}
+
+.ring-9 .dot-36 {
+    transform: rotate(180deg);
+}
+
+.ring-9 .dot-37 {
+    transform: rotate(185deg);
+}
+
+.ring-9 .dot-38 {
+    transform: rotate(190deg);
+}
+
+.ring-9 .dot-39 {
+    transform: rotate(195deg);
+}
+
+.ring-9 .dot-40 {
+    transform: rotate(200deg);
+}
+
+.ring-9 .dot-41 {
+    transform: rotate(205deg);
+}
+
+.ring-9 .dot-42 {
+    transform: rotate(210deg);
+}
+
+.ring-9 .dot-43 {
+    transform: rotate(215deg);
+}
+
+.ring-9 .dot-44 {
+    transform: rotate(220deg);
+}
+
+.ring-9 .dot-45 {
+    transform: rotate(225deg);
+}
+
+.ring-9 .dot-46 {
+    transform: rotate(230deg);
+}
+
+.ring-9 .dot-47 {
+    transform: rotate(235deg);
+}
+
+.ring-9 .dot-48 {
+    transform: rotate(240deg);
+}
+
+.ring-9 .dot-49 {
+    transform: rotate(245deg);
+}
+
+.ring-9 .dot-50 {
+    transform: rotate(250deg);
+}
+
+.ring-9 .dot-51 {
+    transform: rotate(255deg);
+}
+
+.ring-9 .dot-52 {
+    transform: rotate(260deg);
+}
+
+.ring-9 .dot-53 {
+    transform: rotate(265deg);
+}
+
+.ring-9 .dot-54 {
+    transform: rotate(270deg);
+}
+
+.ring-9 .dot-55 {
+    transform: rotate(275deg);
+}
+
+.ring-9 .dot-56 {
+    transform: rotate(280deg);
+}
+
+.ring-9 .dot-57 {
+    transform: rotate(285deg);
+}
+
+.ring-9 .dot-58 {
+    transform: rotate(290deg);
+}
+
+.ring-9 .dot-59 {
+    transform: rotate(295deg);
+}
+
+.ring-9 .dot-60 {
+    transform: rotate(300deg);
+}
+
+.ring-9 .dot-61 {
+    transform: rotate(305deg);
+}
+
+.ring-9 .dot-62 {
+    transform: rotate(310deg);
+}
+
+.ring-9 .dot-63 {
+    transform: rotate(315deg);
+}
+
+.ring-9 .dot-64 {
+    transform: rotate(320deg);
+}
+
+.ring-9 .dot-65 {
+    transform: rotate(325deg);
+}
+
+.ring-9 .dot-66 {
+    transform: rotate(330deg);
+}
+
+.ring-9 .dot-67 {
+    transform: rotate(335deg);
+}
+
+.ring-9 .dot-68 {
+    transform: rotate(340deg);
+}
+
+.ring-9 .dot-69 {
+    transform: rotate(345deg);
+}
+
+.ring-9 .dot-70 {
+    transform: rotate(350deg);
+}
+
+.ring-9 .dot-71 {
+    transform: rotate(355deg);
+}
+
+.ring-9 .dot-72 {
+    transform: rotate(360deg);
+}
+
+.ring-10 .dot-1 {
+    transform: rotate(4.61deg);
+}
+
+.ring-10 .dot-2 {
+    transform: rotate(9.23deg);
+}
+
+.ring-10 .dot-3 {
+    transform: rotate(13.84deg);
+}
+
+.ring-10 .dot-4 {
+    transform: rotate(18.46deg);
+}
+
+.ring-10 .dot-5 {
+    transform: rotate(23.07deg);
+}
+
+.ring-10 .dot-6 {
+    transform: rotate(27.69deg);
+}
+
+.ring-10 .dot-7 {
+    transform: rotate(32.3deg);
+}
+
+.ring-10 .dot-8 {
+    transform: rotate(36.92deg);
+}
+
+.ring-10 .dot-9 {
+    transform: rotate(41.53deg);
+}
+
+.ring-10 .dot-10 {
+    transform: rotate(46.15deg);
+}
+
+.ring-10 .dot-11 {
+    transform: rotate(50.76deg);
+}
+
+.ring-10 .dot-12 {
+    transform: rotate(55.38deg);
+}
+
+.ring-10 .dot-13 {
+    transform: rotate(59.99deg);
+}
+
+.ring-10 .dot-14 {
+    transform: rotate(64.61deg);
+}
+
+.ring-10 .dot-15 {
+    transform: rotate(69.23deg);
+}
+
+.ring-10 .dot-16 {
+    transform: rotate(73.84deg);
+}
+
+.ring-10 .dot-17 {
+    transform: rotate(78.46deg);
+}
+
+.ring-10 .dot-18 {
+    transform: rotate(83.07deg);
+}
+
+.ring-10 .dot-19 {
+    transform: rotate(87.69deg);
+}
+
+.ring-10 .dot-20 {
+    transform: rotate(92.3deg);
+}
+
+.ring-10 .dot-21 {
+    transform: rotate(96.92deg);
+}
+
+.ring-10 .dot-22 {
+    transform: rotate(101.53deg);
+}
+
+.ring-10 .dot-23 {
+    transform: rotate(106.15deg);
+}
+
+.ring-10 .dot-24 {
+    transform: rotate(110.76deg);
+}
+
+.ring-10 .dot-25 {
+    transform: rotate(115.38deg);
+}
+
+.ring-10 .dot-26 {
+    transform: rotate(119.99deg);
+}
+
+.ring-10 .dot-27 {
+    transform: rotate(124.61deg);
+}
+
+.ring-10 .dot-28 {
+    transform: rotate(129.23deg);
+}
+
+.ring-10 .dot-29 {
+    transform: rotate(133.84deg);
+}
+
+.ring-10 .dot-30 {
+    transform: rotate(138.46deg);
+}
+
+.ring-10 .dot-31 {
+    transform: rotate(143.07deg);
+}
+
+.ring-10 .dot-32 {
+    transform: rotate(147.69deg);
+}
+
+.ring-10 .dot-33 {
+    transform: rotate(152.3deg);
+}
+
+.ring-10 .dot-34 {
+    transform: rotate(156.92deg);
+}
+
+.ring-10 .dot-35 {
+    transform: rotate(161.53deg);
+}
+
+.ring-10 .dot-36 {
+    transform: rotate(166.15deg);
+}
+
+.ring-10 .dot-37 {
+    transform: rotate(170.76deg);
+}
+
+.ring-10 .dot-38 {
+    transform: rotate(175.38deg);
+}
+
+.ring-10 .dot-39 {
+    transform: rotate(179.99deg);
+}
+
+.ring-10 .dot-40 {
+    transform: rotate(184.61deg);
+}
+
+.ring-10 .dot-41 {
+    transform: rotate(189.23deg);
+}
+
+.ring-10 .dot-42 {
+    transform: rotate(193.84deg);
+}
+
+.ring-10 .dot-43 {
+    transform: rotate(198.46deg);
+}
+
+.ring-10 .dot-44 {
+    transform: rotate(203.07deg);
+}
+
+.ring-10 .dot-45 {
+    transform: rotate(207.69deg);
+}
+
+.ring-10 .dot-46 {
+    transform: rotate(212.3deg);
+}
+
+.ring-10 .dot-47 {
+    transform: rotate(216.92deg);
+}
+
+.ring-10 .dot-48 {
+    transform: rotate(221.53deg);
+}
+
+.ring-10 .dot-49 {
+    transform: rotate(226.15deg);
+}
+
+.ring-10 .dot-50 {
+    transform: rotate(230.76deg);
+}
+
+.ring-10 .dot-51 {
+    transform: rotate(235.38deg);
+}
+
+.ring-10 .dot-52 {
+    transform: rotate(239.99deg);
+}
+
+.ring-10 .dot-53 {
+    transform: rotate(244.61deg);
+}
+
+.ring-10 .dot-54 {
+    transform: rotate(249.23deg);
+}
+
+.ring-10 .dot-55 {
+    transform: rotate(253.84deg);
+}
+
+.ring-10 .dot-56 {
+    transform: rotate(258.46deg);
+}
+
+.ring-10 .dot-57 {
+    transform: rotate(263.07deg);
+}
+
+.ring-10 .dot-58 {
+    transform: rotate(267.69deg);
+}
+
+.ring-10 .dot-59 {
+    transform: rotate(272.3deg);
+}
+
+.ring-10 .dot-60 {
+    transform: rotate(276.92deg);
+}
+
+.ring-10 .dot-61 {
+    transform: rotate(281.53deg);
+}
+
+.ring-10 .dot-62 {
+    transform: rotate(286.15deg);
+}
+
+.ring-10 .dot-63 {
+    transform: rotate(290.76deg);
+}
+
+.ring-10 .dot-64 {
+    transform: rotate(295.38deg);
+}
+
+.ring-10 .dot-65 {
+    transform: rotate(300deg);
+}
+
+.ring-10 .dot-66 {
+    transform: rotate(304.61deg);
+}
+
+.ring-10 .dot-67 {
+    transform: rotate(309.23deg);
+}
+
+.ring-10 .dot-68 {
+    transform: rotate(313.84deg);
+}
+
+.ring-10 .dot-69 {
+    transform: rotate(318.46deg);
+}
+
+.ring-10 .dot-70 {
+    transform: rotate(323.07deg);
+}
+
+.ring-10 .dot-71 {
+    transform: rotate(327.69deg);
+}
+
+.ring-10 .dot-72 {
+    transform: rotate(332.3deg);
+}
+
+.ring-10 .dot-73 {
+    transform: rotate(336.92deg);
+}
+
+.ring-10 .dot-74 {
+    transform: rotate(341.53deg);
+}
+
+.ring-10 .dot-75 {
+    transform: rotate(346.15deg);
+}
+
+.ring-10 .dot-76 {
+    transform: rotate(350.76deg);
+}
+
+.ring-10 .dot-77 {
+    transform: rotate(355.38deg);
+}
+
+.ring-10 .dot-78 {
+    transform: rotate(359.99deg);
+}
