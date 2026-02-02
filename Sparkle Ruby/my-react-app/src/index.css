@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #FFC902;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ruby {
+  position: absolute;
+  width: 192px;
+  height: 126px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.ruby .bottom-left {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 84px 0px 0 96px;
+  border-color: #890505 transparent transparent transparent;
+}
+.ruby .bottom-right {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  right: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 84px 96px 0 0px;
+  border-color: #C81718 transparent transparent transparent;
+}
+.ruby .bottom-middle {
+  position: absolute;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  left: 54px;
+  bottom: 0;
+  border-style: solid;
+  border-width: 84px 42px 0 42px;
+  border-color: #A51012 transparent transparent transparent;
+}
+.ruby .top-left-left {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 0 22px 42px 32px;
+  border-color: transparent transparent #9E0707 transparent;
+}
+.ruby .top-left {
+  position: absolute;
+  z-index: 1;
+  width: 64px;
+  height: 42px;
+  top: 0;
+  left: 32px;
+  background: #DC2323;
+}
+.ruby .top-middle {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 54px;
+  border-style: solid;
+  border-width: 0 42px 42px 42px;
+  border-color: transparent transparent #BC0E0E transparent;
+}
+.ruby .top-right {
+  position: absolute;
+  z-index: 1;
+  width: 64px;
+  height: 42px;
+  top: 0;
+  right: 32px;
+  background: #F58181;
+  overflow: hidden;
+}
+.ruby .top-right .flash {
+  position: absolute;
+  width: 4px;
+  height: 80px;
+  top: -40px;
+  left: 30px;
+  background: #FFDFDF;
+  transform: rotate(-44deg) translateX(-30px);
+  -webkit-animation: flash 3s linear infinite both;
+          animation: flash 3s linear infinite both;
+  box-shadow: 0 0 5px 0 #FFDFDF;
+}
+.ruby .top-right-right {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 32px 42px 22px;
+  border-color: transparent transparent #B90B0C transparent;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    transform: rotate(-44deg) translateX(-30px);
+  }
+  10%, 100% {
+    transform: rotate(-44deg) translateX(30px);
+  }
+}
+
+@keyframes flash {
+  0% {
+    transform: rotate(-44deg) translateX(-30px);
+  }
+  10%, 100% {
+    transform: rotate(-44deg) translateX(30px);
+  }
+}
