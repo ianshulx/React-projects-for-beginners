@@ -1,19 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ScoreMaster</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Projects for beginners</title>
+  <!-- ICON || FAVICON -->
+  <link rel="shortcut icon" type="image/png" href="/rp.png" />
+  <!-- FOR IE -->
+  <link rel="apple-touch-icon" type="image/png" href="/rp.png" />
+  <!-- FOR iPhone -->
+  <link rel="icon" type="image/png" href="/rp.png" />
 
   
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <script type="module" src="/src/main.jsx"></script>
-  </head>
-  <body class="bg-gray-100">
-    <div id="root"></div>
-  </body>
-</html>
+  <!-- FOR Browser Chrome, Opera, etc -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./output.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="sm:m-10 ml-3 mr-3">
+
+    <div class="flex gap-12">
+    <div class="relative hf-logoo -top-28 logo-fade-in">
+      <!-- <img src="./logo-hacktoberfest-12.svg" class="w-24" /> -->
+    </div>
+
+   
+    <nav class="floating-navbar fixed top-5 w-full z-50 bg-[#003369] xl:w-4/5 lg:w-5/6 rounded-xl flex gap-12 items-center transition-all duration-300">
+
+      <div class="w-20 sm:w-10 hamburger nav-item-fade">
+        <img src="./menu.png" class="" />
+      </div>
+      <div class="w-full navbar-container content-nav">
+        <div class="flex w-10 lg:w-52 gap-2 items-center justify-center nav-item-fade">
+          <img src="./assets/logo.png" class="xl:w-12 w-10 sm:w-10 logo-pulse" />
+          <h1 class="xl:text-xl text-rp text-[#AEEAFC] font-bold">React Projects</h1>
+        </div>
+
+
+        <ul class="navbaar-list-lg navbar-menu">
+          <img class="xl:w-12 w-10 hact-img-animation" src="./heroicon-animation.dd8cd700.gif" alt="hacktoberfest">
+          <li class="list-none nav-item-fade"><a href="#hero" class="text-[#AEEAFC] xl:px-[10px] xl:py-[8px] text-[1.1rem] list-item-a font-bold nav-link-enhanced">HOME</a></li>
+          <li class="list-none nav-item-fade"><a href="#projects" class="text-[#AEEAFC] xl:px-[10px] xl:py-[8px] text-[1.1rem] list-item-a font-bold nav-link-enhanced">PROJECTS</a></li>
+          <li class="list-none nav-item-fade"><a href="#contributors" class="text-[#AEEAFC] xl:px-[10px] xl:py-[8px] text-[1.1rem] list-item-a font-bold nav-link-enhanced">CONTRIBUTORS</a></li>
+          <li class="list-none nav-item-fade"><a href="https://github.com/ianshulx/React-projects-for-beginners" target="_blank" class="text-[#AEEAFC] xl:px-[10px] xl:py-[8px] text-[1.1rem] list-item-a font-bold nav-link-enhanced">GITHUB</a></li>
+        </ul>
+        <!-- SIDEBAR -->
+        <div id="sidebar" class="sidebar">
+          <button class="close-btn">&times;</button>
+
+        <ul class="navbaar-list navbar-menu">
+          <img class="xl:w-12 w-10" src="./heroicon-animation.dd8cd700.gif" alt="hacktoberfest">
+          <li class="list-none"><a href="#hero" class="text-[#AEEAFC] list-item-a text-base font-bold">Home</a></li>
+          <li class="list-none"><a href="#projects" class="text-[#AEEAFC] list-item-a font-bold">Projects</a></li>
+          <li class="list-none"><a href="#contributors" class="text-[#AEEAFC] list-item-a font-bold">Contributors</a></li>
+          <li class="list-none"><a href="https://github.com/ianshulx/React-projects-for-beginners" target="_blank" class="text-[#AEEAFC] list-item-a font-bold">GitHub</a></li>
+        </ul>
+
+        </div>
+
+        <div class="button-container-below-navbar relative sm:left-0 left-12 lg:right-20 nav-item-fade">
+          <div id="menu-label" class="menu-label menu-button-enhanced" tabindex="0" role="button" aria-expanded="false"
+            aria-controls="menu-buttons">Menu</div>
+          <div id="menu-buttons" class="inner-buttons hidden">
+            <button class="inner-btn star-btn button-enhanced"
+              onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/stargazers', '_blank')">
+              <i class="bi bi-star-fill"></i> Star
+            </button>
+            <button class="inner-btn fork-btn button-enhanced"
+              onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/network/members', '_blank')">
+              <i class="bi bi-code-branch"></i> Fork
+            </button>
+            <button class="inner-btn issues-btn button-enhanced"
+              onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/issues', '_blank')">
+              <i class="bi bi-exclamation-circle-fill"></i> Issues
+            </button>
+            <button class="inner-btn pr-btn button-enhanced"
+              onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/pulls', '_blank')">
+              <i class="bi bi-git-pull-request"></i> Pull Requests
+            </button>
+            <button class="inner-btn watchers-btn button-enhanced"
+              onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/watchers', '_blank')">
+              <i class="bi bi-eye"></i> Watchers
+            </button>
+            <button class="inner-btn contributors-btn button-enhanced"
+              onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/graphs/contributors', '_blank')">
+              <i class="bi bi-people-fill"></i> Contributors
+            </button>
+            <button class="inner-btn download-btn button-enhanced"
+              onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/releases', '_blank')">
+              <i class="bi bi-download"></i> Download
+            </button>
+            <button class="inner-btn maintainer-btn button-enhanced" onclick="window.open('https://github.com/ianshulx', '_blank')">
+              <i class="bi bi-person-badge-fill"></i> Maintainer
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- New Intro Section -->
+  <section id="hero" class="intro-section" data-aos="fade-up">
+    <div class="intro-container">
+      <div class="intro-badge" data-aos="zoom-in" data-aos-delay="200">
+       <img src="./logo-hacktoberfest-12.svg" alt="Logo" class="intro-container">
+       </div>
+
+      <!-- <div class="intro-badge" data-aos="zoom-in" data-aos-delay="200">
+       
+        <img src="./hackto25.png" alt="Hacktoberfest" class="intro-badge-icon">
+        <span>Hacktoberfest 2025</span>
+      </div> -->
+      
+      <h1 class="intro-title" data-aos="fade-up" data-aos-delay="300">
+        Welcome to <span class="highlight-text">React Projects</span><br/>
+        for Beginners
+      </h1>
+      
+      <p class="intro-description" data-aos="fade-up" data-aos-delay="400">
+        A curated collection of beginner-friendly React projects perfect for learning and contributing to open source. 
+        Whether you're just starting with React or looking to expand your portfolio, you'll find projects that match your skill level.
+      </p>
+
+      <div class="intro-features" data-aos="fade-up" data-aos-delay="500">
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Easy to Start</h3>
+          <p>Projects designed for beginners with clear documentation</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌟</div>
+          <h3>Learn by Doing</h3>
+          <p>Hands-on experience with real React applications</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Open Source</h3>
+          <p>Contribute to Hacktoberfest and grow your GitHub profile</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💡</div>
+          <h3>Unique Ideas</h3>
+          <p>Projects with out-of-the-box ideas that spark innovation.</p>
+        </div>
+      </div>
+   
+
+      <div class="intro-cta" data-aos="fade-up" data-aos-delay="600">
+        <a href="#projects" class="cta-button cta-primary">
+          <span>Explore Projects</span>
+          <i class="bi bi-arrow-down"></i>
+        </a>
+        <a href="https://github.com/ianshulx/React-projects-for-beginners" target="_blank" class="cta-button cta-secondary">
+          <i class="bi bi-github"></i>
+          <span>Star on GitHub</span>
+        </a>
+      </div>
+
+      <div class="intro-stats" data-aos="fade-up" data-aos-delay="700">
+        <div class="stat-item">
+          <div class="stat-number" id="project-count">150+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="contributor-count">500+</div>
+          <div class="stat-label">Contributors</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="star-count">2K+</div>
+          <div class="stat-label">GitHub Stars</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Project Section -->
+    <section id="projects" class="mt-40" data-aos="fade-up">
+      <div class="container-fluid -mt-20">
+        <div class="row">
+          <h2 class="section-title" data-aos="fade-right">Explore Our Projects</h2>
+
+          <div id="projects-search" class="flex items-center justify-end gap-2 mb-5 pr-[10px] sm:pr-[130px]" data-aos="fade-left">
+            <input id="project-search-input" type="search" placeholder="Search projects..." aria-label="Search projects"
+              class="search-input-enhanced" />
+            <button id="project-clear-btn" class="clear-button-enhanced">
+              Clear
+            </button>
+          </div>
+
+
+
+          <div id="projects-container" class="mt-4"></div>
+        </div>
+      </div>
+    </section>
+
+   <section id="contributors" class="" style="padding: 20px" data-aos="fade-up">
+  <h1 class="hero-text ms-5">Our Contributors</h1>
+  <div id="contributors-box">
+    <ul id="contributors-list">
+      <!-- Contributors will be displayed here -->
+    </ul>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3" data-aos="fade-up">
+  <div class="container">
+    <a href="https://github.com/ianshulx" target="_blank"><i class="bi bi-github"></i></a>
+    <br>
+    This repository is licensed under the MIT license. See the
+    <a href="https://github.com/ianshulx/react-projects-for-beginners/blob/main/LICENSE" target="_blank">LICENSE</a>
+    file for more information.
+  </div>
+</footer>
+
+<script>
+  const repoUrl = "https://api.github.com/repos/ianshulx/react-Projects-for-beginners";
+  const contributorsList = document.getElementById("contributors-list");
+
+  async function fetchAllContributors() {
+    let allContributors = [];
+    let page = 1;
+    const perPage = 100; // max allowed by GitHub
+
+    while (true) {
+      const response = await fetch(`${repoUrl}/contributors?per_page=${perPage}&page=${page}`);
+      const data = await response.json();
+      if (data.length === 0) break;
+      allContributors = allContributors.concat(data);
+      page++;
+    }
+
+    // Display contributors
+    allContributors.forEach(contributor => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <a href="${contributor.html_url}" target="_blank">
+          <img src="${contributor.avatar_url}" alt="${contributor.login}" width="100" height="100">
+          <p>${contributor.login}</p>
+        </a>
+      `;
+      contributorsList.appendChild(li);
+    });
+
+    // Update contributors count
+    const contributorsBtn = document.querySelector('.contributors-btn');
+    if (contributorsBtn) contributorsBtn.innerHTML = `<i class="bi bi-people-fill"></i> Contributors (${allContributors.length})`;
+
+    const contributorCount = document.getElementById('contributor-count');
+    if (contributorCount) contributorCount.textContent = allContributors.length + '+';
+  }
+
+  fetchAllContributors().catch(console.error);
+
+  // Fetch repo details
+  async function fetchRepoDetails() {
+    try {
+      const repoData = await (await fetch(repoUrl)).json();
+
+      // Update stars
+      const starBtn = document.querySelector('.star-btn');
+      if (starBtn) starBtn.innerHTML = `<i class="bi bi-star-fill"></i> Star (${repoData.stargazers_count})`;
+
+      const starCount = document.getElementById('star-count');
+      if (starCount) starCount.textContent = repoData.stargazers_count + '+';
+
+      // Update forks
+      const forkBtn = document.querySelector('.fork-btn');
+      if (forkBtn) forkBtn.innerHTML = `<i class="bi bi-code-branch"></i> Fork (${repoData.forks_count})`;
+
+      // Update open PRs, issues, watchers
+      const pullsData = await (await fetch(`${repoUrl}/pulls?state=open`)).json();
+      const prCount = pullsData.length;
+      const issuesCount = Math.max(repoData.open_issues_count - prCount, 0);
+      const watchersCount = Math.max(repoData.subscribers_count || 0, 0);
+
+      const issuesBtn = document.querySelector('.issues-btn');
+      if (issuesBtn) issuesBtn.innerHTML = `<i class="bi bi-exclamation-circle-fill"></i> Issues (${issuesCount})`;
+
+      const prBtn = document.querySelector('.pr-btn');
+      if (prBtn) prBtn.innerHTML = `<i class="bi bi-git-pull-request"></i> Pull Requests (${prCount})`;
+
+      const watchersBtn = document.querySelector('.watchers-btn');
+      if (watchersBtn) watchersBtn.innerHTML = `<i class="bi bi-eye"></i> Watchers (${watchersCount})`;
+
+    } catch (err) {
+      console.error("Error fetching repo details:", err);
+    }
+  }
+
+  fetchRepoDetails();
+
+  // Navbar scroll effect
+  const navbar = document.querySelector('.floating-navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) navbar.classList.add('scrolled');
+    else navbar.classList.remove('scrolled');
+  });
+
+  // Fade logo on scroll
+  const logoDiv = document.querySelector('.hf-logoo');
+  window.addEventListener('scroll', () => {
+    logoDiv.style.opacity = window.scrollY > 50 ? '0' : '1';
+  });
+</script>
+
+<script src="projects.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- AOS Animation Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  window.addEventListener("load", () => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 50
+    });
+  });
+</script>
+
+<!-- Wave SVG Animation -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="bg">
+      <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+      <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+      <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+    </linearGradient>
+    <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+  </defs>
+  <g>
+    <use xlink:href='#wave' opacity=".3">
+      <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s" calcMode="spline"
+        values="270 230; -334 180; 270 230" keyTimes="0; .5; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+        repeatCount="indefinite" />
+    </use>
+    <use xlink:href='#wave' opacity=".6">
+      <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s" calcMode="spline"
+        values="-270 230;243 220;-270 230" keyTimes="0; .6; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+        repeatCount="indefinite" />
+    </use>
+    <use xlink:href='#wave' opacity=".9">
+      <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s" calcMode="spline"
+        values="0 230;-140 200;0 230" keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+        repeatCount="indefinite" />
+    </use>
+  </g>
+</svg>
+
+<script src="./menu-toggle.js"></script>
+</div></body></html>
