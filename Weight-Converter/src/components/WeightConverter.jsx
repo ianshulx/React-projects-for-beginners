@@ -1,4 +1,4 @@
-// src/components/WeightConverter.jsx
+`// src/components/WeightConverter.jsx
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ConversionTrie from "../utils/ConversionTrie";
@@ -173,7 +173,11 @@ export default function WeightConverter() {
 
               <form onSubmit={convertWeight} className="space-y-4">
                 <div className="flex gap-3">
+                  <label htmlFor="weight-input" className="block text-sm font-medium text-gray-700">
+                    Weight
+                  </label>
                   <input
+                    id="weight-input"
                     type="number"
                     inputMode="decimal"
                     step="any"
