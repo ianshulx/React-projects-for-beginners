@@ -208,3 +208,42 @@
   transform: translateX(20px);
   background: var(--primary-foreground);
 }
+
+.sidebar-divider {
+  height: 1px;
+  background: var(--sidebar-border);
+  margin: 1.5rem 0.5rem 1rem;
+  opacity: 0.5;
+}
+
+.sidebar-section-label {
+  padding: 0 1rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--sidebar-foreground);
+  opacity: 0.6;
+}
+
+.genre-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.25rem !important;
+}
+
+.genre-link {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.825rem !important;
+  opacity: 0.85;
+}
+
+.genre-link:hover {
+  opacity: 1;
+}
+
+.genre-link.active {
+  background: var(--sidebar-primary);
+  color: var(--sidebar-primary-foreground);
+  opacity: 1;
+}
