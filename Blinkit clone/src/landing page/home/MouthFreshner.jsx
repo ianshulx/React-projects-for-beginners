@@ -22,7 +22,7 @@ export default function MouthFreshner() {
 
     return (
         <div className="p-6">
-            <CategoryRow category="mouth freshner" items={items} />
+            <CategoryRow category="Mouth freshner" items={items} />
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { addToBag } from "../store/slices/SliceWish";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 export default function Card({ id, img, title, desc, price }) {
     const dispatch = useDispatch();
@@ -9,17 +9,17 @@ export default function Card({ id, img, title, desc, price }) {
 
     const handleAddToCart = (id) => {
         if (!isLoggedIn) {
-            toast.info("Please login first to add items to cart!");
+            toast("Please login first to add items to cart!");
             return;
         }
         const exists = cartData.find((e) => e.id === id);
         if (exists) {
-          toast.info("Already added! 😅");
+          toast("Already added! 😅");
           return;
         }
 
         dispatch(addToBag({ id, img, title, desc, price }));
-        toast.success("successfully added 😀")
+        toast.success("Successfully Added 😀")
     };
 
     return (

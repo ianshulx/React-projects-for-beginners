@@ -41,7 +41,7 @@ export default function Navbar({ handleModalOpen }) {
                         <button onClick={handleModalOpen}>Login</button>
                       ) : (
                         <>
-                          <span>Hello, {user.email}</span>
+                          <span>Hello, {user.name}</span>
                           <button onClick={() => dispatch(logout())}>Logout</button>
                         </>
                       )}
