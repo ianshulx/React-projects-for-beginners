@@ -40,6 +40,7 @@ const Router = () => {
               <Layout>
                 <Routes>
                   <Route path="/" element={<Home />} />
+                  <Route path="/category/:genre" element={<Home />} />
                   <Route path="/saved" element={<Saved />} />
                   <Route path="/myreview" element={<MyReview />} />
                   <Route path="/profile" element={<Profile />} />

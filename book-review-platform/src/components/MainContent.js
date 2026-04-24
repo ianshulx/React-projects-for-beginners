@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useParams, useLocation } from "react-router-dom";
 import "../styles/MainContent.css";
 import { SearchBar } from "./SearchBar";
 import { BookCard } from "./BookCard";
 import {
   getFeaturedBooks,
+  getBooksBySubject,
   searchBooks,
   transformGoogleBooksResponse,
   addMockReviewData,
@@ -62,6 +64,8 @@ const sampleBooks = [
 ];
 
 const MainContent = () => {
+  const { genre } = useParams();
+  const location = useLocation();
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -90,19 +94,28 @@ const MainContent = () => {
 
   // Fetch featured books on component mount
   // we'll expose a fetch helper so nav can trigger refresh directly
+  // Fetch books logic
   const fetchBooksHelper = async () => {
     try {
       setLoading(true);
       setError(null);
-      const response = await getFeaturedBooks(12);
+      setSearchQuery(""); // Reset search when switching genres/home
+      
+      let response;
+      if (genre) {
+        response = await getBooksBySubject(genre, 12);
+      } else {
+        response = await getFeaturedBooks(12);
+      }
+      
       const transformedBooks = transformGoogleBooksResponse(response);
       const booksWithReviews = transformedBooks.map(addMockReviewData);
       setBooks(booksWithReviews);
     } catch (err) {
       setError("Failed to fetch books. Please try again later.");
       console.error("Error fetching books:", err);
-      // Fallback to sample data if API fails
-      setBooks(sampleBooks);
+      // Fallback to sample data if API fails and we are on home
+      if (!genre) setBooks(sampleBooks);
     } finally {
       setLoading(false);
     }
@@ -110,7 +123,7 @@ const MainContent = () => {
 
   useEffect(() => {
     fetchBooksHelper();
-  }, []);
+  }, [genre, location.pathname]); // Re-run when genre or path changes
 
   // Handle search functionality
   const handleSearch = async (query) => {
@@ -187,6 +200,8 @@ const MainContent = () => {
         <h1>
           {searchQuery
             ? `Search Results for "${searchQuery}"`
+            : genre
+            ? `Exploring ${genre.charAt(0).toUpperCase() + genre.slice(1)}`
             : "Discover Your Next Favorite Book"}
         </h1>
         <p>

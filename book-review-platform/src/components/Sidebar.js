@@ -10,6 +10,16 @@ const navItems = [
   { icon: User, label: "My Reviews", path: "/myreview" },
 ];
 
+const genreItems = [
+  "Fiction",
+  "Science",
+  "Fantasy",
+  "Mystery",
+  "History",
+  "Business",
+  "Cooking",
+];
+
 const Sidebar = ({ currentPage, onNavigate, isDarkMode, onToggleDarkMode }) => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -106,6 +116,26 @@ const Sidebar = ({ currentPage, onNavigate, isDarkMode, onToggleDarkMode }) => {
               </div>
             </div>
           </li>
+        </ul>
+
+        <div className="sidebar-divider"></div>
+
+        <div className="sidebar-section-label">Genres</div>
+        <ul className="genre-list">
+          {genreItems.map((genre) => {
+            const path = `/category/${genre.toLowerCase()}`;
+            const isActive = location.pathname === path;
+            return (
+              <li key={genre} className="nav-item">
+                <button
+                  className={`nav-link genre-link ${isActive ? "active" : ""}`}
+                  onClick={() => navigate(path)}
+                >
+                  <span className="nav-label">{genre}</span>
+                </button>
+              </li>
+            );
+          })}
         </ul>
       </nav>
 
