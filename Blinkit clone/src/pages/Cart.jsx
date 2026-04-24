@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Trash } from "lucide-react";
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import {
   deleteCartData,
   incrementQuantity,
@@ -74,7 +74,7 @@ const Cart = () => {
 
     const handleClearCart = () => {
         if (!cartData || cartData.length === 0) {
-            toast.info('Cart is already empty');
+            toast('Cart is already empty');
             return;
         }
         
@@ -162,7 +162,7 @@ const Cart = () => {
     const handleApplyDiscount = () => {
         const code = (discountInput || '').trim().toUpperCase();
         if (!code) {
-            toast.warn('Enter a discount code first');
+            toast.error('Enter a discount code first');
             return;
         }
         const rule = AVAILABLE_DISCOUNTS[code];
@@ -178,12 +178,12 @@ const Cart = () => {
     const handleRemoveDiscount = () => {
         setAppliedCode(null);
         setDiscountAmount(0);
-        toast.info('Discount removed');
+        toast('Discount removed');
     }
 
     const handleCheckout = () => {
         if (!cartData || cartData.length === 0) {
-            toast.warn('Your cart is empty');
+            toast.error('Your cart is empty');
             return;
         }
         // Prepare payload (demo) and proceed

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 // helper to get a stable string id from various shapes
 const resolveId = (value) => {
@@ -45,7 +45,7 @@ const cartSlice = createSlice({
       if (idx !== -1) {
         // existing — increase qty
         state[idx].qty = (Number(state[idx].qty) || 1) + 1;
-        toast.info("Increased quantity in cart");
+        toast("Increased quantity in cart");
       } else {
         // normalize item: ensure id is a string and qty exists
         const normalized = {
@@ -143,7 +143,7 @@ const authSlice = createSlice({
       state.user = null;
       state.isLoggedIn = false;
       localStorage.removeItem("currentUser");
-      toast.info("Logged out");
+      toast("Logged out");
     },
   },
 });

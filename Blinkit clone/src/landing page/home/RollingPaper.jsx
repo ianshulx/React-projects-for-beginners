@@ -22,7 +22,7 @@ export default function RollingPapers() {
 
     return (
         <div className="p-6">
-            <CategoryRow category="rolling paper" items={items} />
+            <CategoryRow category="Rolling paper" items={items} />
         </div>
     )
 }

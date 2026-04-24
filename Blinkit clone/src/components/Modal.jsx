@@ -3,7 +3,7 @@ import React, { Fragment, useState } from "react";
 import { FaEye, FaEyeSlash, FaTimes } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 import { login, register } from "../store/slices/SliceWish";
 
 export default function Modal({ modal, setModal }) {
