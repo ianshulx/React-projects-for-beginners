@@ -32,3 +32,22 @@
 	width: max-content;
 	height: auto;
 }
+.clearWrapper {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.clearButton {
+  background-color: #ff5c5c;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+
+  &:hover {
+    background-color: #ff3b3b;
+  }
+}
