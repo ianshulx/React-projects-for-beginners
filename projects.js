@@ -972,6 +972,12 @@ const projects = [
     imgSrc: "assets/pomo.png",
   },
   {
+  title: "Codemate",
+  url: "https://github.com/AvinashTanwar01/React-projects-for-beginners/tree/add-codemate-project/Codemate",
+  description: "Browser IDE supporting 10+ languages with 32 VS Code-inspired themes, sandboxed execution, and JWT auth.",
+  imgSrc: "assets/codemate.png",
+  },
+  {
     title: "CosmicVista Space",
     url: "https://github.com/ianshulx/react-projects-for-beginners/tree/main-616/cosmicvista%20-%20space",
     description: "CosmicVista Space is a space-themed educational app showing celestial bodies, planets, and facts.",
