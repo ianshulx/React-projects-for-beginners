@@ -977,6 +977,13 @@ const projects = [
     description: "CosmicVista Space is a space-themed educational app showing celestial bodies, planets, and facts.",
     imgSrc: "assets/cosm.png",
   },
+  {
+    title: "FLAVOURLY",
+    url: "https://github.com/ianshulx/react-projects-for-beginners/tree/main-616/FLAVOURLY",
+    description:
+      "A Recipe finding app powered by TheMealDB API, with search by ingredient or title, autocomplete, favorites, vegetarian filtering, and recipe details modal.",
+    imgSrc: "assets/pizzat.png",
+  },
 ];
 
 // Render all projects inside the container
