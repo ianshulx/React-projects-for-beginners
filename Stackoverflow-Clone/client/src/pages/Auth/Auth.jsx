@@ -43,9 +43,9 @@ const Auth = () => {
 //Front End Code
 
     return (
-        <section class='auth-section'>
+        <section className='auth-section'>
             { isSignup && <AboutAuth/> }
-            <div class='auth-container'>
+            <div className='auth-container'>
                 { !isSignup && <img src={icon} alt='stack overflow'></img>}
                 <form onSubmit={handleSubmit}>
                     { 

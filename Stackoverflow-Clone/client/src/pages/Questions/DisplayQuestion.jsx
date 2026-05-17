@@ -5,7 +5,7 @@ import QuestionDetails from './QuestionDetails'
 
 const DisplayQuestion = () => {
     return (
-        <div class='home-container'>
+        <div className='home-container'>
             <LeftSidebar/>
             <QuestionDetails/>
             <RightSidebar/>

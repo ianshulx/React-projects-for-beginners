@@ -22,8 +22,8 @@ const Footer = () => {
             <li><Link to='/UnderConstruction'>Returns & Refunds</Link></li>
             <li><a href="https://www.linkedin.com/in/manshusainishab/">My Account</a></li>
           </ul>
-          <p><i data-v-3610fc48="" class=" circleicon_light fa fa-rupee"></i>COD Available</p>
-          <p><i data-v-3610fc48="" class="circleicon_light fa fa-refresh"></i>30 Days Easy Returns</p>
+          <p><i data-v-3610fc48="" className=" circleicon_light fa fa-rupee"></i>COD Available</p>
+          <p><i data-v-3610fc48="" className="circleicon_light fa fa-refresh"></i>30 Days Easy Returns</p>
         </div>
 
         <div className="footer-column">
@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <div className='footer-bottom-head'><i class="fa fa-mobile-phone"></i>   EXPERIENCE THE SOULED STORE APP</div>
+        <div className='footer-bottom-head'><i className="fa fa-mobile-phone"></i>   EXPERIENCE THE SOULED STORE APP</div>
         <div className="app-links">
           <a href="https://play.google.com/store/apps/details?id=com.thesouledstore" target='_blank'><img src={playstore} alt="Get it on Google Play" /></a>
           <a href="https://apps.apple.com/in/app/the-souled-store/id1493897434" target='_blank'><img src={applestore} alt="Download on the App Store" /></a>

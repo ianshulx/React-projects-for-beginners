@@ -87,7 +87,7 @@ const Login = () => {
             <ul className='topbar-list'>
                 <li id='topbar-option-list'><a href='/'>TRACK ORDER</a></li>
                 <li id='topbar-option-list'><a href='/'>CONTACT US</a></li>
-                <li id='topbar-option-list'><i class="fa fa-mobile-phone"></i>  <a href='https://play.google.com/store/apps/details?id=com.thesouledstore'>DOWNLOAD APP</a></li>
+                <li id='topbar-option-list'><i className="fa fa-mobile-phone"></i>  <a href='https://play.google.com/store/apps/details?id=com.thesouledstore'>DOWNLOAD APP</a></li>
             </ul>
         </div>
       </div>

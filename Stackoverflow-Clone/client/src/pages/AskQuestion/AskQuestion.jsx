@@ -29,7 +29,7 @@ const AskQuestion = () => {
     }
     
     return (
-        <div class='home-container'>
+        <div className='home-container'>
             <LeftSidebar/>
         
         <div className='ask-question'>
