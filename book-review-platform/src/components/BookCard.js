@@ -128,12 +128,7 @@ export const BookCard = ({
       });
       setUserRating(starRating);
       if (existingReview) {
-        console.log(
-          "Rating updated from",
-          existingReview.rating,
-          "to",
-          starRating
-        );
+        // Rating updated successfully
       }
     }
   };

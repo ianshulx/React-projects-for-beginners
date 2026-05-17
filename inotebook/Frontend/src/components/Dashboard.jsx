@@ -82,8 +82,8 @@ function Dashboard(props) {
             </Card>
           </Col>
         </Row>
-        <button type="button" class="btn btn-primary" onClick={()=>downloadAllNotes()}>
-          <i class="fas fa-download"></i> Download All
+        <button type="button" className="btn btn-primary" onClick={()=>downloadAllNotes()}>
+          <i className="fas fa-download"></i> Download All
         </button>
         <br />
         <br />

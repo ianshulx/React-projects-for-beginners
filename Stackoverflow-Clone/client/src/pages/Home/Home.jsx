@@ -5,7 +5,7 @@ import HomeMainbar from '../../components/HomeMainbar/HomeMainbar'
 import '../../App.css'
 const Home = () => {
     return (
-        <div class='home-container'>
+        <div className='home-container'>
             <LeftSidebar/>
             <HomeMainbar/>
             <RightSidebar/>
