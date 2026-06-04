@@ -1,5 +1,5 @@
 // src/components/WorkoutRandomizer.jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const workoutRoutines = [
   {
@@ -12,7 +12,6 @@ const workoutRoutines = [
       { exercise: "Plank", baseAmount: 30, unit: "sec" },
     ],
   },
-
   {
     name: "Upper Body Strength",
     exercises: [
@@ -23,7 +22,6 @@ const workoutRoutines = [
       { exercise: "Mountain Climbers", baseAmount: 20 },
     ],
   },
-
   {
     name: "Core Blast",
     exercises: [
@@ -34,7 +32,6 @@ const workoutRoutines = [
       { exercise: "Flutter Kicks", baseAmount: 20 },
     ],
   },
-
   {
     name: "Lower Body Workout",
     exercises: [
@@ -45,7 +42,6 @@ const workoutRoutines = [
       { exercise: "Glute Bridges", baseAmount: 15 },
     ],
   },
-
   {
     name: "HIIT Cardio",
     exercises: [
@@ -58,40 +54,62 @@ const workoutRoutines = [
   },
 ];
 
-const difficulties = {
+const difficultyMultiplier = {
   easy: 0.8,
   medium: 1,
   hard: 1.5,
 };
 
-const difficultiesRandomiser = () =>{
+const getRandomDifficulty = () => {
   const levels = ["easy", "medium", "hard"];
   return levels[Math.floor(Math.random() * levels.length)];
-}
+};
+
 const WorkoutRandomizer = () => {
   const [workout, setWorkout] = useState(null);
 
   const getRandomWorkout = () => {
     const randomIndex = Math.floor(Math.random() * workoutRoutines.length);
-    setWorkout(workoutRoutines[randomIndex]);
+    const selectedWorkout = workoutRoutines[randomIndex];
+
+    const generatedExercises = selectedWorkout.exercises.map((ex) => {
+      const difficulty = getRandomDifficulty();
+
+      return {
+        ...ex,
+        difficulty,
+        amount: Math.round(ex.baseAmount * difficultyMultiplier[difficulty]),
+      };
+    });
+
+    setWorkout({
+      name: selectedWorkout.name,
+      exercises: generatedExercises,
+    });
   };
 
   return (
     <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold text-gray-800 mb-4">Workout Randomizer</h1>
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">
+        Workout Randomizer
+      </h1>
+
       <button
         onClick={getRandomWorkout}
         className="w-full py-2 mb-4 bg-blue-500 text-white rounded hover:bg-blue-600"
       >
         Get Workout
       </button>
+
       {workout && (
         <div className="mt-4">
           <h2 className="text-lg font-semibold">{workout.name}</h2>
+
           <ul className="mt-2 list-disc list-inside">
-            {workout.exercises.map((exercise, index) => (
+            {workout.exercises.map((ex, index) => (
               <li key={index} className="text-gray-700">
-                {exercise}
+                {ex.exercise} — {ex.amount} {ex.unit ? ex.unit : "reps"} (
+                {ex.difficulty})
               </li>
             ))}
           </ul>
