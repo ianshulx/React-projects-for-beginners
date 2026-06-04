@@ -5,55 +5,69 @@ const workoutRoutines = [
   {
     name: "Full Body Circuit",
     exercises: [
-      "10 Push-ups",
-      "15 Squats",
-      "20 Jumping Jacks",
-      "10 Burpees",
-      "30-sec Plank"
+      { exercise: "Push Ups", baseAmount: 10 },
+      { exercise: "Squats", baseAmount: 15 },
+      { exercise: "Jumping Jacks", baseAmount: 20 },
+      { exercise: "Burpees", baseAmount: 10 },
+      { exercise: "Plank", baseAmount: 30, unit: "sec" },
     ],
   },
+
   {
     name: "Upper Body Strength",
     exercises: [
-      "15 Dumbbell Curls",
-      "10 Push-ups",
-      "12 Shoulder Press",
-      "15 Tricep Dips",
-      "20 Mountain Climbers"
+      { exercise: "Dumbbell Curls", baseAmount: 15 },
+      { exercise: "Push Ups", baseAmount: 10 },
+      { exercise: "Shoulder Press", baseAmount: 12 },
+      { exercise: "Tricep Dips", baseAmount: 15 },
+      { exercise: "Mountain Climbers", baseAmount: 20 },
     ],
   },
+
   {
     name: "Core Blast",
     exercises: [
-      "20 Russian Twists",
-      "15 Bicycle Crunches",
-      "10 Leg Raises",
-      "30-sec Plank",
-      "20 Flutter Kicks"
+      { exercise: "Russian Twists", baseAmount: 20 },
+      { exercise: "Bicycle Crunches", baseAmount: 15 },
+      { exercise: "Leg Raises", baseAmount: 10 },
+      { exercise: "Plank", baseAmount: 30, unit: "sec" },
+      { exercise: "Flutter Kicks", baseAmount: 20 },
     ],
   },
+
   {
     name: "Lower Body Workout",
     exercises: [
-      "20 Lunges",
-      "15 Squats",
-      "20 Calf Raises",
-      "30-sec Wall Sit",
-      "15 Glute Bridges"
+      { exercise: "Lunges", baseAmount: 20 },
+      { exercise: "Squats", baseAmount: 15 },
+      { exercise: "Calf Raises", baseAmount: 20 },
+      { exercise: "Wall Sit", baseAmount: 30, unit: "sec" },
+      { exercise: "Glute Bridges", baseAmount: 15 },
     ],
   },
+
   {
     name: "HIIT Cardio",
     exercises: [
-      "30-sec High Knees",
-      "15 Burpees",
-      "30-sec Jump Rope",
-      "20 Mountain Climbers",
-      "15 Jump Squats"
+      { exercise: "High Knees", baseAmount: 30, unit: "sec" },
+      { exercise: "Burpees", baseAmount: 15 },
+      { exercise: "Jump Rope", baseAmount: 30, unit: "sec" },
+      { exercise: "Mountain Climbers", baseAmount: 20 },
+      { exercise: "Jump Squats", baseAmount: 15 },
     ],
   },
 ];
 
+const difficulties = {
+  easy: 0.8,
+  medium: 1,
+  hard: 1.5,
+};
+
+const difficultiesRandomiser = () =>{
+  const levels = ["easy", "medium", "hard"];
+  return levels[Math.floor(Math.random() * levels.length)];
+}
 const WorkoutRandomizer = () => {
   const [workout, setWorkout] = useState(null);
 
