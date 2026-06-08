@@ -37,16 +37,11 @@ export const isAuthenticated = () => {
 
 /**
  * Clear user data from localStorage (logout)
- * Also clears all user-related data: saved books, reviews, reviewed books, stats
  */
 export const clearUser = () => {
   try {
-    // Clear all bookr-related localStorage keys
+    // Clear user session token
     localStorage.removeItem(USER_STORAGE_KEY);
-    localStorage.removeItem("bookr_saved_books");
-    localStorage.removeItem("bookr_reviews");
-    localStorage.removeItem("bookr_reviewed_books");
-    localStorage.removeItem("bookr_stats");
     return true;
   } catch (error) {
     console.error("Error clearing user data:", error);
