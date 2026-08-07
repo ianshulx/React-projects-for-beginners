@@ -1,5 +1,13 @@
 // Please add your project details in the below array.
 const projects = [
+
+    {
+  title: "PlacementPrep Tracker",
+  url: "https://github.com/rahultakale44/React-projects-for-beginners/tree/add-placementprep-tracker/PlacementPrep-Tracker",
+  description:
+    "A responsive React placement preparation dashboard for tracking DSA, Java, database, aptitude and interview tasks with progress analytics, filtering, localStorage and dark mode.",
+  imgSrc: "assets/placementprep-tracker.png",
+    },
     {
     title: "digital_clock",
     url: "https://github.com/IshikaSinghRajput/React-projects-for-beginners.git",
