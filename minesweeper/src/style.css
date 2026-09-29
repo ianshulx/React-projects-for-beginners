@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f1f5f9; color: #1e293b; font-family: system-ui, sans-serif; padding: 20px 12px; }
+main { width: 100%; max-width: 410px; padding: 24px; background: white; border: 1px solid #e2e8f0; border-radius: 16px; box-shadow: 0 8px 30px #0f172a0a; text-align: center; }
+h1 { margin: 0; font-size: 30px; letter-spacing: -1px; }
+.subtitle { color: #64748b; margin: 8px 0 24px; font-size: 14px; }
+.toolbar { display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 600; }
+button { font: inherit; cursor: pointer; border: 0; border-radius: 6px; background: #e2e8f0; color: #1e293b; padding: 9px 12px; }
+button:hover { background: #cbd5e1; }
+button:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; position: relative; z-index: 1; }
+.toolbar button { background: #2563eb; color: white; }
+.toolbar button:hover { background: #1d4ed8; }
+.status { font-size: 14px; margin: 20px 0 16px; }
+.won { color: #15803d; font-weight: 600; }
+.lost { color: #b91c1c; font-weight: 600; }
+.board { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 3px; background: #cbd5e1; padding: 5px; border-radius: 8px; }
+.cell { aspect-ratio: 1; padding: 0; border-radius: 3px; background: #dbe4ef; box-shadow: inset 0 -2px 0 #b7c5d6; font-weight: 800; font-size: clamp(14px, 4vw, 20px); }
+.cell:hover:not(:disabled) { background: #b9ccec; }
+.cell.revealed { background: #f8fafc; box-shadow: none; cursor: default; }
+.cell:disabled { opacity: 1; cursor: default; }
+.cell[data-count="1"] { color: #2563eb; }
+.cell[data-count="2"] { color: #15803d; }
+.cell[data-count="3"] { color: #dc2626; }
+.cell[data-count="4"] { color: #7c3aed; }
+.cell[data-count="5"], .cell[data-count="6"], .cell[data-count="7"], .cell[data-count="8"] { color: #9a3412; }
+.cell.mine { background: #fecaca; color: #991b1b; }
+.flag-toggle { margin-top: 20px; font-size: 14px; }
+.flag-toggle.active { background: #2563eb; color: white; }
+.help { font-size: 12px; line-height: 1.8; color: #64748b; margin: 16px 0 0; }
+@media (max-width: 360px) { main { padding: 16px; } }
